@@ -22,7 +22,7 @@ We will use IntelliJ Idea to view and write our clb scripts:
 
     This section assumes that you have already dumped your game files.
 
-Most of the clb scripts rely on a particular set of packages (with define general math functions, UI utilities etc). We are now going to dump these to usable .java files:
+Most of the clb scripts rely on a particular set of packages (which define general math functions, UI utilities etc). We are now going to dump these to usable .java files:
 
 * Download the [JavaToCLB archive](https://cdn.discordapp.com/attachments/764599308704022568/1197892700205240352/JavaToCLB.zip) and unzip it.
 

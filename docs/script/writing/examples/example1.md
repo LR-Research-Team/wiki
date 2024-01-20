@@ -2,7 +2,7 @@ In this example, we are going to repurpose the Ark's teleporter to execute our o
 
 ## Dumping the zone scripts
 
-We first need to dump dump the zone scripts of the Ark, which are located in 
+We first need to dump the zone scripts of the Ark, which are located in 
 
 ```
 
