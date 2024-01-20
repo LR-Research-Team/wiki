@@ -102,6 +102,7 @@ nav:
       - Setting up the exporter: script/basics/repacking.md
     - Writing scripts:
       - Examples: script/writing/examples.md
+      - Tips: script/writing/tips.md
       - API: script/writing/api.md
       - FAQ: script/writing/faq.md
   - Container editing:
