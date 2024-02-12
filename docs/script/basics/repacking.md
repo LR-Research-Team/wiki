@@ -47,7 +47,7 @@ The most important fields are the following:
     followed by  your **javac.exe** location, from your Java 5 install folder, between quotes ("")
     - Working Directory: put 
     ```
-    "$Sourcepath$"
+    $Sourcepath$
     ```
 
 That's it, you will now be able to generate your clb file with a single from your .java file by right-clicking the choosing **External Tools -> YourToolName**.
