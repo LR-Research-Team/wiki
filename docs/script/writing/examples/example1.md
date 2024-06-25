@@ -90,7 +90,7 @@ That's it, you can now go to the teleporter and check out the result:
 
 <div align="center">
 <video width="800" height="480" controls>
-  <source src="https://cdn.discordapp.com/attachments/884793460501147689/1196578545426776205/2024-01-15_23-14-50.mp4" type="video/mp4">
+  <source src="../../../resource/video/ArkTeleporterExample.mp4" type="video/mp4">
 </video>
 </div>
 
