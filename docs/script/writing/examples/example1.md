@@ -59,7 +59,7 @@ We can now write any logic that we want to happen when using the teleporter. In 
         //Menu
         String title = "Did you enjoy it?";
         String[] menuItems = new String[]{"Yes", "No"};
-        com.sfCallAskChoiceWindow(title, menuItems, 2);
+        com.sfCallAskChoiceWindow(title, menuItems, 0);
         int v = com.sfWaitAskChoiceWindowSkipAvailable(title);
         switch (v) {
             case 0: {
