@@ -13,7 +13,7 @@ This guide covers the process of installing a nova mod with the Nova mod manager
 
 All of these mods will require the game data to be Unpacked and will only work if the game is launched through Nova, with the Filesystem set to **Unpacked Mode**.
 
-# Installing a NCMP mod
+## Installing a NCMP mod
 Here is a demo which will help to identify and install a .ncmp mod file with Nova.
 
 
