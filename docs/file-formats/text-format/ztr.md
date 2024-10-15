@@ -17,7 +17,9 @@ N.B.: The below sections are all in Big Endian.
 <br>
 
 ### Dictionary chunk table
+
 This offset table begins from 0x14 (absolute) onwards and would contain 4 offsets for each dictionary chunk in the file. 
+
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x50 | 0x4 | UInt32 | [Dictionary Chunk](https://lr-research-team.github.io/wiki/file-formats/text-format/ztr/#dictionary-chunk) offset |
@@ -33,7 +35,9 @@ The remaining offsets after the first 0 offset, will have to be taken relatively
 
 
 ### Line Info table
+
 This offset table begins after the dictionary chunk table and according to the line count in the header, there would be four offsets for each line in the file.
+
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x1 | UInt8 | Dictionary Chunk number |
