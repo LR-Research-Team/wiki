@@ -1,5 +1,5 @@
 The WPD pack files (not to be confused with the WDB files), is like a mini archive that can hold a lot of files inside it. they come in .bin, .wpd, .wpk, .xgr, .xfv, .xwb, and .xwp file extensions.
-<br><br>Sometimes these files can also have a paired [IMGB](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/imgb/) file which can contain header less DDS texture or image related data for all txbh files ([SEDBtxb](https://github.com/LR-Research-Team/Datalog/wiki/TRB#sedbtxb) section only data), that are packed inside this archive file.
+<br><br>Sometimes these files can also have a paired [IMGB](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/imgb/) file which can contain header less DDS texture or image related data for all txbh files ([SEDBtxb](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#sedbtxb) section only data), that are packed inside this archive file.
 
 # Section Header
 

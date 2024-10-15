@@ -99,6 +99,8 @@ This section contains manually reversed field names for each WDB file from FINAL
 
 ## item_weapon.wdb
 N.B: Only reversed partially
+<br>
+
 | Field | Type | Description |
 | -- | -- | -- |
 | sWeaponCharaSpecId | UInt32 | relative offset in !!string section |
@@ -163,6 +165,8 @@ N.B: Only reversed partially
 
 ## movie_items.win32.wdb
 N.B: also applies to movie_items.win32_us.wdb file
+<br>
+
 | Field | Type | Description |
 | -- | -- | -- |
 | sZoneName | UInt32 | relative offset in !!string section |
@@ -214,6 +218,8 @@ The ps3 version of this file uses the uReserved and uCinemaStart fields together
 
 ## sound_fileid_dic.wdb
 N.B: also applies to sound_fileid_dic_us.wdb file
+<br>
+
 | Field | Type | Description |
 | -- | -- | -- |
 | i31FileId | Bits | Signed 31 bits |
@@ -221,6 +227,8 @@ N.B: also applies to sound_fileid_dic_us.wdb file
 
 ## sound_filename_dic.wdb
 N.B: also applies to sound_filename_dic_us.wdb
+<br>
+
 | Field | Type | Description |
 | -- | -- | -- |
 | sResourceName | UInt32 | relative offset in !!string section |
@@ -274,6 +282,8 @@ N.B: also applies to sound_filename_dic_us.wdb
 
 ## z###.wdb
 N.B: applies to the wdb files present inside each zone\z### folders
+<br>
+
 | Field | Type | Description |
 | -- | -- | -- |
 | iBaseNum | Int32 | int32 value |

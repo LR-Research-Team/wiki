@@ -22,20 +22,28 @@ N.B.: The below sections are all in Big Endian.
 
 ## Database Structure
 Each WDB file contains these common sections/records at the starting portion of the file. 
-- [!!string](https://github.com/LR-Research-Team/Datalog/wiki/WDB#string)
-- [!!strtypelist](https://github.com/LR-Research-Team/Datalog/wiki/WDB#strtypelist)
-- [!!typelist](https://github.com/LR-Research-Team/Datalog/wiki/WDB#typelist)
-- [!!version](https://github.com/LR-Research-Team/Datalog/wiki/WDB#version)
+- [!!string](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#string)
+
+- [!!strtypelist](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strtypelist)
+
+- [!!typelist](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#typelist)
+
+- [!!version](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#version)
 
 The structure underwent few changes in XIII-2 and LR where a section for the field names was introduced. this section gives information on how to parse each record's data and this being completely absent in XIII-1's wdb files, made parsing the wdb files from that game a bit difficult. the !!strtypelist section got changed to !!strtypelistb, while the !!typelist section will be present only when the !!strtypelist section is present.
 
 These following new sections were introduced:
-- [!!sheetname](https://github.com/LR-Research-Team/Datalog/wiki/WDB#sheetname)
-- [!structitem](https://github.com/LR-Research-Team/Datalog/wiki/WDB#structitem)
-- [!structitemnum](https://github.com/LR-Research-Team/Datalog/wiki/WDB#structitemnum)
-- [!!strArray](https://github.com/LR-Research-Team/Datalog/wiki/WDB#strArray)
-- [!!strArrayInfo](https://github.com/LR-Research-Team/Datalog/wiki/WDB#strArrayInfo) 
-- [!!strArrayList](https://github.com/LR-Research-Team/Datalog/wiki/WDB#strArrayList)
+- [!!sheetname](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#sheetname)
+
+- [!structitem](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#structitem)
+
+- [!structitemnum](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#structitemnum)
+
+- [!!strArray](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarray)
+
+- [!!strArrayInfo](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarrayinfo) 
+
+- [!!strArrayList](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarraylist)
 
 Do note that the !!strArray, !!strArrayInfo and the !!strArrayList are only present in some of the WDB files. whenever there is a 4byte field, assume that the byte order is in Big Endian.
 
@@ -44,6 +52,8 @@ This section contains strings (each terminated by a null value), used by each re
 
 ### !!strtypelist
 This section contains specific values that indicate how each 4bytes field of a record's data is supposed to be parsed. 
+
+#### !!strtypelist structure
 
 Each 4bytes field (UInt32) value in this section would contain these following parsing values. in the !!strtypelistb section (introduced from XIII-2 and LR), instead of using 4bytes, a single byte is used for storing the values.
 
@@ -61,7 +71,10 @@ This section is somewhat identical to the strtypelist section and contains value
 
 If there are multiple fields in a record's bitpacked field, the typelist section will contain more values and its size will be larger than the strtypelist section. if there are no multiple fields in the bitpacked field or if there is no bitpacked field at all, then the typelist section will be identical to the strtypelist section. the order in which these values are present in this section can be random especially when there are bitpacked fields and this section can be used to determine how many signed and unsigned type fields are present in the bitpacked fields.
 
+#### !!typelist structure
+
 Each 4bytes field (UInt32) value in this section would contain these following values:
+
 | Value | Description | Comments |
 | -- | -- | -- |
 | 0 | Signed integer value field | denotes a single field with a signed integer value |
@@ -76,7 +89,7 @@ This section contains a single UInt32 value that potentially holds some sort of 
 This section contain a string (null terminated), that gives a brief idea about the type of records that are stored in the WDB file.
 
 ## !structitem
-The section contains one or more strings (each null terminated) which are all the field names for each record's data, stored in the WDB file. refer to this [page](https://github.com/LR-Research-Team/Datalog/wiki/WDB-Field-Names) for more information.
+The section contains one or more strings (each null terminated) which are all the field names for each record's data, stored in the WDB file. refer to this [page](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb-field-names/) for more information.
 
 ## !structitemnum
 This section contains a UInt32 value that indicates the total number of fields used in the WDB file. you can use this value to determine the number of field names, present in the !structitem section.
@@ -102,6 +115,8 @@ Let's say there is a value `285212676` in the !!strArray section. the string off
 
 ## !!strArrayInfo
 This section is always 4bytes in size and contains values that determine the general structure of each value present in the !!strArray section.
+
+#### !!strArrayInfo structure
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x1 | UInt8 | Reserved, always null |

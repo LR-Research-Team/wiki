@@ -34,6 +34,8 @@ Here is how a single decompressed file path string looks like:
 64:1000:2f5:mot/pc/sk_c005_va/t1.white.win32.bin
 ```
 The ```:``` is used to separate the data into multiple parts and all of the numerical values at the first three parts would have to be converted from hexadecimal to decimal
+
+#### Path string structure
 | Value | Info | Description |
 | --- | --- | --- |
 | 0x64 | File Position in the white image BIN file | Convert 0x64 to decimal and multiply the converted value with 2048 | 
@@ -84,8 +86,11 @@ You have to take the actual position value of the file path string in the chunk 
 
 For example 32768 would be position 0, 32819 would be position 51 and so on. (32768 + 51 = 32819)
 <br>
+
 #### Filelist Encryption Footer
+
 The following offsets are present at the end of the filelist file and is part of the encryption.
+
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x4 | UInt32 | Filelist data size. same as the encryption header but in LE |
