@@ -1,5 +1,6 @@
-# Field name types
 The field names in the WDB files indicates how to parse each record's binary data and is present only in XIII-2 and XIII-LR's WDB files. each field would begin with a single letter that indicates the type of field, a number that indicates the amount of bits used by that field's value, and a small description about what the field is supposed to do ingame. 
+
+## Field name types
 
 The following list contains commonly used starting letters for the field names.
 
@@ -98,8 +99,8 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u16ConsumeAP | Bits | Unsigned 16 bits |
 
 ## item_weapon.wdb
+
 N.B: Only reversed partially
-<br>
 
 | Field | Type | Description |
 | -- | -- | -- |
@@ -164,8 +165,8 @@ N.B: Only reversed partially
 | u1Unk | Bits | Unsigned 1 bit |
 
 ## movie_items.win32.wdb
+
 N.B: also applies to movie_items.win32_us.wdb file
-<br>
 
 | Field | Type | Description |
 | -- | -- | -- |
@@ -217,8 +218,8 @@ The ps3 version of this file uses the uReserved and uCinemaStart fields together
 | i16SaveIconOverrideImageIndex | Bits | Signed 16 bits |
 
 ## sound_fileid_dic.wdb
+
 N.B: also applies to sound_fileid_dic_us.wdb file
-<br>
 
 | Field | Type | Description |
 | -- | -- | -- |
@@ -226,8 +227,8 @@ N.B: also applies to sound_fileid_dic_us.wdb file
 | u1IsStream | Bits | Unsigned 1 bit |
 
 ## sound_filename_dic.wdb
+
 N.B: also applies to sound_filename_dic_us.wdb
-<br>
 
 | Field | Type | Description |
 | -- | -- | -- |
@@ -281,8 +282,8 @@ N.B: also applies to sound_filename_dic_us.wdb
 | u1On2ndtLayerPS3 | Bits | Unsigned 1 bit |
 
 ## z###.wdb
+
 N.B: applies to the wdb files present inside each zone\z### folders
-<br>
 
 | Field | Type | Description |
 | -- | -- | -- |

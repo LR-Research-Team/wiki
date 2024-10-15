@@ -22,6 +22,7 @@ N.B.: The below sections are all in Big Endian.
 
 ## Database Structure
 Each WDB file contains these common sections/records at the starting portion of the file. 
+
 - [!!string](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#string)
 
 - [!!strtypelist](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strtypelist)
@@ -33,6 +34,7 @@ Each WDB file contains these common sections/records at the starting portion of 
 The structure underwent few changes in XIII-2 and LR where a section for the field names was introduced. this section gives information on how to parse each record's data and this being completely absent in XIII-1's wdb files, made parsing the wdb files from that game a bit difficult. the !!strtypelist section got changed to !!strtypelistb, while the !!typelist section will be present only when the !!strtypelist section is present.
 
 These following new sections were introduced:
+
 - [!!sheetname](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#sheetname)
 
 - [!structitem](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#structitem)
