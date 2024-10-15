@@ -92,6 +92,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - User Guide:
+    - user-guide/index.md
     - Setting up Nova: user-guide/setting-up-nova.md
     - Installing Mods: user-guide/installing-mods.md
   - CLB scripting:
@@ -109,3 +110,27 @@ nav:
     - container/index.md
   - File formats:
     - file-formats/index.md
+    - Archive Formats:
+      - White Image BIN files: file-formats/archive-formats/white-image.md
+      - WPD Pack files: file-formats/archive-formats/wpd-pack.md
+    - Animation Formats:
+      - MCB: file-formats/animation-formats/mcb.md
+      - MTB: file-formats/animation-formats/mtb.md
+    - Audio Format:
+      - SCD: file-formats/audio-format/scd.md
+    - Database Format:
+      - WDB: file-formats/database-format/wdb.md
+      - WDB Contents: file-formats/database-format/wdb-contents.md
+      - WDB Field Names: file-formats/database-format/wdb-field-names.md
+    - Map Format:
+      - LYB: file-formats/map-format/lyb.md
+    - Model/Texture Formats:
+      - TRB: file-formats/model-texture-formats/trb.md
+      - IMGB: file-formats/model-texture-formats/imgb.md
+    - Text Format:
+      - ZTR: file-formats/text-format/ztr.md
+      - Encoding Keys Info: file-formats/text-format/encoding-keys-info.md
+    - Script Format:
+      - CLB: file-formats/script-format/clb.md
+    - Save Format:
+      - DAT:  file-formats/save-format/dat.md
