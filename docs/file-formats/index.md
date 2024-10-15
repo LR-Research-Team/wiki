@@ -1,6 +1,6 @@
 # File formats
 
-This section contains about the different file formats that are found throughout the trilogy.
+This section contains information about the different file formats that are found throughout the trilogy.
 
 !!! warning
 

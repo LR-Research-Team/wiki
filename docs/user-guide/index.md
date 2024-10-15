@@ -4,7 +4,7 @@ This section contains instructions on setting up the Nova Chrysalia mod manager 
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-laptop: __[Setup]__ – Setup game files for modding with Nova.
+- :fontawesome-solid-laptop: __[Setup]__ – Setup game files for modding.
 - :fontawesome-solid-file-pen: __[Installing-Mods]__ – Simple example to get you started with mod installations.
 
 </div>
