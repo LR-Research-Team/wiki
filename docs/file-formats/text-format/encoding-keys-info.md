@@ -1,29 +1,29 @@
 The game uses shift-jis encoding for all latin alphabets based languages and Japanese, while big5 and euc-kr encodings are used for Chinese and Korean languages respectively. do note that not all characters from shift-jis, big5, and euc-kr are used in these games and so you would have to refer to each game's font image files to determine whether a character can be used by the game.
 
-## Page navigation links:
+## Page navigation links
 * **Common**
-<br>[Single byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#single-byte-keys)
-<br>[Characters byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#characters-byte-keys)
-<br>[Similar character byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#similar-character-byte-keys)
-<br>[Special byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#special-byte-keys)
-<br>[Unknown byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#unknown-byte-keys)
-<br>[Unknown2 byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#unknown2-byte-keys)
+<br>[Single byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#single-byte-keys)
+<br>[Characters byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#characters-byte-keys)
+<br>[Similar character byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#similar-character-byte-keys)
+<br>[Special byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#special-byte-keys)
+<br>[Unknown byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#unknown-byte-keys)
+<br>[Unknown2 byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#unknown2-byte-keys)
 
 * **FFXIII-1**
-<br>[Color keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#color-keys)
-<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#icon-keys)
-<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#button-prompt-keys)
+<br>[Color keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#color-keys)
+<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#icon-keys)
+<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#button-prompt-keys)
 
 * **FFXIII-2**
-<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#icon-keys-1)
-<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#button-prompt-keys-1)
+<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#icon-keys_1)
+<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#button-prompt-keys_1)
 
 * **FFXIII-LR**
-<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#icon-keys-2)
-<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#button-prompt-keys-2)
+<br>[Icon keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#icon-keys_2)
+<br>[Button prompt keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#button-prompt-keys_2)
 
 * **Common (FFXIII-2 and FFXIII-LR)**
-<br>[Color keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#color-keys-1)
+<br>[Color keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#color-keys_1)
 
 
 ## Common
@@ -331,7 +331,7 @@ N.B.: These are duplicate keys that are used for representing special characters
 | 0x85, 0xBC | {ExChara85 BC} | Inserts character Ý |
 
 ### Special byte keys
-Just like the [Single byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/Encoding-Keys-Info/#single-byte-keys), these keys also represent special conditions that are taken into account by the games when displaying them.
+Just like the [Single byte keys](https://lr-research-team.github.io/wiki/file-formats/text-format/encoding-keys-info/#single-byte-keys), these keys also represent special conditions that are taken into account by the games when displaying them.
 
 #### Group 1
 **Important:** For English (us), French (fr), German (gr), Italian (it), Japanese (jp), and Spanish (sp) ztr files.
@@ -446,6 +446,7 @@ The color keys indicate the color with which a particular portion of text is dis
 ![Image](../../../resource/images/xiii1_ztr_colors.png)
 
 <br>**Color Notes**
+
 - The ones that begin with 'Ex' are semi transparent colors which are mostly unused by the game.
 
 #### Group 1
@@ -1333,6 +1334,7 @@ These keys are used in LIGHTNING RETURNS FINAL FANTASY XIII, to insert special i
 The order of the keys given in the tables below would be the order of the icons in the image from the left side. 
 
 <br>**Icon Notes**
+
 - In the game's ZTR files, the key ``{Icon Small_Star}`` is usually inserted right after a different icon key. this would make the star appear below the previous icon and so if you want the star icon to appear separately, then the icon key has to be written after three empty spaces.
 
 #### Group 1
