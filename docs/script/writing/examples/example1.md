@@ -81,7 +81,7 @@ You can inject it back ingame using **LayeredFS** or by running the game in **un
 
 !!! note
 
-    To have this mod taken into account, you will also need to do a small database edit. A dedicated tutorial will be written later, for now simply use the [following file](https://cdn.discordapp.com/attachments/884793460501147689/1196577833326227526/script00110.wdb) as a modification of the original one located at
+    To have this mod taken into account, you will also need to do a small database edit. A dedicated tutorial will be written later, for now simply use the [following file](https://drive.google.com/file/d/1rqh4gw0PJmcrwZMrx7ssIpBN-dlQh8vq/view?usp=sharing) as a modification of the original one located at
     ```
     LIGHTNING RETURNS FINAL FANTASY XIII\weiss_data\db\script\script00110.wdb
     ```
@@ -90,7 +90,7 @@ That's it, you can now go to the teleporter and check out the result:
 
 <div align="center">
 <video width="800" height="480" controls>
-  <source src="../../../../docs/resource/video/ArkTeleporterExample.mp4" type="video/mp4">
+  <source src="../../../../docs/resource/videos/ArkTeleporterExample.mp4" type="video/mp4">
 </video>
 </div>
 
