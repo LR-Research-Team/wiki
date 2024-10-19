@@ -28,7 +28,7 @@ This section is used to define and encapsulate all the other ones. It contains i
 | 0x34 | 0x4 | UInt32| File paths offset, relative to the beginning of the first subsection |
 | 0x38 | 0x4 | UInt32| Subsection count |
 | 0x3C | 0x4 | UInt32| FourCC. Always 0x627274 (brt, "trb" in LE) |
-| 0x40 | 0x10 x Subsection count | [Subsection Definition](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#Subsection-Definition)[Subsection count] | Subsection offsets and lengths |
+| 0x40 | 0x10 x Subsection count | [Subsection Definition](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#subsection-Definition)[Subsection count] | Subsection offsets and lengths |
 
 #### Subsection Definition
 
@@ -65,7 +65,7 @@ N.B.: This chunk is in Big Endian.
 | 0x6 | 0x1 | UInt8 | [Texture format](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#texture-format) |
 | 0x7 | 0x1 | UInt8 | Mipmap Count |
 | 0x8 | 0x1 | UInt8 | Unknown (srgb flag or something ?) |
-| 0x9 | 0x1 | UInt8 | [Texture type](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#texture-format) |
+| 0x9 | 0x1 | UInt8 | [Texture type](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#texture-type) |
 | 0xA | 0x2 | UInt16 | Width |
 | 0xC | 0x2 | UInt16 | Height |
 | 0xE | 0x2 | UInt16 | Depth |
@@ -107,7 +107,7 @@ This struct defines the necessary information to extract the texture data from t
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x30 | [SectionHeader](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#section-header)| The header of this section |
-| 0x30 | Variable | [SHD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#SHD) | SHD Chunk |
+| 0x30 | Variable | [SHD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#shd) | SHD Chunk |
 
 --------------------------------
 
@@ -127,7 +127,7 @@ This section is used to define the necessary semantics in case of data spread in
 | 0x0 | 0x4 | UInt32| FourCC |
 | 0x4 | 0x4 | UInt32| Record count |
 | 0x8 | 0x8 | UInt32[2] | Reserved, always null |
-| 0x10 | 0x20 | [WPDRecord](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#WPD-Record)[Record count] | WPD record definitions |
+| 0x10 | 0x20 | [WPDRecord](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#wpd-record)[Record count] | WPD record definitions |
 | 0x10 + 0x20 x Record count | Variable | Binary | Data as per record definition| 
 
 #### WPD Record
@@ -189,7 +189,7 @@ This section is used to define the geometry data (attributes, skinning informati
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x30 | [SectionHeader](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#section-header)| The header of this section |
-| 0x30 | Variable | [WRB](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#WRB) | WRB Chunk |
+| 0x30 | Variable | [WRB](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#wrb) | WRB Chunk |
 
 --------------------------------
 
@@ -204,8 +204,8 @@ This section is used to define the model's skeleton.
 | 0x34 | 0x4 | UInt32 | Name table offset |
 | 0x38 | 0x4 | UInt32 | Names count |
 | 0x3C | 0x4 | UInt32 | FourCC. Always 0x736B6C (skl in LE) |
-| 0x40 | Subsections count * 0x10 | [SKL Subsection Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#SKL-subsection-header)[Subsections count] | Subsections' headers |
-| Variable | Variable | [SKL Subsections](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#SKL-subsection) | The actual subsections|
+| 0x40 | Subsections count * 0x10 | [SKL Subsection Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#skl-subsection-header)[Subsections count] | Subsections' headers |
+| Variable | Variable | [SKL Subsections](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#skl-subsection) | The actual subsections|
 | Name table offset | Variable | Stringz[names count] | Name table, with the joint names, type names, subsection names etc|
 
 #### SKL Subsection Header
@@ -656,10 +656,10 @@ This is the main chunk container for the shader section.
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | Variable | [FILE[Count depending on the game]](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#FILE) | FILE Chunks |
-| Variable | 0x20 | [VCAP](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#VCAP) | VCAP Chunk |
-| Variable | 0x90 | [PCAP](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#PCAP) | PCAP Chunk |
-| Variable | Variable | [PRAM](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#PRAM) | PRAM Chunk |
+| 0x20 | Variable | [FILE[Count depending on the game]](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#file) | FILE Chunks |
+| Variable | 0x20 | [VCAP](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#vcap) | VCAP Chunk |
+| Variable | 0x90 | [PCAP](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#pcap) | PCAP Chunk |
+| Variable | Variable | [PRAM](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#pram) | PRAM Chunk |
 
 ### WRB
 
@@ -668,9 +668,9 @@ This is the main chunk container for the geometry section. Its underlying chunk 
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | Variable | [MDLC](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MDLC) | MDLC Chunk Container |
-| Variable | 0x40 | [LTCD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#LTCD) | LTCD Chunk Container |
-| Variable | Variable | [MICT](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MICT) | MICT Chunk Container |
+| 0x20 | Variable | [MDLC](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mdlc) | MDLC Chunk Container |
+| Variable | 0x40 | [LTCD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#ltcd) | LTCD Chunk Container |
+| Variable | Variable | [MICT](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mict) | MICT Chunk Container |
 | Variable | 0x70 | [PESR](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#PESR) | PESR Chunk Container (not always present)|
 
 ### MDLC
@@ -681,7 +681,7 @@ This chunk container has the "main" model geometry information embedded. It's th
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
 | 0x20 | 0x30 | [MDLC Header Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mdlc-header) | MDLC Header Chunk |
-| 0x50 | Variable | [MDL Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MDL)[Variable count] | MDL Chunk Containers (count given in the MDLC Header chunk)|
+| 0x50 | Variable | [MDL Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mdl)[Variable count] | MDL Chunk Containers (count given in the MDLC Header chunk)|
 
 ### MDL
 
@@ -692,8 +692,8 @@ This chunk container defines a mesh and its underlying submeshes, defined in "ME
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
 | 0x20 | Variable | [Name Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#name) | The MDL name |
 | Variable | 0x30 | [MDL Header Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mdl-header) | MDL Header Chunk |
-| Variable | Variable | [MESH Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MESH)[Variable count] | MESH Chunk Containers (count given in the MDLC Header chunk)|
-| Variable | 0x80 | [AABB Chunk Container](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#AABB-container) | The MDL's bounding box and scale/bias info |
+| Variable | Variable | [MESH Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mesh)[Variable count] | MESH Chunk Containers (count given in the MDLC Header chunk)|
+| Variable | 0x80 | [AABB Chunk Container](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#aabb-container) | The MDL's bounding box and scale/bias info |
 
 ### MESH
 
@@ -702,17 +702,17 @@ This chunk container defines a submesh. It has the vertex buffers necessary to c
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | 0x20 | [MESH Header Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MESH-header) | MESH Header Chunk |
+| 0x20 | 0x20 | [MESH Header Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mesh-header) | MESH Header Chunk |
 | 0x40 | Variable | [STR Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#str) | This chunk defines the shader used for this submesh, giving its name.|
 | Variable | 0x20 | [RSID Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#rsid) | External resource name info |
 | Variable | 0x20 | [RSTP Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#rstp) | External resource type info |
 | Variable | 0x20 | [PRID Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#prid) | External resource source file location info |
 | Variable | 0x20 | [PRTP Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#prtp) | External resource file type info |
-| Variable | Variable | [STMS](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#STMS)[Variable count] | STMS Chunks (count given in the MESH Header chunk)|
-| Variable | 0x20 | [MPR](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MPR)[Variable count] | MPR Chunks (not always present, count given in the MESH Header chunk)|
-| Variable | 0x20 | [MDR](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MDR)[Variable count] | MDR Chunks (not always present, count given in the MESH Header chunk)|
-| Variable | Variable | [ENVD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#ENVD)[Variable count] | ENVD Chunks (count given in the MESH Header chunk)|
-| Variable | 0x50 | [AABB Chunk Container](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#AABB-container) | The mesh's bounding box info |
+| Variable | Variable | [STMS](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#stms)[Variable count] | STMS Chunks (count given in the MESH Header chunk)|
+| Variable | 0x20 | [MPR](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mpr)[Variable count] | MPR Chunks (not always present, count given in the MESH Header chunk)|
+| Variable | 0x20 | [MDR](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mdr)[Variable count] | MDR Chunks (not always present, count given in the MESH Header chunk)|
+| Variable | Variable | [ENVD](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#envd)[Variable count] | ENVD Chunks (count given in the MESH Header chunk)|
+| Variable | 0x50 | [AABB Chunk Container](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#aabb-container) | The mesh's bounding box info |
 
 ### AABB Container
 
@@ -721,7 +721,7 @@ This chunk container is used to define bounding box information (Mesh & MDL) and
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | 0x30 | [AABB Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#AABB-/-Comp)[Variable count] | AABB Chunk |
+| 0x20 | 0x30 | [AABB Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#aabb-comp)[Variable count] | AABB Chunk |
 
 ### LTCD
 
@@ -739,7 +739,7 @@ This chunk container only has a single embedded chunk container. Its purpose is 
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | Variable | [MINS Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#MINS)[Variable count] | MINS Chunk Containers, which count is always equal to the number of MDL in the MDLC Chunk Container.|
+| 0x20 | Variable | [MINS Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#mins)[Variable count] | MINS Chunk Containers, which count is always equal to the number of MDL in the MDLC Chunk Container.|
 
 ### MINS
 
@@ -758,6 +758,6 @@ Purpose currently unknown
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x20 | [Chunk Container Header](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#chunk-container-header) | Chunk Container Header |
-| 0x20 | 0x50 | [PESH Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#PESH)[Variable count] | PESH Chunk |
+| 0x20 | 0x50 | [PESH Chunk](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#pesh)[Variable count] | PESH Chunk |
 
 --------------------------------
