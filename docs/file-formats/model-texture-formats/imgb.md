@@ -4,4 +4,4 @@ They are always paired with another file, which gives the offsets and specs of t
 
 | Paired file | Information location |
 | --- | --- | 
-| TRB | [SEDBtxb](https://lr-research-team.github.io/wiki/trb/#sedbtxb) sections, in particual the [GTEX](https://lr-research-team.github.io/wiki/trb/#gtex) chunks contained in these | 
+| TRB | [SEDBtxb](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#sedbtxb) sections, in particual the [GTEX](https://lr-research-team.github.io/wiki/file-formats/model-texture-formats/trb/#gtex) chunks contained in these | 
