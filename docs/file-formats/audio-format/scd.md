@@ -178,11 +178,11 @@ Refer to the [UnXOR'ing logic](https://lr-research-team.github.io/wiki/file-form
 
 
 ### Audio stream info
-Vorbis type streams have the audio header, while the ADPCM ones do not. you have to manually generate a WAV ADPCM header with the necessary info given in the [Audio Info Section](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#audio-info-section) and the [Partial Header/XOR Chunk](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#partial-headerxor-chunk).
+Vorbis type streams have the audio header, while the ADPCM ones do not. you have to manually generate a WAV ADPCM header with the necessary info given in the [Stream Info Section](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#stream-info) and the [Partial Header/XOR Chunk](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#partial-headerxor-chunk).
 <br><br>
 **Conversion Notes:**
 
-- Vorbis streams from the game aren't serialized. if you are trying to replace an existing vorbis type SCD file, then ensure that your vorbis converter doesn't serialize the converted audio file. you can use the **_VorbisEncoder_** tool that comes with the **_NovaChrysalia_** Mod manager to convert your audio track to vorbis. make sure to update the offsets in the [Audio Info Section](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#audio-info-section) to reflect your new vorbis file.
+- Vorbis streams from the game aren't serialized. if you are trying to replace an existing vorbis type SCD file, then ensure that your vorbis converter doesn't serialize the converted audio file. you can use the **_VorbisEncoder_** tool that comes with the **_NovaChrysalia_** Mod manager to convert your audio track to vorbis. make sure to update the offsets in the [Stream Info Section](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#stream-info) to reflect your new vorbis file.
 
 - If you are trying to replace an existing ADPCM type SCD file, then you have to strip the WAV header from your encoded file as well as update the number of channels, sample rate, average bytes per sample, block align, and the samples per block offsets in the [Partial Header/XOR chunk](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#partial-headerxor-chunk). the values that you have to put in these offsets can all be found in your newly encoded ADPCM file's header.
 <br>
