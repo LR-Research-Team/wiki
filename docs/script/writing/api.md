@@ -68,3 +68,18 @@ public static int showCinemaMessage(String string, int n) {
     
 }
 ```
+
+
+### compareString
+
+Compares two strings and returns `1` if equal, and `0` if not equal.
+
+**Parameter(s) :**
+
+* String var0 : first string to compare
+* String var1 : second string to compare
+
+```java
+public static native int compareString(String var0, String var1);
+```
+
