@@ -8,8 +8,11 @@ These following functions can be used in all the three games.
 
 
 ### sfShowWindowWithKeyWait
+!!! note
 
-Displays a message window that can be closed on user input. the function will always returns `-1`.<br>
+    Function can be accessed from ``fld.com`` package.
+
+Displays a message window that can be closed on user input. the function will always return `-1`.<br>
 
 **Parameter(s) :**
 
@@ -23,6 +26,9 @@ public static int sfShowWindowWithKeyWait(String string) {
 
 
 ### sfCallAskChoiceWindow
+!!! note
+
+    Function can be accessed from ``fld.com`` package.
 
 Draws a message window with options. the function will return the message window id.<br>
 
@@ -40,6 +46,9 @@ public static int sfCallAskChoiceWindow(String string, String[] stringArray, int
 
 
 ### sfWaitAskChoiceWindowSkipAvailable
+!!! note
+
+    Function can be accessed from ``fld.com`` package.
 
 Makes an options window, interactable. this has to be used after the sfCallAskChoiceWindow function is used and the function will return the **selected** option's index.<br>
 
@@ -55,6 +64,9 @@ public static int sfWaitAskChoiceWindowSkipAvailable(String string) {
 
 
 ### showCinemaMessage
+!!! note
+
+    Function can be accessed from ``fake.Window`` package.
 
 Shows a message for a specific duration or indefinitely. this functions returns some sort of numerical boolean id.<br>
 
@@ -71,6 +83,9 @@ public static int showCinemaMessage(String string, int n) {
 
 
 ### compareString
+!!! note
+   
+    Function can be accessed from ``fake.White`` package.
 
 Compares two strings and returns `1` if equal, and `0` if not equal.
 
