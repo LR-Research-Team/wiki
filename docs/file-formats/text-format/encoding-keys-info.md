@@ -1631,7 +1631,8 @@ The order of the keys given in the tables below would be the order of the icons 
 These keys are used in LIGHTNING RETURNS FINAL FANTASY XIII, to insert controller button icons next to a text when its displayed ingame. 
 
 <br>**Button prompt Notes**
-* Keys ``{Btn B_2}`` and ``(Btn A_2}`` are duplicates of keys ``{Btn B}`` and ``{Btn A}`` respectively.
+
+- Keys ``{Btn B_2}`` and ``(Btn A_2}`` are duplicates of keys ``{Btn B}`` and ``{Btn A}`` respectively.
 
 #### Group 1
 **Important:** For English (us), French (fr), German (gr), Italian (it), Japanese (jp), and Spanish (sp) ztr files.
