@@ -45,7 +45,7 @@ public static int sfCallAskChoiceWindow(String string, String[] stringArray, int
 ```
 
 
-### sfWaitAskChoiceWindowSkipAvailable
+### sfWaitAskChoiceWindow
 !!! note
 
     Function can be accessed from ``fld.com`` package.
@@ -57,7 +57,7 @@ Makes an options window, interactable. this has to be used after the sfCallAskCh
 * String string : title used for the options window. 
 
 ```java
-public static int sfWaitAskChoiceWindowSkipAvailable(String string) {
+public static int sfWaitAskChoiceWindow(String string) {
 
 }
 ```
@@ -66,7 +66,7 @@ public static int sfWaitAskChoiceWindowSkipAvailable(String string) {
 ### showCinemaMessage
 !!! note
 
-    Function can be accessed from ``fake.Window`` package.
+    Function can be accessed from ``fake.Window`` package. 
 
 Shows a message for a specific duration or indefinitely. this functions returns some sort of numerical boolean id.<br>
 
