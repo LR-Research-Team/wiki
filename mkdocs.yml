@@ -111,7 +111,7 @@ nav:
   - File formats:
     - file-formats/index.md
     - Archive Formats:
-      - White Image BIN files: file-formats/archive-formats/white-image.md
+      - White BIN files: file-formats/archive-formats/white-bin.md
       - WPD Pack files: file-formats/archive-formats/wpd-pack.md
     - Animation Formats:
       - MCB: file-formats/animation-formats/mcb.md
