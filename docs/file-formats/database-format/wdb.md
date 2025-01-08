@@ -7,8 +7,8 @@ N.B.: The below sections are all in Big Endian.
 #### WDB Header section
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
-| 0x0 | 0x4 | UInt32| FourCC, Always 0x57504400 (WPD, "White Packed Data") |
-| 0x4 | 0x4 | UInt32| Record count |
+| 0x0 | 0x4 | UInt32 | FourCC, Always 0x57504400 (WPD, "White Packed Data") |
+| 0x4 | 0x4 | UInt32 | Record count |
 | 0x8 | 0x8 | UInt32[2] | Reserved, always null |
 
 #### WDB Record info section

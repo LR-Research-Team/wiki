@@ -8,8 +8,8 @@ N.B.: The below sections are all in Big Endian.
 #### WPD Header section
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
-| 0x0 | 0x4 | UInt32| FourCC, Always 0x57504400 (WPD, "White Packed Data") |
-| 0x4 | 0x4 | UInt32| File count |
+| 0x0 | 0x4 | String | FourCC, Always WPD ("White Packed Data") |
+| 0x4 | 0x4 | UInt32 | File count |
 | 0x8 | 0x8 | UInt32[2] | Reserved, always null |
 
 #### WPD File info section

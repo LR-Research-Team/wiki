@@ -1,5 +1,5 @@
-These are the main archive files that contain all of the game's data and always have a paired filelist file. the filename for this archive type have "white" in their filenames along with a platform code (eg .win32, .ps3, and .x360). 
-<br><br>The filelist file structure is the only thing that you would need to know if you want to extract or repack files from the white image file and so only the structs for that is given here.
+These are the main archive files that contain all of the game's data and always have a paired filelist file. the filename for this archive type have "white" in their filenames along with a platform code (.win32, .ps3, and .x360). 
+<br><br>The filelist file structure is the only thing that you would need to know if you want to extract or repack files from the white BIN archive and so only the structs for that is given here.
 
 # Final Fantasy XIII
 
@@ -14,8 +14,8 @@ These are the main archive files that contain all of the game's data and always 
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x4 | UInt32 | The File Code |
-| 0x4 | 0x2 | UInt16 | Chunk number in which the file's path string is stored |
-| 0x6 | 0x2 | UInt16 | Position of the file path string in the chunk |
+| 0x4 | 0x2 | UInt16 | Chunk number in which the file info string is stored |
+| 0x6 | 0x2 | UInt16 | Position of the file info string in the chunk |
 
 The filecode contains information that determines how the game is supposed to parse the file. this code contains info that determine the file type, the file id or number, and its category or group.
 
@@ -26,7 +26,7 @@ The filecode contains information that determines how the game is supposed to pa
 | 0x4 | 0x4 | UInt32 | Chunk Compressed size |
 | 0x8 | 0x4 | UInt32 | Chunk position, relative from Chunk data start offset |
 
-A chunk is a collection of file path strings that contain the filepath, file position, and the size of the file inside the white image archive file. each chunk is zlib compressed and you would have to decompress it to get readable file path strings.<br><br>
+A chunk is a collection of file path strings that contain the filepath, file position, and the size of the file inside the white BIN archive. each chunk is zlib compressed and you would have to decompress it to get readable file path strings.<br><br>
 
 #### Chunk Data section
 Here is how a single decompressed file path string looks like:
@@ -38,14 +38,14 @@ The ```:``` is used to separate the data into multiple parts and all of the nume
 #### Path string structure
 | Value | Info | Description |
 | --- | --- | --- |
-| 0x64 | File Position in the white image BIN file | Convert 0x64 to decimal and multiply the converted value with 2048 | 
-| 0x1000 | Uncompressed file size | Convert 0x1000 to decimal |
-| 0x2F5 | Compressed file size | Convert 0x2F5 to decimal |
-| mot/pc/sk_c005_va/t1.white.win32.bin | Virtual file path | The virtual file path string |
+| 0x64 | File Position in the white BIN archive | Multiply this value with 0x800 | 
+| 0x1000 | Uncompressed file size | Actual file size |
+| 0x2F5 | Compressed file size | Size of the file when its zlib compressed, this is the size of the file when stored in the archive |
+| mot/pc/sk_c005_va/t1.white.win32.bin | Virtual path | The virtual path string |
 
-Most of the files inside the white_img archive are compressed with zlib compression while few of the files aren't compressed. if the uncompressed and the compressed values given in the string is similar, then that file is not compressed in the archive. 
+Most of the files inside the white BIN archive are compressed with zlib compression while few of the files aren't compressed. if the uncompressed and the compressed values given in the string is similar, then that file is not compressed in the archive. 
 
-When rebuilding the archive, you have to ensure that the position at which you are placing a file is divisible by 2048. if the position isn't divisible, then add some null bytes till the next closest divisible by 2048 position value.
+When rebuilding the archive, you have to ensure that the position at which you are placing a file is divisible by 0x800. if the position isn't divisible, then add some null bytes till the next closest divisible by 0x800 position value.
 
 
 # Final Fantasy XIII-2 and Lightning Returns: Final Fantasy XIII
@@ -69,18 +69,18 @@ The filelist file has to be decrypted with the [WhiteCryptTool](https://github.c
 | 0x4 | 0x4 | UInt32 | Chunk data start offset |
 | 0x8 | 0x4 | UInt32 | Total number of files |
 
-These offsets have to be taken relatively from position 0x20 onwards. (0x20 + Chunk Info start offset)
+These offsets have to be taken relatively from position 0x20 onwards due to the encryption header (eg. 0x20 + Chunk Info start offset, 0x20 + Chunk data start offset).
 <br>
 
 #### File Entry section
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x4 | UInt32 | The File Code |
-| 0x4 | 0x2 | UInt16 | Position of the file path string in the chunk |
-| 0x6 | 0x1 | UInt8 | Chunk number in which the file's path string is stored |
-| 0x7 | 0x1 | UInt8 | File type or root folder value |
+| 0x4 | 0x2 | UInt16 | Position of the file info string in the chunk |
+| 0x6 | 0x1 | UInt8 | Chunk number in which the file info string is stored |
+| 0x7 | 0x1 | UInt8 | File type ID |
 
-The position value of the file path string in the odd number chunks, will start from 32768 onwards and resets to 0 after the odd number chunk. it again starts from 32768 for the next odd number chunk and again switches back to 0 after that chunk. 
+The position value of the file info string in the odd number chunks, will start from 32768 onwards and resets to 0 after an odd numbered chunk. it again starts from 32768 for the next odd numbered chunk and again switches back to 0 after that chunk. 
 
 You have to take the actual position value of the file path string in the chunk and add it to 32768. the resulting value will be the position value in this Entry section.
 

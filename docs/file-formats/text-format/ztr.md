@@ -10,7 +10,7 @@ N.B.: The below sections are all in Big Endian.
 ### Header section
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
-| 0x0 | 0x8 | UInt32| magic |
+| 0x0 | 0x8 | UInt64 | magicID, always 1 |
 | 0x8 | 0x4 | UInt32 | Line count |
 | 0xC | 0x4 | UInt32 | Decompressed line-ids size |
 | 0x10 | 0x4 | UInt32 | Number of Dictionary chunk offsets |
