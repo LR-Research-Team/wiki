@@ -217,6 +217,24 @@ The ps3 version of this file uses the uReserved and uCinemaStart fields together
 | u15SaveIconBackgroundImageIndex | Bits | Unsigned 15 bits |
 | i16SaveIconOverrideImageIndex | Bits | Signed 16 bits |
 
+## script.wdb
+
+N.B: also applies to script#####.wdb files present inside the db\script folder
+
+| Field | Type | Description |
+| -- | -- | -- |
+| sClassName | UInt32 | relative offset in !!string section |
+| sMethodName | UInt32 | relative offset in !!string section |
+| iAdditionalArgCount | Int32 | int32 value |
+| iAdditionalArg0 | Int32 | int32 value |
+| iAdditionalArg1 | Int32 | int32 value |
+| iAdditionalArg2 | Int32 | int32 value |
+| iAdditionalArg3 | Int32 | int32 value |
+| iAdditionalStringArgCount | Int32 | int32 value |
+| sAdditionalStringArg0 | UInt32 | relative offset in !!string section |
+| sAdditionalStringArg1 | UInt32 | relative offset in !!string section |
+| sAdditionalStringArg2 | UInt32 | relative offset in !!string section |
+
 ## sound_fileid_dic.wdb
 
 N.B: also applies to sound_fileid_dic_us.wdb file
