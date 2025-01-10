@@ -16,7 +16,7 @@ The following list contains commonly used starting letters for the field names.
 # Field names for FINAL FANTASY XIII's WDBs
 This section contains manually reversed field names for each WDB file from FINAL FANTASY XIII. as of now the field names are reversed and given only for some of the WDB files. more will be added to this page slowly when their field names are reversed.
 
-<br>All the offsets values are in Big Endian order. 
+<br>All the offsets values are stored in Big Endian order. for non 32bit fields, the fields have to be applied from a right to left order on a 4byte set of a record's data. if you run out of bits in that 4bytes set, then apply the fields to the next 4bytes set, in the same right to left order.
 
 ## auto_clip.wdb
 | Field | Type | Description |
@@ -63,6 +63,88 @@ This section contains manually reversed field names for each WDB file from FINAL
 | iiVal | Int32 | int32 value |
 | ffVal | Float32 | float value |
 | ssVal | UInt32 | relative offset in !!string section |
+
+## bt_summon.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| iSummonKind | Int32 | int32 value |
+| sCharaSet | UInt32 | relative offset in !!string section |
+| sCharaSet | UInt32 | relative offset in !!string section |
+| sBtChSpec0 | UInt32 | relative offset in !!string section |
+| sBtChSpec1 | UInt32 | relative offset in !!string section |
+| sSummonInEv | UInt32 | relative offset in !!string section |
+| sDriveInEv | UInt32 | relative offset in !!string section |
+| sFinishArtsEv | UInt32 | relative offset in !!string section |
+| iMaxSp0 | Int32 | int32 value |
+| iMaxSp1 | Int32 | int32 value |
+| iMaxSp2 | Int32 | int32 value |
+| iMaxSp3 | Int32 | int32 value |
+| iMaxSp4 | Int32 | int32 value |
+| iMaxSp5 | Int32 | int32 value |
+| iMaxSp6 | Int32 | int32 value |
+| iMaxSp7 | Int32 | int32 value |
+| iMaxSp8 | Int32 | int32 value |
+| iMaxSp9 | Int32 | int32 value |
+| iMaxSp10 | Int32 | int32 value |
+| iMaxSp11 | Int32 | int32 value |
+| iMaxSp12 | Int32 | int32 value |
+| iMaxSp13 | Int32 | int32 value |
+| iMaxSp14 | Int32 | int32 value |
+| iMaxSp15 | Int32 | int32 value |
+| iMaxSp16 | Int32 | int32 value |
+| u16Str0 | Bits | Unsigned 16 bits |
+| u16Str1 | Bits | Unsigned 16 bits |
+| u16Str2 | Bits | Unsigned 16 bits |
+| u16Str3 | Bits | Unsigned 16 bits |
+| u16Str4 | Bits | Unsigned 16 bits |
+| u16Str5 | Bits | Unsigned 16 bits |
+| u16Str6 | Bits | Unsigned 16 bits |
+| u16Str7 | Bits | Unsigned 16 bits |
+| u16Str8 | Bits | Unsigned 16 bits |
+| u16Str9 | Bits | Unsigned 16 bits |
+| u16Str10 | Bits | Unsigned 16 bits |
+| u16Str11 | Bits | Unsigned 16 bits |
+| u16Str12 | Bits | Unsigned 16 bits |
+| u16Str13 | Bits | Unsigned 16 bits |
+| u16Str14 | Bits | Unsigned 16 bits |
+| u16Str15 | Bits | Unsigned 16 bits |
+| u16Str16 | Bits | Unsigned 16 bits |
+| u16Mag0 | Bits | Unsigned 16 bits |
+| u16Mag1 | Bits | Unsigned 16 bits |
+| u16Mag2 | Bits | Unsigned 16 bits |
+| u16Mag3 | Bits | Unsigned 16 bits |
+| u16Mag4 | Bits | Unsigned 16 bits |
+| u16Mag5 | Bits | Unsigned 16 bits |
+| u16Mag6 | Bits | Unsigned 16 bits |
+| u16Mag7 | Bits | Unsigned 16 bits |
+| u16Mag8 | Bits | Unsigned 16 bits |
+| u16Mag9 | Bits | Unsigned 16 bits |
+| u16Mag10 | Bits | Unsigned 16 bits |
+| u16Mag11 | Bits | Unsigned 16 bits |
+| u16Mag12 | Bits | Unsigned 16 bits |
+| u16Mag13 | Bits | Unsigned 16 bits |
+| u16Mag14 | Bits | Unsigned 16 bits |
+| u16Mag15 | Bits | Unsigned 16 bits |
+| u16Mag16 | Bits | Unsigned 16 bits |
+
+
+## crystal wdb files
+
+* crystal_fang.wdb
+* crystal_hope.wdb
+* crystal_lightning.wdb
+* crystal_sazh.wdb
+* crystal_snow.wdb
+* crystal_vanille.wdb
+
+| Field | Type | Description |
+| -- | -- | -- |
+| uCPCost | UInt32 | uint32 value |
+| sAbilityID | UInt32 | relative offset in !!string section |
+| u4Role | Bits | Unsigned 4 bits |
+| u4CrystalStage | Bits | Unsigned 4 bits |
+| u8NodeType | Bits | Unsigned 8 bits |
+| u16NodeVal | Bits | Unsigned 16 bits |
 
 ## item.wdb
 | Field | Type | Description |
@@ -258,6 +340,28 @@ N.B: also applies to sound_filename_dic_us.wdb
 | sAbility | UInt32 | relative offset in !!string section |
 | u6Genre | Bits | Unsigned 6 bits |
 | u3Count | Bits | Unsigned 3 bits |
+
+## succession.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| u1RideOffChocobo | Bits | Unsigned 1 bit |
+| i2NaviMapMode | Bits | Signed 2 bits |
+| i2PartyCharaAIMode | Bits | Signed 2 bits |
+| i2UserControlMode | Bits | Signed 2 bits |
+| i9ZoneStateChangeTriggerOnEnter | Bits | Signed 9 bits |
+| i9ZoneStateWait | Bits | Signed 9 bits |
+| u1EventSkipAble | Bits | Unsigned 1 bit |
+| u1FieldCommonObjectHide | Bits | Unsigned 1 bit |
+| u1EnablePause | Bits | Unsigned 1 bit |
+| u1SuspendFieldObject | Bits | Unsigned 1 bit |
+| u1DisableTalk | Bits | Unsigned 1 bit |
+| i9ZoneStateChangeTriggerOnExit | Bits | Signed 9 bits |
+| i9ZoneStateExit | Bits | Signed 9 bits |
+| u13CameraInterporationTimeOnEnter | Bits | Unsigned 13 bits |
+| u1FieldActiveFlag | Bits | Unsigned 1 bit |
+| u13CameraInterporationTimeOnExit | Bits | Unsigned 13 bits |
+| u1HighModelEventFlag | Bits | Unsigned 1 bit |
+| u1ApplyFieldCameraByPlayerMatrix | Bits | Unsigned 1 bit |
 
 ## treasurebox.wdb
 | Field | Type | Description |
