@@ -14,9 +14,9 @@ The following list contains commonly used starting letters for the field names.
 | u# | represents an unsigned integer value field |
 
 # Field names for FINAL FANTASY XIII's WDBs
-This section contains manually reversed field names for each WDB file from FINAL FANTASY XIII. as of now the field names are reversed and given only for some of the WDB files. more will be added to this page slowly when their field names are reversed.
+This section contains manually reversed field names for each WDB file from FINAL FANTASY XIII. as of now the field names are given only for some of the WDB files and more will be added to this page slowly when their field names are identified. do know that some of them may not be correct and if you encounter such incorrect fields, please report them in the Fabula Nova Chrystalis discord server.
 
-<br>All the offsets values are stored in Big Endian order. for non 32bit fields, the fields have to be applied from a right to left order on a 4byte set of a record's data. if you run out of bits in that 4bytes set, then apply the fields to the next 4bytes set, in the same right to left order.
+<br>All the offsets values are stored in Big Endian order. for non 32bit type fields, the fields would have to be applied from a right to left order on a 4byte set of a record's data. if you run out of bits in that 4bytes set, then apply the fields to the next 4bytes set, in the same right to left order.
 
 ## auto_clip.wdb
 | Field | Type | Description |
@@ -29,6 +29,202 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u4Category | Bits | Unsigned 4 bits |
 | u7Sort | Bits | Unsigned 7 bits |
 | u4Chapter | Bits | Unsigned 4 bits |
+
+## actioneffect.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sEffectId | UInt32 | relative offset in !!string section |
+| iEffectArg1 | Int32 | int32 value |
+| sSoundId | UInt32 | relative offset in !!string section |
+
+## attreffect.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sFootSoundResourceNameDefaultAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameDrySoilAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameDampSoilAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameGrassAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameBushAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameSandAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameWoodAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameBoardAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameFlooringAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameStoneAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameGravelAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameIronAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameThinIronAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameClothAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameEartenwareAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameCrystalAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameGlassAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameIceAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameWaterAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameAsphaltAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameNoneAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameWireNetAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameBranchOfMachineAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameBranchOfNatureAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameCorkAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameMarbleAttr | UInt32 | relative offset in !!string section |
+| sFootSoundResourceNameHologramAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameDefaultAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameDrySoilAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameDampSoilAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameGrassAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameBushAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameSandAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameWoodAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameBoardAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameFlooringAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameStoneAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameGravelAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameIronAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameThinIronAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameClothAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameEartenwareAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameCrystalAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameGlassAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameIceAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameWaterAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameAsphaltAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameNoneAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameWireNetAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameBranchOfMachineAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameBranchOfNatureAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameCorkAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameMarbleAttr | UInt32 | relative offset in !!string section |
+| sFootVfxResourceNameHologramAttr | UInt32 | relative offset in !!string section |
+
+## attreffectstate.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sWalk | UInt32 | relative offset in !!string section |
+| sRun | UInt32 | relative offset in !!string section |
+| sJump | UInt32 | relative offset in !!string section |
+| sRetreat | UInt32 | relative offset in !!string section |
+| sLanding | UInt32 | relative offset in !!string section |
+| sSliding | UInt32 | relative offset in !!string section |
+| sSquat | UInt32 | relative offset in !!string section |
+| sStand | UInt32 | relative offset in !!string section |
+| sFly | UInt32 | relative offset in !!string section |
+
+## bt_ability.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sStringResId | UInt32 | relative offset in !!string section |
+| sInfoStResId | UInt32 | relative offset in !!string section |
+| sScriptId | UInt32 | relative offset in !!string section |
+| sAblArgStr0 | UInt32 | relative offset in !!string section |
+| sAblArgStr1 | UInt32 | relative offset in !!string section |
+| sAutoAblStEff0 | UInt32 | relative offset in !!string section |
+| fDistanceMin | Float32 | float value |
+| fDistanceMax | Float32 | float value |
+| fMaxJumpHeight | Float32 | float value |
+| fYDistanceMin | Float32 | float value |
+| fYDistanceMax | Float32 | float value |
+| fAirJpHeight | Float32 | float value |
+| fAirJpTime | Float32 | float value |
+| sReplaceAirAttack | UInt32 | relative offset in !!string section |
+| sReplaceAirAir | UInt32 | relative offset in !!string section |
+| sReplaceRangeAtk | UInt32 | relative offset in !!string section |
+| sReplaceFinAtk | UInt32 | relative offset in !!string section |
+| sReplaceEnAttr | UInt32 | relative offset in !!string section |
+| iExceptionID | Int32 | int32 value |
+| sActionId0 | UInt32 | relative offset in !!string section |
+| sActionId1 | UInt32 | relative offset in !!string section |
+| sActionId2 | UInt32 | relative offset in !!string section |
+| sActionId3 | UInt32 | relative offset in !!string section |
+| sRtDamSrc | UInt32 | relative offset in !!string section |
+| sRefDamSrc | UInt32 | relative offset in !!string section |
+| sSubRefDamSrc | UInt32 | relative offset in !!string section |
+| sSlamDamSrc | UInt32 | relative offset in !!string section |
+| sCamArtsSeqId0 | UInt32 | relative offset in !!string section |
+| sCamArtsSeqId1 | UInt32 | relative offset in !!string section |
+| sCamArtsSeqId2 | UInt32 | relative offset in !!string section |
+| sCamArtsSeqId3 | UInt32 | relative offset in !!string section |
+| sRedirectAbility0 | UInt32 | relative offset in !!string section |
+| sRedirectTo0 | UInt32 | relative offset in !!string section |
+| sRedirectAbility1 | UInt32 | relative offset in !!string section |
+| sRedirectTo1 | UInt32 | relative offset in !!string section |
+| sRedirectAbility2 | UInt32 | relative offset in !!string section |
+| sRedirectTo2 | UInt32 | relative offset in !!string section |
+| sRedirectAbility3 | UInt32 | relative offset in !!string section |
+| sRedirectTo3 | UInt32 | relative offset in !!string section |
+| sSysEffId0 | UInt32 | relative offset in !!string section |
+| iSysEffArg0 | Int32 | int32 value |
+| sSysSndId0 | UInt32 | relative offset in !!string section |
+| sRtEffId0 | UInt32 | relative offset in !!string section |
+| iRtEffArg0 | Int32 | int32 value |
+| sRtSndId0 | UInt32 | relative offset in !!string section |
+| sRtEffId1 | UInt32 | relative offset in !!string section |
+| iRtEffArg1 | Int32 | int32 value |
+| sRtSndId1 | UInt32 | relative offset in !!string section |
+| sRtEffId2 | UInt32 | relative offset in !!string section |
+| iRtEffArg2 | Int32 | int32 value |
+| sRtSndId2 | UInt32 | relative offset in !!string section |
+| sRtEffId3 | UInt32 | relative offset in !!string section |
+| iRtEffArg3 | Int32 | int32 value |
+| sRtSndId3 | UInt32 | relative offset in !!string section |
+| sRtEffId4 | UInt32 | relative offset in !!string section |
+| iRtEffArg4 | Int32 | int32 value |
+| sRtSndId4 | UInt32 | relative offset in !!string section |
+| u1ComAbility | Bits | Unsigned 1 bit |
+| u1RsvFlag0 | Bits | Unsigned 1 bit |
+| u1RsvFlag1 | Bits | Unsigned 1 bit |
+| u1RsvFlag2 | Bits | Unsigned 1 bit |
+| u1RsvFlag3 | Bits | Unsigned 1 bit |
+| u1RsvFlag4 | Bits | Unsigned 1 bit |
+| u1RsvFlag5 | Bits | Unsigned 1 bit |
+| u1RsvFlag6 | Bits | Unsigned 1 bit |
+| u4ArtsNameHideKd | Bits | Unsigned 4 bits |
+| u16ArtsNameFrame | Bits | Unsigned 16 bits |
+| u4UseRole | Bits | Unsigned 4 bits |
+| u8AblSndKind | Bits | Unsigned 8 bits |
+| u4MenuCategory | Bits | Unsigned 4 bits |
+| i16MenuSortNo | Bits | Signed 16 bits |
+| u1NoDespel | Bits | Unsigned 1 bit |
+| i16ScriptArg0 | Bits | Signed 16 bits |
+| i16ScriptArg1 | Bits | Signed 16 bits |
+| u8AbilityKind | Bits | Unsigned 8 bits |
+| u4TargetListKind | Bits | Unsigned 4 bits |
+| i16AblArgInt0 | Bits | Signed 16 bits |
+| u4UpAblKind | Bits | Unsigned 4 bits |
+| i16AblArgInt1 | Bits | Signed 16 bits |
+| i16AtbCount | Bits | Signed 16 bits |
+| i16AtRnd | Bits | Signed 16 bits |
+| i16KeepVal | Bits | Signed 16 bits |
+| i16IntRsv0 | Bits | Signed 16 bits |
+| i16IntRsv1 | Bits | Signed 16 bits |
+| u1TgFoge | Bits | Unsigned 1 bit |
+| u1NoBackStep | Bits | Unsigned 1 bit |
+| u1AIWanderFlag | Bits | Unsigned 1 bit |
+| u16TgElemId | Bits | Unsigned 16 bits |
+| u10OpProp0 | Bits | Unsigned 10 bits |
+| u1AutoAblStEfEd0 | Bits | Unsigned 1 bit |
+| u1CheckAutoRpl | Bits | Unsigned 1 bit |
+| u1SeqParts | Bits | Unsigned 1 bit |
+| i16AutoAblStEfTi0 | Bits | Signed 16 bits |
+| u4YRgCheckType | Bits | Unsigned 4 bits |
+| u4AtDistKind | Bits | Unsigned 4 bits |
+| u4JumpAttackType | Bits | Unsigned 4 bits |
+| u1SeqTermination | Bits | Unsigned 1 bit |
+| u5ActSelType | Bits | Unsigned 5 bits |
+| u4LoopFinCond | Bits | Unsigned 4 bits |
+| u16LoopFinArg	| Bits | Unsigned 16 bits |
+| u4RedirectMargeNof0 | Bits | Unsigned 4 bits |
+| i16RefDamSrcRpt | Bits | Signed 16 bits |
+| i16SubRefDamSrcRp | Bits | Signed 16 bits |
+| i8AreaRad | Bits | Signed 8 bits |
+| u8CamArtsSelType | Bits | Unsigned 8 bits |
+| u4RedirectMargeNof1 | Bits | Unsigned 4 bits |
+| u4RedirectMargeNof2 | Bits | Unsigned 4 bits |
+| u4RedirectMargeNof3 | Bits | Unsigned 4 bits |
+| u16SysEffPos0 | Bits | Unsigned 16 bits |
+| u16RtEffPos0 | Bits | Unsigned 16 bits |
+| u16RtEffPos1 | Bits | Unsigned 16 bits |
+| u16RtEffPos2	| Bits | Unsigned 16 bits |
+| u16RtEffPos3 | Bits | Unsigned 16 bits |
+| u16RtEffPos4 | Bits | Unsigned 16 bits |
 
 ## bt_chainbonus.wdb
 | Field | Type | Description |
@@ -245,6 +441,12 @@ N.B: Only reversed partially
 | u9SortId | Bits | Unsigned 9 bits |
 | u9PictureId | Bits | Unsigned 9 bits |
 | u1Unk | Bits | Unsigned 1 bit |
+
+## movie.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sZone0 | UInt32 | relative offset in !!string section |
+| sZone1 | UInt32 | relative offset in !!string section |
 
 ## movie_items.win32.wdb
 
