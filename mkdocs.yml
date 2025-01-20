@@ -134,3 +134,5 @@ nav:
       - CLB: file-formats/script-format/clb.md
     - Save Format:
       - DAT:  file-formats/save-format/dat.md
+  - Main Directories:
+    - main-dirs/index.md
