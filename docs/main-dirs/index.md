@@ -15,11 +15,11 @@ Root folder is ``white_data``
 "mot"       // animation files
 "movie"     // Pre-rendered movie files
 "prog"      // game exe and libraries
-"railcam"   // ???
+"railcam"   // camera related files
 "scene"     // layout setup files
 "sound"     // sound files
 "sys"       // main filelists and archive files, core scripts, and savedata images
-"txtres"    // text files
+"txtres"    // ztr text files
 "vfx"       // vfx files
 "zone"      // zone filelists, scripts, and database files
 ```
@@ -40,11 +40,11 @@ Root folder is ``alba_data``
 "movie"      // movie archive files. ignored if running in unpacked mode
 "movie_win"  // Pre-rendered movie files
 "prog"       // game exe and libraries
-"railcam"    // ???
+"railcam"    // camera related files
 "scene"      // layout setup files
 "sound"      // sound files
 "sys"        // main filelists and archive files, core scripts, and savedata images
-"txtres"     // text files
+"txtres"     // ztr text files
 "udp"        // filelist and archive files containing sound related data
 "vfx"        // vfx files
 "zone"       // zone filelists, scripts, and database files
@@ -58,7 +58,7 @@ Root folder is ``weiss_data``
 "bg"         // map model files
 "btscene"    // battle scene setup database files
 "chr"        // characters, npc, summons, enemies and small object model files
-"db"         // database and sidequest text files
+"db"         // database and sidequest ztr text files
 "dlc"        // filelist and archive files for dlc content
 "event"      // main cutscene setup/schedule files
 "gui"        // image files used in UI elements 
@@ -67,7 +67,7 @@ Root folder is ``weiss_data``
 "scene"      // layout setup files
 "sound"      // sound files
 "sys"        // main filelists and archive files, core scripts, and savedata images
-"txtres"     // text files
+"txtres"     // ztr text files
 "vfx"        // vfx files
 "zone"       // zone filelists, scripts, and database files
 ```
