@@ -434,6 +434,53 @@ N.B: Only reversed partially
 | u7UnkVal14 | Bits | Unsigned 7 bits |
 | u14DisasRate5 | Bits | Unsigned 14 bits |
 
+## mapset.wdb
+
+N.B: also applies to mapset_loc###.wdb files present inside the db\bg folder
+
+| Field | Type | Description |
+| -- | -- | -- |
+| iMemorySizeLimit | Int32 | int32 value |
+| iVideoMemoryLimit | Int32 | int32 value |
+| sScriptIdOnLoaded | UInt32 | relative offset in !!string section |
+| sMapNameResourceId | UInt32 | relative offset in !!string section |
+| sBattleFreeSpaceResourceId | UInt32 | relative offset in !!string section |
+| i20LoadingTime | Bits | Signed 20 bits |
+| i11LocationNum | Bits | Signed 11 bits |
+| i16FieldSceneDataNum | Bits | Signed 16 bits |
+| i16BattleSceneDataNum | Bits | Signed 16 bits |
+| i12PartyPositionMarkerGroup | Bits | Signed 12 bits |
+| i10FieldMapNum0 | Bits | Signed 10 bits |
+| i10FieldMapNum1 | Bits | Signed 10 bits |
+| i10FieldMapNum2 | Bits | Signed 10 bits |
+| i10FieldMapNum3 | Bits | Signed 10 bits |
+| i10FieldMapNum4 | Bits | Signed 10 bits |
+| i10FieldMapNum5 | Bits | Signed 10 bits |
+| i10FieldMapNum6 | Bits | Signed 10 bits |
+| i10FieldMapNum7 | Bits | Signed 10 bits |
+| i10FieldMapNum8 | Bits | Signed 10 bits |
+| i10FieldMapNum9 | Bits | Signed 10 bits |
+| i10FieldMapNum10 | Bits | Signed 10 bits |
+| i10FieldMapNum11 | Bits | Signed 10 bits |
+| i10FieldMapNum12 | Bits | Signed 10 bits |
+| i10FieldMapNum13 | Bits | Signed 10 bits |
+| i10FieldMapNum14 | Bits | Signed 10 bits |
+| i10FieldMapNum15 | Bits | Signed 10 bits |
+| i10FieldMapNum16 | Bits | Signed 10 bits |
+| i10FieldMapNum17 | Bits | Signed 10 bits |
+| i10FieldMapNum18 | Bits | Signed 10 bits |
+| i10FieldMapNum19 | Bits | Signed 10 bits |
+| i10VfxMapNum0 | Bits | Signed 10 bits |
+| i10VfxMapNum1 | Bits | Signed 10 bits |
+| i10VfxMapNum2 | Bits | Signed 10 bits |
+| i10VfxMapNum3 | Bits | Signed 10 bits |
+| i10BattleMapNum0 | Bits | Signed 10 bits |
+| i10BattleMapNum1 | Bits | Signed 10 bits |
+| i10BattleMapNum2 | Bits | Signed 10 bits |
+| i10BattleMapNum3 | Bits | Signed 10 bits |
+| i10BattleMapNum4 | Bits | Signed 10 bits |
+| i10BattleMapNum5 | Bits | Signed 10 bits |
+
 ## monster_book.wdb
 | Field | Type | Description |
 | -- | -- | -- |
