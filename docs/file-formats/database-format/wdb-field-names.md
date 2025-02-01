@@ -364,7 +364,7 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u16SortAllByKCategory | Bits | Unsigned 16 bits |
 | u16SortCategoryByCategory | Bits | Unsigned 16 bits |
 | u16Experience | Bits | Unsigned 16 bits |
-| i16Mulitplier | Bits | Signed 16 bits |
+| i8Mulitplier | Bits | Signed 8 bits |
 | u1IsUseItemChange | Bits | Unsigned 1 bit |
 
 ## item_consume.wdb
