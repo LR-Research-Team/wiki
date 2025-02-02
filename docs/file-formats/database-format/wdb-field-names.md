@@ -342,6 +342,35 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u8NodeType | Bits | Unsigned 8 bits |
 | u16NodeVal | Bits | Unsigned 16 bits |
 
+## emotion_voice.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| u4RandomMax0 | Bits | Unsigned 4 bits |
+| u4RandomMax1 | Bits | Unsigned 4 bits |
+| u4RandomMax2 | Bits | Unsigned 4 bits |
+| u4RandomMax3 | Bits | Unsigned 4 bits |
+| u4RandomMax4 | Bits | Unsigned 4 bits |
+| u4RandomMax5 | Bits | Unsigned 4 bits |
+| u4RandomMax6 | Bits | Unsigned 4 bits |
+| u4RandomMax7 | Bits | Unsigned 4 bits |
+| u4RandomMax8 | Bits | Unsigned 4 bits |
+| u4RandomMax9 | Bits | Unsigned 4 bits |
+| u4AIRandomMax0 | Bits | Unsigned 4 bits |
+| u4AIRandomMax1 | Bits | Unsigned 4 bits |
+| u4AIRandomMax2 | Bits | Unsigned 4 bits |
+| u4AIRandomMax3 | Bits | Unsigned 4 bits |
+| u4AIRandomMax4 | Bits | Unsigned 4 bits |
+| u4AIRandomMax5 | Bits | Unsigned 4 bits |
+| u4AIRandomMax6 | Bits | Unsigned 4 bits |
+| u4AIRandomMax7 | Bits | Unsigned 4 bits |
+| u4AIRandomMax8 | Bits | Unsigned 4 bits |
+| u4AIRandomMax9 | Bits | Unsigned 4 bits |
+
+## event_flag.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| iFlagIndex | Int32 | int32 value |
+
 ## item.wdb
 | Field | Type | Description |
 | -- | -- | -- |
@@ -565,6 +594,50 @@ N.B: also applies to script#####.wdb files present inside the db\script folder
 | sAdditionalStringArg0 | UInt32 | relative offset in !!string section |
 | sAdditionalStringArg1 | UInt32 | relative offset in !!string section |
 | sAdditionalStringArg2 | UInt32 | relative offset in !!string section |
+
+## shop.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sFlagItemId | UInt32 | relative offset in !!string section |
+| sUnlockEventID | UInt32 | relative offset in !!string section |
+| sShopNameLabel | UInt32 | relative offset in !!string section |
+| sSignId | UInt32 | relative offset in !!string section |
+| sExplanationLabel | UInt32 | relative offset in !!string section |
+| sUnkStringVal1 | UInt32 | relative offset in !!string section |
+| sItemLabel1 | UInt32 | relative offset in !!string section |
+| sItemLabel2 | UInt32 | relative offset in !!string section |
+| sItemLabel3 | UInt32 | relative offset in !!string section |
+| sItemLabel4 | UInt32 | relative offset in !!string section |
+| sItemLabel5 | UInt32 | relative offset in !!string section |
+| sItemLabel6 | UInt32 | relative offset in !!string section |
+| sItemLabel7 | UInt32 | relative offset in !!string section |
+| sItemLabel8 | UInt32 | relative offset in !!string section |
+| sItemLabel9 | UInt32 | relative offset in !!string section |
+| sItemLabel10 | UInt32 | relative offset in !!string section |
+| sItemLabel11 | UInt32 | relative offset in !!string section |
+| sItemLabel12 | UInt32 | relative offset in !!string section |
+| sItemLabel13 | UInt32 | relative offset in !!string section |
+| sItemLabel14 | UInt32 | relative offset in !!string section |
+| sItemLabel15 | UInt32 | relative offset in !!string section |
+| sItemLabel16 | UInt32 | relative offset in !!string section |
+| sItemLabel17 | UInt32 | relative offset in !!string section |
+| sItemLabel18 | UInt32 | relative offset in !!string section |
+| sItemLabel19 | UInt32 | relative offset in !!string section |
+| sItemLabel20 | UInt32 | relative offset in !!string section |
+| sItemLabel21 | UInt32 | relative offset in !!string section |
+| sItemLabel22 | UInt32 | relative offset in !!string section |
+| sItemLabel23 | UInt32 | relative offset in !!string section |
+| sItemLabel24 | UInt32 | relative offset in !!string section |
+| sItemLabel25 | UInt32 | relative offset in !!string section |
+| sItemLabel26 | UInt32 | relative offset in !!string section |
+| sItemLabel27 | UInt32 | relative offset in !!string section |
+| sItemLabel28 | UInt32 | relative offset in !!string section |
+| sItemLabel29 | UInt32 | relative offset in !!string section |
+| sItemLabel30 | UInt32 | relative offset in !!string section |
+| sItemLabel31 | UInt32 | relative offset in !!string section |
+| sItemLabel32 | UInt32 | relative offset in !!string section |
+| u4Version | Bits | Unsigned 4 bits |
+| u13ZoneNum | Bits | Unsigned 13 bits |
 
 ## sound_fileid_dic.wdb
 
