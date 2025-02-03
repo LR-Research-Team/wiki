@@ -226,6 +226,29 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u16RtEffPos3 | Bits | Unsigned 16 bits |
 | u16RtEffPos4 | Bits | Unsigned 16 bits |
 
+## bt_auto_ability.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sStringResId | UInt32 | relative offset in !!string section |
+| sInfoStResId | UInt32 | relative offset in !!string section |
+| sScriptId | UInt32 | relative offset in !!string section |
+| sAutoAblArgStr0 | UInt32 | relative offset in !!string section |
+| sAutoAblArgStr1 | UInt32 | relative offset in !!string section |
+| u1RsvFlag0 | Bits | Unsigned 1 bit |
+| u1RsvFlag1 | Bits | Unsigned 1 bit |
+| u1RsvFlag2 | Bits | Unsigned 1 bit |
+| u1RsvFlag3 | Bits | Unsigned 1 bit |
+| u4UseRole | Bits | Unsigned 4 bits |
+| u4MenuCategory | Bits | Unsigned 4 bits |
+| i16MenuSortNo | Bits | Signed 16 bits |
+| i16ScriptArg0 | Bits | Signed 16 bits |
+| i16ScriptArg1 | Bits | Signed 16 bits |
+| u8AutoAblKind | Bits | Unsigned 8 bits |
+| i16AutoAblArgInt0 | Bits | Signed 16 bits |
+| i16AutoAblArgInt1 | Bits | Signed 16 bits |
+| i16WepLvArg0 | Bits | Signed 16 bits |
+| i16WepLvArg1 | Bits | Signed 16 bits |
+
 ## bt_chainbonus.wdb
 | Field | Type | Description |
 | -- | -- | -- |
@@ -323,6 +346,81 @@ This section contains manually reversed field names for each WDB file from FINAL
 | u16Mag15 | Bits | Unsigned 16 bits |
 | u16Mag16 | Bits | Unsigned 16 bits |
 
+## charaset.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| iMemorySizeLimit | Int32 | int32 value |
+| iVideoMemorySizeLimit | Int32 | int32 value |
+| sCharaSpecId0 | UInt32 | relative offset in !!string section |
+| sCharaSpecId1 | UInt32 | relative offset in !!string section |
+| sCharaSpecId2 | UInt32 | relative offset in !!string section |
+| sCharaSpecId3 | UInt32 | relative offset in !!string section |
+| sCharaSpecId4 | UInt32 | relative offset in !!string section |
+| sCharaSpecId5 | UInt32 | relative offset in !!string section |
+| sCharaSpecId6 | UInt32 | relative offset in !!string section |
+| sCharaSpecId7 | UInt32 | relative offset in !!string section |
+| sCharaSpecId8 | UInt32 | relative offset in !!string section |
+| sCharaSpecId9 | UInt32 | relative offset in !!string section |
+| sCharaSpecId10 | UInt32 | relative offset in !!string section |
+| sCharaSpecId11 | UInt32 | relative offset in !!string section |
+| sCharaSpecId12 | UInt32 | relative offset in !!string section |
+| sCharaSpecId13 | UInt32 | relative offset in !!string section |
+| sCharaSpecId14 | UInt32 | relative offset in !!string section |
+| sCharaSpecId15 | UInt32 | relative offset in !!string section |
+| sCharaSpecId16 | UInt32 | relative offset in !!string section |
+| sCharaSpecId17 | UInt32 | relative offset in !!string section |
+| sCharaSpecId18 | UInt32 | relative offset in !!string section |
+| sCharaSpecId19 | UInt32 | relative offset in !!string section |
+| sCharaSpecId20 | UInt32 | relative offset in !!string section |
+| sCharaSpecId21 | UInt32 | relative offset in !!string section |
+| sCharaSpecId22 | UInt32 | relative offset in !!string section |
+| sCharaSpecId23 | UInt32 | relative offset in !!string section |
+| sCharaSpecId24 | UInt32 | relative offset in !!string section |
+| sCharaSpecId25 | UInt32 | relative offset in !!string section |
+| sCharaSpecId26 | UInt32 | relative offset in !!string section |
+| sCharaSpecId27 | UInt32 | relative offset in !!string section |
+| sCharaSpecId28 | UInt32 | relative offset in !!string section |
+| sCharaSpecId29 | UInt32 | relative offset in !!string section |
+| sCharaSpecId30 | UInt32 | relative offset in !!string section |
+| sCharaSpecId31 | UInt32 | relative offset in !!string section |
+| sCharaSpecId32 | UInt32 | relative offset in !!string section |
+| sCharaSpecId33 | UInt32 | relative offset in !!string section |
+| sCharaSpecId34 | UInt32 | relative offset in !!string section |
+| sCharaSpecId35 | UInt32 | relative offset in !!string section |
+| sCharaSpecId36 | UInt32 | relative offset in !!string section |
+| sCharaSpecId37 | UInt32 | relative offset in !!string section |
+| sCharaSpecId38 | UInt32 | relative offset in !!string section |
+| sCharaSpecId39 | UInt32 | relative offset in !!string section |
+| sCharaSpecId40 | UInt32 | relative offset in !!string section |
+| sCharaSpecId41 | UInt32 | relative offset in !!string section |
+| sCharaSpecId42 | UInt32 | relative offset in !!string section |
+| sCharaSpecId43 | UInt32 | relative offset in !!string section |
+| sCharaSpecId44 | UInt32 | relative offset in !!string section |
+| sCharaSpecId45 | UInt32 | relative offset in !!string section |
+| sCharaSpecId46 | UInt32 | relative offset in !!string section |
+| sCharaSpecId47 | UInt32 | relative offset in !!string section |
+| sCharaSpecId48 | UInt32 | relative offset in !!string section |
+| sCharaSpecId49 | UInt32 | relative offset in !!string section |
+| sCharaSpecId50 | UInt32 | relative offset in !!string section |
+| sCharaSpecId51 | UInt32 | relative offset in !!string section |
+| sCharaSpecId52 | UInt32 | relative offset in !!string section |
+| sCharaSpecId53 | UInt32 | relative offset in !!string section |
+| sCharaSpecId54 | UInt32 | relative offset in !!string section |
+| sCharaSpecId55 | UInt32 | relative offset in !!string section |
+| sCharaSpecId56 | UInt32 | relative offset in !!string section |
+| sCharaSpecId57 | UInt32 | relative offset in !!string section |
+| sCharaSpecId58 | UInt32 | relative offset in !!string section |
+| sCharaSpecId59 | UInt32 | relative offset in !!string section |
+| sCharaSpecId60 | UInt32 | relative offset in !!string section |
+| sCharaSpecId61 | UInt32 | relative offset in !!string section |
+| sCharaSpecId62 | UInt32 | relative offset in !!string section |
+| sCharaSpecId63 | UInt32 | relative offset in !!string section |
+| u1PartyLoadRequestIndex0 | Bits | Unsigned 1 bit |
+| u1PartyLoadRequestIndex1 | Bits | Unsigned 1 bit |
+| u1PartyLoadRequestIndex2 | Bits | Unsigned 1 bit |
+| u1PartyLoadRequestIndex3 | Bits | Unsigned 1 bit |
+| u1PartyLoadRequestIndex4 | Bits | Unsigned 1 bit |
+| u1PartyLoadRequestIndex5 | Bits | Unsigned 1 bit |
 
 ## crystal wdb files
 
