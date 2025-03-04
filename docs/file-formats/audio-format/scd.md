@@ -22,7 +22,7 @@ N.B.: The sub header begins from offset 0x30 onwards. as some parts of the sub h
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x2 | UInt16 | Number of 'A' chunks |
-| 0x3 | 0x2 | UInt16 | Number of 'B' chunks |
+| 0x2 | 0x2 | UInt16 | Number of 'B' chunks |
 | 0x4 | 0x2 | UInt16 | Number of 'Stream-info' chunks |
 | 0x6 | 0x2 | UInt16 | Numbered sound folder id |
 | 0x8 | 0x4 | UInt32 | [Chunk-B table offset](https://lr-research-team.github.io/wiki/file-formats/audio-format/scd/#chunk-b-table) |
