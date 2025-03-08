@@ -104,7 +104,7 @@ That's it, you can now go to the teleporter and check out the result:
 
 <div align="center">
 <video width="800" height="480" controls>
-  <source src="https://github.com/LR-Research-Team/wiki/blob/main/docs/resource/videos/ArkTeleporterExample.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/LR-Research-Team/wiki/refs/heads/main/docs/resource/videos/ArkTeleporterExample.mp4" type="video/mp4">
 </video>
 </div>
 
