@@ -23,7 +23,7 @@ This guide will help you set up VS Code for creating a scripting environment:
 
 * Click on the bottom left Gear icon and select Settings. 
 
-* In the settings menu searchbar, type ``java.referencesCodeLens.enabled`` and Enable the option. this will ensure that all usage references are shown for the functions.
+* In the settings menu searchbar, type ``java.referencesCodeLens.enabled`` and enable the option. this will ensure that all usage references are shown for the functions.
 
 <figure markdown>
   ![Image](../../assets/script/basics/vscodeJavaRefCodeLens.png)
