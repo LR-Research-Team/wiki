@@ -2,7 +2,7 @@ This page contains encoding keys used only by FINAL FANTASY XIII-2.
 
 ### Color keys
 
-The color keys indicate the color with which a particular portion of text is displayed ingame in FINAL FANTASY XIII. 
+The color keys indicate the color with which a particular portion of text is displayed ingame in FINAL FANTASY XIII-2. 
 <br>Please refer the image given below, to get a better idea on how the colors would look like when its displayed ingame.
 
 <br>![Image](../../assets/ztr/xiii2_ztr_colors.png)
