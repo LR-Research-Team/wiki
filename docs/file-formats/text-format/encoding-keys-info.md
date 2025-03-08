@@ -443,7 +443,7 @@ N.B.: The purpose of these two byte keys are unknown.
 The color keys indicate the color with which a particular portion of text is displayed ingame in FINAL FANTASY XIII. 
 <br>Please refer the image given below, to get a better idea on how the colors would look like when its displayed ingame.
 
-![Image](../../../resource/images/xiii1_ztr_colors.png)
+![Image](../../resource/images/xiii1_ztr_colors.png)
 
 <br>**Color Notes**
 
@@ -601,7 +601,7 @@ The color keys indicate the color with which a particular portion of text is dis
 These keys are used in FINAL FANTASY XIII, to insert special icons next to a text when its displayed ingame. 
 <br>Please refer the below image for the icons. 
 
-![Image](../../../resource/images/xiii1_ztr_icons.png)
+![Image](../../resource/images/xiii1_ztr_icons.png)
 
 The order of the keys given in the tables below would be the order of the icons in the image from the left side.
 
@@ -915,7 +915,7 @@ These keys are used in FINAL FANTASY XIII, to insert controller button icons nex
 These keys are used in FINAL FANTASY XIII-2, to insert special icons next to a text when its displayed ingame. 
 <br>Please refer the below image for the icons. 
 
-![Image](../../../resource/images/xiii2_ztr_icons.png)
+![Image](../../resource/images/xiii2_ztr_icons.png)
 
 The order of the keys given in the tables below would be the order of the icons in the image from the left side.
 
@@ -1329,7 +1329,7 @@ These keys are used in FINAL FANTASY XIII-2, to insert controller button icons n
 These keys are used in LIGHTNING RETURNS FINAL FANTASY XIII, to insert special icons next to a text when its displayed ingame. 
 <br>Please refer to the below image for the icons. 
 
-![Image](../../../resource/images/xiiilr_ztr_icons.png)
+![Image](../../resource/images/xiiilr_ztr_icons.png)
 
 The order of the keys given in the tables below would be the order of the icons in the image from the left side. 
 
@@ -1766,10 +1766,10 @@ The color keys indicate the color with which a particular portion of text is dis
 <br>Please refer to the images given below, to get a better idea on how the colors would look like when its displayed ingame. 
 
 **XIII-2 Colors**
-<br>![Image](../../../resource/images/xiii2_ztr_colors.png)
+<br>![Image](../../resource/images/xiii2_ztr_colors.png)
 
 **XIII-LR Colors**
-<br>![Image](../../../resource/images/xiiilr_ztr_colors.png)
+<br>![Image](../../resource/images/xiiilr_ztr_colors.png)
 
 #### Group 1
 **Important:** For English (us), French (fr), German (gr), Italian (it), Japanese (jp), and Spanish (sp) ztr files.

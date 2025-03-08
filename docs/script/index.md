@@ -9,7 +9,6 @@ The goal of this section is to provide a central knowledgebase for everything re
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __[Basics]__ – General information about scripts and their use ingame.
 - :fontawesome-solid-laptop: __[Setup]__ – Setup the necessary tools for script modding.
 - :fontawesome-solid-file-pen: __[Examples]__ – Simple examples to get you started.
 - :fontawesome-solid-code: __[API]__ – A documentation of the packages' functions.
@@ -17,7 +16,6 @@ The goal of this section is to provide a central knowledgebase for everything re
 
 </div>
 
-  [Basics]: basics/general-info.md
   [Setup]: basics/extracting.md
   [Examples]: writing/examples.md
   [API]: writing/api.md
