@@ -129,6 +129,10 @@ nav:
     - Text Format:
       - ZTR: file-formats/text-format/ztr.md
       - Encoding Keys Info: file-formats/text-format/encoding-keys-info.md
+      - Encoding Keys Common: file-formats/text-format/encoding-keys-common.md
+      - Encoding Keys XIII: file-formats/text-format/encoding-keys-xiii.md
+      - Encoding Keys XIII-2: file-formats/text-format/encoding-keys-xiii2.md
+      - Encoding Keys LR: file-formats/text-format/encoding-keys-lr.md
     - Script Format:
       - CLB: file-formats/script-format/clb.md
     - Save Format:
