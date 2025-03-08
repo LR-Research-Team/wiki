@@ -103,9 +103,6 @@ You can now inject the clb file back ingame using **LayeredFS** or by running th
 That's it, you can now go to the teleporter and check out the result:
 
 <div align="center">
-<video width="800" height="480" controls>
-  <source src="https://raw.githubusercontent.com/LR-Research-Team/wiki/refs/heads/main/docs/resource/videos/ArkTeleporterExample.mp4" type="video/mp4">
-</video>
+<iframe width="800" height="480" frameborder="0" src="https://mega.nz/embed/OlBkRaqT#zpIAqHzb9emiPPpKyQdz-HAsd43CjYLvaR4TAXzEeD0" allowfullscreen ></iframe>
+
 </div>
-
-
