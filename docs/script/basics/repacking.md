@@ -1,4 +1,4 @@
-In this section, you will learn how to write your own clb scripts. 
+In this section, you will learn how to setup your script exporter. 
 
 !!! note
 
@@ -11,16 +11,15 @@ We need to use the same Java version as the XIII Trilogy, go to the [Oracle webs
 
 !!! tip
 
-    To avoid creating an account, right click on the download link and remove everything before "nexturl=" (including it). For example, 
+    You can either create an account with your email or us this throwaway account below, to avoid creating an account with your email: 
     ```
-    https://www.oracle.com/webapps/redirect/signon?nexturl=https://download.oracle.com/otn/java/jdk/1.5.0_22/jdk-1_5_0_22-windows-i586-p.exe
-    ```
-    becomes 
-    ```
-    https://download.oracle.com/otn/java/jdk/1.5.0_22/jdk-1_5_0_22-windows-i586-p.exe
+    email: rebil93626@oziere.com
+    Password: TrilogyXIIIOraclePwd5!
     ```
 
 ## Setting up the IntelliJ IDEA external tool
+
+If you had followed the IntelliJ IDEA setup guide before, then follow these steps given below.
 
 We are now going to setup an external tool to compile our .java files to .clb in IntelliJ:
 
@@ -39,17 +38,55 @@ We are now going to setup an external tool to compile our .java files to .clb in
 The most important fields are the following:
 
 !!! note
-    - Program: put your **JavatoCLB.exe** location here, between quotes ("")
-    - Arguments: put 
+    - Program: put your **WhiteCLBtool.exe** location here, between quotes ("")
+    - Arguments: put your **javac.exe** location, from your Java 5 install folder, between quotes ("") and after that put
     ```
     "$FilePathRelativeToSourcepath$"
     ```
-    followed by  your **javac.exe** location, from your Java 5 install folder, between quotes ("")
     - Working Directory: put 
     ```
     $Sourcepath$
     ```
 
-That's it, you will now be able to generate your clb file with a single from your .java file by right-clicking the choosing **External Tools -> YourToolName**.
+That's it, you will now be able to generate your clb file with a single click, from your .java file by right-clicking and then choosing **External Tools -> YourToolName**.
 
 
+## Setting up a task for VS Code
+
+If you had followed the VS Code setup guide before, then follow these steps given below.
+
+We are going to setup a VS Code task, that can be used to quickly compile .java files to .clb:
+
+* Open VS Code and in the search bar at the top, type ``> Tasks: Open User Tasks``. select this option and it will open a ``tasks.json`` file.
+
+<figure markdown>
+  ![Image](../../assets/script/basics/vscodeSearchTask.png)
+</figure>
+
+* In the json file and inside the "tasks" object, we will create a new task called WhiteCLBtool. you can refer to this image below and setup the task according to it. make sure that you put the location of the **WhiteCLBtool.exe** on your PC for the ``command`` object's value.
+
+<figure markdown>
+  ![Image](../../assets/script/basics/vscodeSetupTask.png)
+</figure>
+
+!!! note
+    - Change the path separator characters from `\` to `\\`. 
+
+    - The javac file location should be from the Java 5 SDK installation on your PC.
+    
+    - Here is the json object, which you can use as a reference:
+    ```json
+     {
+        "label": "WhiteCLBtool",
+        "type": "process",
+        "command": "U:\\Documents\\Visual Studio Projects\\C# stuff\\App projects\\FFXIII Mod Programs\\WhiteCLBtool\\bin\\Release\\WhiteCLBtool.exe",
+        "args": [
+            "-c", 
+            "C:\\Program Files\\Java\\jdk1.5.0_22\\bin\\javac.exe",
+            "${relativeFile}"
+        ],
+        "group": {
+            "kind": "build"
+        }
+    }   
+    ```

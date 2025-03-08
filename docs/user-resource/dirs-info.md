@@ -1,4 +1,5 @@
-# Main Directories
+This page contains information on what all types of files are stored in each of the root directories present in each game from the trilogy.
+***
 
 ## FINAL FANTASY XIII
 

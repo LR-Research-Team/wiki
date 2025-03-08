@@ -91,23 +91,22 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - User Guide:
-    - user-guide/index.md
-    - Setting up Nova: user-guide/setting-up-nova.md
-    - Installing Mods: user-guide/installing-mods.md
   - CLB scripting:
     - script/index.md
     - Getting started:
-      - General info: script/basics/general-info.md
       - Setting up the codebase: script/basics/extracting.md
+      - Setting up IntelliJ IDEA : script/basics/setup-intellij.md
+      - Setting up VS Code : script/basics/setup-vscode.md
       - Setting up the exporter: script/basics/repacking.md
     - Writing scripts:
       - Examples: script/writing/examples.md
       - Tips: script/writing/tips.md
-      - API: script/writing/api.md
-      - FAQ: script/writing/faq.md
-  - Container editing:
-    - container/index.md
+      - API: 
+        - script/writing/api.md
+        - FINAL FANTASY XIII: script/writing/api-xiii.md
+        - FINAL FANTASY XIII-2: script/writing/api-xiii2.md
+        - LIGHTNING RETURNS FINAL FANTASY XIII: script/writing/api-lr.md  
+      - FAQ: script/writing/faq.md  
   - File formats:
     - file-formats/index.md
     - Archive Formats:
@@ -134,5 +133,15 @@ nav:
       - CLB: file-formats/script-format/clb.md
     - Save Format:
       - DAT:  file-formats/save-format/dat.md
-  - Main Directories:
-    - main-dirs/index.md
+  - User Guide:
+    - user-guide/index.md
+    - Setting up Nova: user-guide/setting-up-nova.md
+    - Installing Mods: user-guide/installing-mods.md
+    - Importing Custom BGM with looping: user-guide/importing-bgm-with-looping.md
+  - User Resource:
+    - user-resource/index.md
+    - Additional Tools: user-resource/additional-tools.md
+    - Directory Info: user-resource/dirs-info.md
+    - File IDs: user-resource/file-ids.md
+    - File Info: user-resource/file-info.md
+    - Zone Info: user-resource/zone-info.md

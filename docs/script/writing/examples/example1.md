@@ -1,20 +1,26 @@
 In this example, we are going to repurpose the Ark's teleporter to execute our own custom function.
 
-## Dumping the zone scripts
+## Project setup
 
-We first need to dump the zone scripts of the Ark, which are located in 
+* Create a new folder on your PC and call it **"LR teleporter edit"** or anything of your choice. we will now copy the core script files and the Ark zone's script files, into this folder.
 
-```
-
-LIGHTNING RETURNS FINAL FANTASY XIII\weiss_data\zone\z0110
-
-```
-
-Drag and drop this folder on the JavaToCLB.exe to do so, you'll end up with 3 decompiled java files. Place them at the root of your codebase, you should end up with a project structure like the following:
+* Inside the **"FFXIIICodebase"** folder or the **"clbs_decompiled"** folder that you had renamed when generating the codebase , goto ``sys/script_decomp`` folder and copy all of its contents into the **"LR teleporter edit"** folder. these are the core script files.
 
 <figure markdown>
-  ![Image](../../../assets/script/writing/example1/img1.png)
+  ![Image](../../../assets/script/writing/example1/setup_proj_1.png)
 </figure>
+
+* Come back outside the ``sys`` folder and goto ``zone/z0110`` folder. once again copy all of its contents into the **"LR teleporter edit"** folder. these are the Ark zone's script files
+
+<figure markdown>
+  ![Image](../../../assets/script/writing/example1/setup_proj_2.png)
+</figure>
+
+* And that's it. we should be ready now to edit the script files.
+
+* If you are using IntelliJ, then right click on the **"LR teleporter edit"** folder, (show more options if on windows 11) and select the **Open Folder as IntelliJ IDEA Community Edition Project** option. you will be prompted with a message asking whether you can trust and open this project or not. click on the ***"Trust Project"*** button and IntelliJ will open the folder.
+
+* If you are using VS Code, then right click on the **"LR teleporter edit"** folder, (show more options if on windows 11) and select the **Open with Code** option and VS code will open the folder.
 
 ## Writing our new logic
 
@@ -75,9 +81,17 @@ We can now write any logic that we want to happen when using the teleporter. In 
     }
   ```
 
-We're done, it's now time to compile our edited file back to clb. To do so, simply right-click on it then click on External Tools -> YourToolName. Wait for a bit and you will get a compiled scr000.clb file.
+We're done, it's now time to compile our edited file back to clb. 
 
-You can inject it back ingame using **LayeredFS** or by running the game in **unpacked mode**
+Now depending on whether you are using IntelliJ or VS Code, the steps required to compile our file to clb, will vary slightly.
+
+If you are using IntelliJ, simply right-click on the java file that you had edited and then click on External Tools -> YourToolName. Wait for a bit and you will get a compiled scr000.clb file.
+
+Or
+
+If you are using VS Code, stay on the tab where your edited script file is open and press ``CTRL+Shift+B`` keys together on your keyboard. this will bring up the Task selection menu at the top and from this menu, select the task that you had setup with the **WhiteCLBtool** before. this will begin the compilation process and you will get a compiled scr000.clb file.
+
+You can now inject the clb file back ingame using **LayeredFS** or by running the game in **unpacked mode**
 
 !!! note
 
