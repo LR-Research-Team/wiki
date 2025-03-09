@@ -11,7 +11,7 @@ The goal of this section is to provide a central knowledgebase for everything re
 
 - :fontawesome-solid-laptop: __[Setup]__ – Setup the necessary tools for script modding.
 - :fontawesome-solid-file-pen: __[Examples]__ – Simple examples to get you started.
-- :fontawesome-solid-code: __[API]__ – A documentation of the packages' functions.
+- :fontawesome-solid-code: __[API]__ – Documentation of functions.
 - :fontawesome-solid-question: __[FAQ]__ – Frequently Asked Questions related to scripts.
 
 </div>
