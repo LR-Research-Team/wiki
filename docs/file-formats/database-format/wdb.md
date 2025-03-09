@@ -1,4 +1,4 @@
-This is the main format used for all database files from the trilogy. the format structure is similar to the [WPD Pack files](https://lr-research-team.github.io/wiki/file-formats/archive-formats/wpd-pack/) with some minor differences.
+This is the main format used for all database files from the trilogy. the format structure is similar to the [WPD Pack files](../archive-formats/wpd-pack.md) with some minor differences.
 
 # Section Header
 
@@ -23,29 +23,29 @@ N.B.: The below sections are all in Big Endian.
 ## Database Structure
 Each WDB file contains these common sections/records at the starting portion of the file. 
 
-- [!!string](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#string)
+- [!!string](#string)
 
-- [!!strtypelist](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strtypelist)
+- [!!strtypelist](#strtypelist)
 
-- [!!typelist](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#typelist)
+- [!!typelist](#typelist)
 
-- [!!version](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#version)
+- [!!version](#version)
 
 The structure underwent few changes in XIII-2 and LR where a section for the field names was introduced. this section gives information on how to parse each record's data and this being completely absent in XIII-1's wdb files, made parsing the wdb files from that game a bit difficult. the !!strtypelist section got changed to !!strtypelistb, while the !!typelist section will be present only when the !!strtypelist section is present.
 
 These following new sections were introduced:
 
-- [!!sheetname](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#sheetname)
+- [!!sheetname](#sheetname)
 
-- [!structitem](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#structitem)
+- [!structitem](#structitem)
 
-- [!structitemnum](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#structitemnum)
+- [!structitemnum](#structitemnum)
 
-- [!!strArray](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarray)
+- [!!strArray](#strarray)
 
-- [!!strArrayInfo](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarrayinfo) 
+- [!!strArrayInfo](#strarrayinfo) 
 
-- [!!strArrayList](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb/#strarraylist)
+- [!!strArrayList](#strarraylist)
 
 Do note that the !!strArray, !!strArrayInfo and the !!strArrayList are only present in some of the WDB files. whenever there is a 4byte field, assume that the byte order is in Big Endian.
 
@@ -105,7 +105,7 @@ This section contains a single UInt32 value that potentially holds some sort of 
 This section contain a string (null terminated), that gives a brief idea about the type of records that are stored in the WDB file.
 
 ### !structitem
-The section contains one or more strings (each null terminated) which are all the field names for each record's data, stored in the WDB file. refer to this [page](https://lr-research-team.github.io/wiki/file-formats/database-format/wdb-field-names/) for more information.
+The section contains one or more strings (each null terminated) which are all the field names for each record's data, stored in the WDB file. refer to this [page](../database-format/wdb-field-names.md) for more information.
 
 ### !structitemnum
 This section contains a UInt32 value that indicates the total number of fields used in the WDB file. you can use this value to determine the number of field names, present in the !structitem section.
