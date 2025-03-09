@@ -1,3 +1,41 @@
+## ``fake.White``
+!!! note
+   
+    These functions can be accessed by using ``import fake.White``.
+
+### compareString
+
+Compares two strings and returns `1` if equal, and `0` if not equal.
+
+**Parameter(s) :**
+
+* String var0 : first string to compare
+* String var1 : second string to compare
+
+```java
+public static native int compareString(String var0, String var1);
+```
+
+## ``fake.Window``
+!!! note
+
+    These functions can be accessed by using ``import fake.Window``. 
+
+### showCinemaMessage
+
+Shows a message for a specific duration or indefinitely. this functions returns some sort of numerical boolean id.<br>
+
+**Parameter(s) :**
+
+* String string : message to show
+* int n : duration. set it to `0` to show indefinitely.
+
+```java
+public static int showCinemaMessage(String string, int n) {
+    
+}
+```
+
 ## ``fld.com``
 !!! note
 
@@ -44,43 +82,5 @@ Makes an options window, interactable. this has to be used after the sfCallAskCh
 ```java
 public static int sfWaitAskChoiceWindow(String string) {
 
-}
-```
-
-## ``fake.White``
-!!! note
-   
-    These functions can be accessed by using ``import fake.White``.
-
-### compareString
-
-Compares two strings and returns `1` if equal, and `0` if not equal.
-
-**Parameter(s) :**
-
-* String var0 : first string to compare
-* String var1 : second string to compare
-
-```java
-public static native int compareString(String var0, String var1);
-```
-
-## ``fake.Window``
-!!! note
-
-    These functions can be accessed by using ``import fake.Window``. 
-
-### showCinemaMessage
-
-Shows a message for a specific duration or indefinitely. this functions returns some sort of numerical boolean id.<br>
-
-**Parameter(s) :**
-
-* String string : message to show
-* int n : duration. set it to `0` to show indefinitely.
-
-```java
-public static int showCinemaMessage(String string, int n) {
-    
 }
 ```

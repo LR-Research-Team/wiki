@@ -1,3 +1,20 @@
+## ``fake.White``
+!!! note
+   
+    These functions can be accessed by using ``import fake.White``.
+
+### compareString
+
+Compares two strings and returns `1` if equal, and `0` if not equal.
+
+**Parameter(s) :**
+
+* String var0 : first string to compare
+* String var1 : second string to compare
+
+```java
+public static native int compareString(String var0, String var1);
+```
 
 ## ``fld.com``
 !!! note
@@ -48,20 +65,3 @@ public static int sfWaitAskChoiceWindow(String string) {
 }
 ```
 
-## ``fake.White``
-!!! note
-   
-    These functions can be accessed by using ``import fake.White``.
-
-### compareString
-
-Compares two strings and returns `1` if equal, and `0` if not equal.
-
-**Parameter(s) :**
-
-* String var0 : first string to compare
-* String var1 : second string to compare
-
-```java
-public static native int compareString(String var0, String var1);
-```
