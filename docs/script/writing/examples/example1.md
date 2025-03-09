@@ -95,7 +95,7 @@ You can now inject the clb file back ingame using **LayeredFS** or by running th
 
 !!! note
 
-    To have this mod taken into account, you will also need to do a small database edit. A dedicated tutorial will be written later, for now simply use the [following file](https://drive.google.com/file/d/1rqh4gw0PJmcrwZMrx7ssIpBN-dlQh8vq/view?usp=sharing) as a modification of the original one located at
+    To have this mod taken into account, you will also need to do a small database edit. A dedicated tutorial will be written later, for now simply use the [following file](https://mega.nz/file/boZRgC5Y#brElSjzy-gzTmI0NR1JCPZkWTbbIdwaKpxb0fpSss1s) as a modification of the original one located at
     ```
     LIGHTNING RETURNS FINAL FANTASY XIII\weiss_data\db\script\script00110.wdb
     ```
