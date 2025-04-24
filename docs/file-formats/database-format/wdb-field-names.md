@@ -469,6 +469,57 @@ This section contains manually reversed field names for each WDB file from FINAL
 | -- | -- | -- |
 | iFlagIndex | Int32 | int32 value |
 
+## fieldcamera.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| fFreeCameraRotationInterporationSpeedAdjustMode | Float32 | float value |
+| fFreeCameraRunStopMoveSpeed | Float32 | float value |
+| fFreeCameraAimRotationSpeedAtMoving | Float32 | float value |
+| fFreeCameraCompositionAimRate | Float32 | float value |
+| fFreeCameraAimHeight | Float32 | float value |
+| fFreeCameraAimHeightDuringWatchingFoot | Float32 | float value |
+| fCollisionSolveInterporationRateX | Float32 | float value |
+| fCollisionSolveInterporationRateY | Float32 | float value |
+| fCollisionSolveInterporationRateZ | Float32 | float value |
+| fInterporationRateAtForward | Float32 | float value |
+| fInterporationRateAtBack | Float32 | float value |
+| fInterporationRateAtForwardRunning | Float32 | float value |
+| fInterporationRateAtBackRunning | Float32 | float value |
+| fFreeCameraYAxisRotateAttenuationRateRunning | Float32 | float value |
+| fFreeCameraXAxisRotateAttenuationRateRunning | Float32 | float value |
+| fFreeCameraYAxisRotateAttenuationRate | Float32 | float value |
+| fFreeCameraXAxisRotateAttenuationRate | Float32 | float value |
+| fFreeCameraYaxisRotationSpeedRate | Float32 | float value |
+| fFreeCameraYaxisRotationSpeedRateAtIdle | Float32 | float value |
+| fFreeCameraXaxisRotationSpeedRate | Float32 | float value |
+| fFreeCameraXaxisRotationSpeedRateAtIdle | Float32 | float value |
+| fFreeCameraFollowingSpeedRate | Float32 | float value |
+| fCharacterChangingAlphaTime | Float32 | float value |
+| fRailCameraFollowingDistance | Float32 | float value |
+| fRailCameraFollowingRate | Float32 | float value |
+| fRailCameraYOffset | Float32 | float value |
+| fCameraNearZDefault | Float32 | float value |
+| fCameraFarZDefault | Float32 | float value |
+| fAspectRateDefault | Float32 | float value |
+| f9FreeCameraEyeHeight | Bits | signed 9 bits parsed as float value |
+| f10EyeAimDistanceAtMoving | Bits | signed 10 bits parsed as float value |
+| f10EyeAimDistanceDuringWatchingFoot | Bits | signed 10 bits parsed as float value |
+| f10EyeAimDistanceAtStop | Bits | signed 10 bits parsed as float value |
+| f14FreeCameraeFov | Bits | signed 14 bits parsed as float value |
+| f14CompositAimChangeAngleThrreshold | Bits | signed 14 bits parsed as float value |
+| f16DelayTimeBetweenPlayerAndCamera | Bits | signed 16 bits parsed as float value |
+| f18CharacterChangingAlphaDistanceMax | Bits | signed 18 bits parsed as float value |
+| f14FreeCameraXaxisRotationLimitAngle | Bits | signed 14 bits parsed as float value |
+| f18CharacterChangingAlphaDistanceMax_PC | Bits | signed 18 bits parsed as float value |
+| f14FreeRailSwitchAngle | Bits | signed 14 bits parsed as float value |
+| f18CharacterChangingAlphaDistanceMin | Bits | signed 18 bits parsed as float value |
+| f14CameraRadius | Bits | signed 14 bits parsed as float value |
+| f18CharacterChangingAlphaDistanceMin_PC | Bits | signed 18 bits parsed as float value |
+| f14FreeCameraPullupLimitAngle | Bits | signed 14 bits parsed as float value |
+| f19CameraInterporationTimeDefault | Bits | signed 19 bits parsed as float value |
+| f18CharacterChangingAlphaLosen | Bits | signed 18 bits parsed as float value |
+| f18FreeCameraPullupTimeAtJump | Bits | signed 18 bits parsed as float value |
+
 ## item.wdb
 | Field | Type | Description |
 | -- | -- | -- |
@@ -608,13 +659,44 @@ N.B: also applies to mapset_loc###.wdb files present inside the db\bg folder
 | i10BattleMapNum4 | Bits | Signed 10 bits |
 | i10BattleMapNum5 | Bits | Signed 10 bits |
 
+## mission.wdb
+| Field | Type | Description |
+| -- | -- | -- |
+| sMissionTitleStringId | UInt32 | relative offset in !!string section |
+| sMissionExplanationStringId | UInt32 | relative offset in !!string section |
+| sMissionTargetStringId | UInt32 | relative offset in !!string section |
+| sMissionPosStringId | UInt32 | relative offset in !!string section |
+| sMissionMarkPosStringId | UInt32 | relative offset in !!string section |
+| sPosMarkerName | UInt32 | relative offset in !!string section |
+| sTreasureBoxId0 | UInt32 | relative offset in !!string section |
+| sTreasureBoxId1 | UInt32 | relative offset in !!string section |
+| sTreasureBoxId2 | UInt32 | relative offset in !!string section |
+| sCharasetId0 | UInt32 | relative offset in !!string section |
+| sCharasetId1 | UInt32 | relative offset in !!string section |
+| sCharasetId2 | UInt32 | relative offset in !!string section |
+| sCharasetId3 | UInt32 | relative offset in !!string section |
+| sCharaspecId0 | UInt32 | relative offset in !!string section |
+| sCharaspecId1 | UInt32 | relative offset in !!string section |
+| sCharaspecId2 | UInt32 | relative offset in !!string section |
+| sCharaspecId3 | UInt32 | relative offset in !!string section |
+| sCharaspecId4 | UInt32 | relative offset in !!string section |
+| sAreaActivationName | UInt32 | relative offset in !!string section |
+| iBattleSceneNum | Int32 | int32 value |
+| u8ZoneNum | Bits | Unsigned 8 bits |
+| u6IndexInMapMenu | Bits | Unsigned 6 bits |
+| u4Class | Bits | Unsigned 4 bits |
+| u6MissionPictureId | Bits | Unsigned 6 bits |
+| u1UnkBool1 | Bits | Unsigned 1 bit |
+| u1UnkBool2 | Bits | Unsigned 1 bit |
+| u1UnkBool3 | Bits | Unsigned 1 bit |
+
 ## monster_book.wdb
 | Field | Type | Description |
 | -- | -- | -- |
 | u6MbookId | Bits | Unsigned 6 bits |
 | u9SortId | Bits | Unsigned 9 bits |
 | u9PictureId | Bits | Unsigned 9 bits |
-| u1Unk | Bits | Unsigned 1 bit |
+| u1UnkBool | Bits | Unsigned 1 bit |
 
 ## movie.wdb
 | Field | Type | Description |
