@@ -265,7 +265,7 @@
 | it_tpsmoke | Ethersol |
 | it_wax | Wax |
 
-### Non Consumables
+### Keys
 | ID | Name |
 | -- | -- |
 | key_c_alexa | Eidolon Alexander |
@@ -445,6 +445,69 @@
 | material_o011 | Gold Nugget |
 | material_o012 | Platinum Ingot |
 
+### Stats
+| Stat | ID |
+| -- | -- |
+| Health | 1 |
+| Strength | 5 |
+| Magic | 6 |
+| Evade | 9 |
+| Resilience | 10 |
+| Resist Physical | 16 |
+| Resist Magic | 17 |
+| Resist Fire | 18 |
+| Resist Frost | 19 |
+| Resist Lightning | 20 |
+| Resist Water | 21 |
+| Resist Earth | 22 |
+| Resist Air | 23 |
+| Resist Fog | 24 |
+| Resist Slow | 25 |
+| Resist Imperil | 26 |
+| Resist Pain | 27 |
+| Resist Curse | 28 |
+| Resist Daze | 29 |
+| Resist Poison | 30 |
+| Resist Deprotect | 32 |
+| Resist Deshell | 33 |
+| Resist Debrave | 37 |
+| Resist Defaith | 38 |
+| Resist Death | 52 |
+| Resist Elements | 60 |
+
+### Synthesized Abilities
+| Ability | Ability Power | ID |
+| -- | -- | -- |
+| High HP | High HP: Power Surge | 1 |
+| Low HP | Low HP: Power Surge | 2 |
+| Physical Defense | Physical Wall | 3 |
+| Magic Defense | Magic Wall | 4 |
+| Damage Reduction | Damage Wall | 7 |
+| Ultimate Physic | Ethereal Mantle | 9 |
+| Ultimate Magic | Magic Damper | 10 |
+| Fire Resistance | Fire Damage | 11 |
+| Ice Resistance | Ice Damage | 12 |
+| Lightning Resistance | Lightning Damage | 13 |
+| Water Resistance | Water Damage | 14 |
+| Wind Resistance | Wind Damage | 15 |
+| Earth Resistance | Earth Damage | 16 |
+| Debrave Resistance | Debrave Duration  | 17 |
+| Defaith Resistance | Defaith Duration | 18 |
+| Deprotect Resistance | Deprotect Duration | 19 |
+| Deshell Resistance | Deshell Duration | 20 |
+| Slow Resistance | Slow Duration | 21 |
+| Poison Resistance | Poison Duration | 22 |
+| Imperil Resistance | Imperil Duration | 23 |
+| Curse Resistance | Curse Duration | 24 |
+| Pain Resistance | Pain Duration | 25 |
+| Fog Resistance | Fog Duration | 26 |
+| Daze Resistance | Daze Duration | 27 |
+| Boost | ATB Rate | 30 |
+| Gestalt | Random: Instant Chain / Gestalt / TP Boost | 31 |
+| Positive Effect | Buff Duration | 32 |
+| Adamancy | Vampiric Strike | 33 |
+| Independent | - | 34 |
+
 ### Weapons
 | ID | Name |
 | -- | -- |
@@ -598,66 +661,3 @@
 | wea_van_022 | Nirvana (Mistliteinn) |
 | wea_van_023 | Nirvana (Belladonna Wand) |
 | wea_van_024 | Nirvana (Heavenly Axis) |
-
-### Synthesized Abilities
-| Ability | Ability Power | ID |
-| -- | -- | -- |
-| High HP | High HP: Power Surge | 1 |
-| Low HP | Low HP: Power Surge | 2 |
-| Physical Defense | Physical Wall | 3 |
-| Magic Defense | Magic Wall | 4 |
-| Damage Reduction | Damage Wall | 7 |
-| Ultimate Physic | Ethereal Mantle | 9 |
-| Ultimate Magic | Magic Damper | 10 |
-| Fire Resistance | Fire Damage | 11 |
-| Ice Resistance | Ice Damage | 12 |
-| Lightning Resistance | Lightning Damage | 13 |
-| Water Resistance | Water Damage | 14 |
-| Wind Resistance | Wind Damage | 15 |
-| Earth Resistance | Earth Damage | 16 |
-| Debrave Resistance | Debrave Duration  | 17 |
-| Defaith Resistance | Defaith Duration | 18 |
-| Deprotect Resistance | Deprotect Duration | 19 |
-| Deshell Resistance | Deshell Duration | 20 |
-| Slow Resistance | Slow Duration | 21 |
-| Poison Resistance | Poison Duration | 22 |
-| Imperil Resistance | Imperil Duration | 23 |
-| Curse Resistance | Curse Duration | 24 |
-| Pain Resistance | Pain Duration | 25 |
-| Fog Resistance | Fog Duration | 26 |
-| Daze Resistance | Daze Duration | 27 |
-| Boost | ATB Rate | 30 |
-| Gestalt | Random: Instant Chain / Gestalt / TP Boost | 31 |
-| Positive Effect | Buff Duration | 32 |
-| Adamancy | Vampiric Strike | 33 |
-| Independent | - | 34 |
-
-### Stats
-| Stat | ID |
-| -- | -- |
-| Health | 1 |
-| Strength | 5 |
-| Magic | 6 |
-| Evade | 9 |
-| Resilience | 10 |
-| Resist Physical | 16 |
-| Resist Magic | 17 |
-| Resist Fire | 18 |
-| Resist Frost | 19 |
-| Resist Lightning | 20 |
-| Resist Water | 21 |
-| Resist Earth | 22 |
-| Resist Air | 23 |
-| Resist Fog | 24 |
-| Resist Slow | 25 |
-| Resist Imperil | 26 |
-| Resist Pain | 27 |
-| Resist Curse | 28 |
-| Resist Daze | 29 |
-| Resist Poison | 30 |
-| Resist Deprotect | 32 |
-| Resist Deshell | 33 |
-| Resist Debrave | 37 |
-| Resist Defaith | 38 |
-| Resist Death | 52 |
-| Resist Elements | 60 |
