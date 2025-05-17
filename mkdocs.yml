@@ -121,6 +121,10 @@ nav:
       - WDB: file-formats/database-format/wdb.md
       - WDB Contents: file-formats/database-format/wdb-contents.md
       - WDB Field Names: file-formats/database-format/wdb-field-names.md
+    - Event Schedule Formats:
+      - XWB: file-formats/event-schedule-formats/xwb.md
+      - SCB: file-formats/event-schedule-formats/scb.md
+      - SRB: file-formats/event-schedule-formats/srb.md
     - Map Format:
       - LYB: file-formats/map-format/lyb.md
     - Model/Texture Formats:
