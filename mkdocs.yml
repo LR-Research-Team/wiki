@@ -148,4 +148,9 @@ nav:
     - Directory Info: user-resource/dirs-info.md
     - File IDs: user-resource/file-ids.md
     - File Info: user-resource/file-info.md
+    - Internal IDs: 
+      - Internal IDs Info: user-resource/internal-ids-info.md
+      - Internal IDs XIII: user-resource/internal-ids-xiii.md
+      - Internal IDs XIII-2: user-resource/internal-ids-xiii2.md
+      - Internal IDs LR: user-resource/internal-ids-lr.md
     - Zone Info: user-resource/zone-info.md
