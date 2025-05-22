@@ -1,3 +1,123 @@
+### Abilities
+| ID | Name |
+| -- | -- |
+| ade600_00 | Deathward |
+| ade610_00 | Fringeward |
+| ade720_00 | Lifesiphon |
+| ade740_00 | Adrenaline |
+| ade800_00 | Fearsiphon  |
+| ade810_00 | Overwhelm |
+| aat500_00 | Launch |
+| aat540_00 | Blindside |
+| aat550_00 | Powerchain |
+| aat560_00 | Smite |
+| aat570_00 | Scourge |
+| aat630_00 | Armor Breaker |
+| aat640_00 | Mind Piercer |
+| aat650_00 | Bloodthirsty |
+| aat660_00 | Stagger Wound |
+| aat670_00 | Stagger Drain |
+| aat720_00 | Slow Chaser |
+| aat730_00 | Deprotect Chaser |
+| aat740_00 | Deshell Chaser |
+| aat750_00 | Imperil Chaser |
+| aat760_00 | Curse Chaser |
+| aat770_00 | Fog Chaser |
+| aat780_00 | Pain Chaser |
+| aat790_00 | Poison Chase |
+| aat800_00 | Bravery Feeder |
+| aat830_00 | Protect Feeder |
+| aat840_00 | Shell Feeder |
+| ac100_00 | Provoke |
+| ac110_00 | Challenge |
+| gd010_00 | Steelguard |
+| gd110_00 | Mediguard |
+| gd310_00 | Vendetta |
+| gd410_00 | Entrench |
+| gd510_00 | Element Guard |
+| ma000_00 | Ruin |
+| ma020_00 | Ruinga |
+| at010_00 | Attack |
+| at520_00 | Blitz |
+| at620_00 | Area Sweep |
+| mb000_00 | Fire |
+| mb010_00 | Fira |
+| mb020_00 | Firaga |
+| mb100_00 | Blizzard |
+| mb110_00 | Blizzara |
+| mb120_00 | Blizzaga |
+| mb200_00 | Thunder |
+| mb210_00 | Thundara |
+| mb220_00 | Thundaga |
+| mb400_00 | Aero |
+| mb410_00 | Aerora |
+| mb420_00 | Aeroga |
+| at010_10 | Flamestrike |
+| at010_20 | Froststrike |
+| at010_30 | Sparkstrike |
+| at010_50 | Galestrike |
+| at620_00 | Heat Blitz |
+| at620_20 | Ice Blitz |
+| at620_30 | Electric Blitz |
+| at620_50 | Aero Blitz |
+| me000_00 | Bravery |
+| me010_00 | Faith |
+| me030_00 | Enfire |
+| me040_00 | Enfrost |
+| me050_00 | Enthunder |
+| me070_00 | Vigilance |
+| me080_00 | Enaero |
+| me220_00 | Bravega |
+| me230_00 | Faithga |
+| me500_00 | Protect |
+| me510_00 | Shell |
+| me520_00 | Veil |
+| me720_00 | Protectga |
+| me730_00 | Shellga |
+| me740_00 | Veilga |
+| me750_00 | Vigilaga |
+| me800_00 | Endless Blessings |
+| mg000_00 | Deprotect |
+| mg010_00 | Deshell |
+| mg020_00 | Poison |
+| mg030_00 | Imperil |
+| mg200_00 | Deprotega |
+| mg210_00 | Deshellga |
+| mg220_00 | Poisonga |
+| mg230_00 | Imperilga |
+| mg240_00 | Dispel |
+| mg250_00 | Dispelga |
+| mg510_00 | Fog |
+| mg520_00 | Pain |
+| mg530_00 | Curse |
+| mg550_00 | Wound |
+| mg710_00 | Fogga |
+| mg720_00 | Painga |
+| mg730_00 | Cursega |
+| mg750_00 | Woundga |
+| mg800_00 | Endless Knightmare |
+| mg000_at | Deprotect 2 |
+| mg010_at | Deshell 2 |
+| mg020_at | Poison 2 |
+| mg030_at | Imperil 2 |
+| mg200_at | Heavy Deprotega |
+| mg210_at | Heavy Deshellga |
+| mg220_at | Heavy Poisonga |
+| mg230_at | Heavy Imperilga |
+| mg510_at | Fog 2 |
+| mg520_at | Pain 2 |
+| mg530_at | Curse 2 |
+| mg710_at | Heavy Fogga |
+| mg720_at | Heavy Painga |
+| mg730_at | Heavy Cursega |
+| mw000_00 | Cure |
+| mw010_00 | Cura |
+| mw020_00 | Curasa |
+| mw100_00 | Raise |
+| mw200_00 | Esuna |
+| mw210_00 | Esunada |
+| mw900_00 | Cheer |
+
 ### Accessories
 | ID | Name |
 | -- | -- |
@@ -881,6 +1001,142 @@
 | mcr_k971 | Lightning |
 | mcr_k973 | Snow |
 | mcr_k974 | Sazh |
+
+### Passive Abilities
+| ID | Name |
+| -- | -- |
+| awp_all_250 | Hindrance, runaway |
+| awp_all_350 | Fettered Magic, second wind |
+| awp_c000_000 | Attack Atb Charge, perseverance |
+| awp_c000_050 | Attack Atb Charge 2, perseverance |
+| awp_c000_100 | Improved Raise, perseverance |
+| awp_c000_150 | Improved Raise 2, perserverance |
+| awp_c001_000 | Improved Guard, supersonic |
+| awp_c001_050 | Improved Guard 2?, supersonic |
+| awp_c001_100 | critical Power Surge, supersonic |
+| awp_c001_150 | critical Power Surge 2, supersonic |
+| awp_c001_200 | Improved Ward, lightning bolt |
+| awp_c001_250 | Improved Ward 2?, lightning bolt |
+| awp_c002_000 | Augment Maintenance, no racing skill |
+| awp_c002_050 | Augment Maintenance 2, no racing skill |
+| awp_c002_100 | Chain Bonus Boost, lightning bolt |
+| awp_c002_150 | Chain Bonus Boost 2, lightning bolt |
+| awp_c002_200 | Stagger Maintenance, lightning bolt |
+| awp_c002_250 | Stagger Maintenance 2, lightning bolt |
+| awp_c003_000 | Critical Shield, turbo |
+| awp_c003_050 | Critical Shield 2, turbo |
+| awp_c003_200 | Defense Maintenance, turbo |
+| awp_c003_250 | Defense Maintenance 2, turbo |
+| awp_c004_000 | Improved Cure, turbo |
+| awp_c004_050 | Improved Cure 2, turbo |
+| awp_c004_100 | Ally KO Power Surge, blue streak |
+| awp_c004_150 | Ally KO Power Surge 2, blue streak |
+| awp_c004_200 | Improved Debuffing, blue streak |
+| awp_c004_250 | Improved Debuffing 2. blue streak |
+| awp_c005_100 | Improved Debilitation, no race skill might be second wind |
+| awp_c005_150 | Improved Debilitation 2, no race skill might be second wind |
+| awp_c005_200 | Improved Counter, second wind |
+| awp_c005_250 | Improved Counter 2, second wind |
+| auto_00_0 | ATB Advantage, sprinter |
+| auto_00_1 | First Strike, sprinter |
+| auto_cp | Double CP, health nut |
+| auto_crack | Pressure 2, no race skill |
+| auto_keep | Immovable 2, no race skill |
+| auto_law | Jungle Law, runaway |
+| auto_rol | Role Resonance, rocket blast |
+| auto_weeks | Weak Spot, no racing skill |
+| auto_drop_0 | Item Scavenger 2, dark horse |
+| auto_drop_1 | Item Collector, dark horse |
+| auto_gilup | Gilfinder 2, attention hog |
+| auto_amdef_s1 | Resist phys/mag 5% |
+| auto_mdefp_1 | Resist Magic 5% |
+| auto_mdefp_3 | Resist Magic 15% |
+| auto_mdefp_6 | Resist Magic 26% |
+| auto_defp_1 | Resist Physical 5% |
+| auto_defp_3 | Resist Physical 15% |
+| auto_defp_6 | Resist Physical 26% |
+| auto_fdefp_1 | Resist Fire 10% |
+| auto_fdefp_3 | Resist Fire 33% |
+| auto_fdefp_6 | Resist Fire 45% |
+| auto_idefp_1 | Resist Ice 10% |
+| auto_idefp_3 | Resist Ice 33% |
+| auto_idefp_6 | Resist Ice 45% |
+| auto_adefp_1 | Resist Wind 10% |
+| auto_adefp_3 | Resist Wind 33% |
+| auto_adefp_6 | Resist Wind 45% |
+| auto_ldefp_1 | Resist Lightning 10% |
+| auto_ldefp_3 | Resist Lightning 33% |
+| auto_ldefp_6 | Resist Lightning 45% |
+| auto_6def_1 | Resist Elements 5% |
+| auto_6def_3 | Resist Elements 20% |
+| auto_6def_5 | Resist Elements 30% |
+| auto_sdefp_dp1 | Resist Deprotect 10% |
+| auto_sdefp_dp3 | Resist Deprotect 44% |
+| auto_sdefp_dp4 | Resist Deprotect 66% |
+| auto_sdefp_ds1 | Resist Deshell 10% |
+| auto_sdefp_ds3 | Resist Deshell 44% |
+| auto_sdefp_ds4 | Resist Deshell 66% |
+| auto_sdefp_wk1 | Resist Imperial 10% |
+| auto_sdefp_wk3 | Resist Imperial 44% |
+| auto_sdefp_wk4 | Resist Imperial 66% |
+| auto_sdefp_bi1 | Resist Poison 10% |
+| auto_sdefp_bi3 | Resist Poison 44% |
+| auto_sdefp_bi4 | Resist Poison 66% |
+| auto_sdefp_sl1 | Resist Slow 10% |
+| auto_sdefp_sl3 | Resist Slow 44% |
+| auto_sdefp_sl4 | Resist Slow 66% |
+| auto_sdefp_pn1 | Resist Pain 10% |
+| auto_sdefp_pn3 | Resist Pain 44% |
+| auto_sdefp_pn4 | Resist Pain 66% |
+| auto_sdefp_fg1 | Resist Fog 10% |
+| auto_sdefp_fg3 | Resist Fog 44% |
+| auto_sdefp_fg4 | Resist Fog 66% |
+| auto_sdefp_cs1 | Resist Curse 10% |
+| auto_sdefp_cs3 | Resist Curse 44% |
+| auto_sdefp_cs4 | Resist Curse 66% |
+| auto_sdefp_de1 | Resist Dispel 10% |
+| auto_sdefp_de3 | Resist Dispel 44% |
+| auto_sdefp_de4 | Resist Dispel 66% |
+| auto_def_s1 | Resilience 10% |
+| auto_def_s3 | Resilience 20% |
+| auto_def_s4 | Resilience 40% |
+| auto_b_atb | Kill ATB Charge, limelight |
+| auto_b_libra | Kill Libra charge, limelight |
+| auto_shorten | Rapid recovery, health nut |
+| auto_triplets | Pack mentality, runaway |
+| auto_syncup | Feral Speed 2, attention hog |
+| auto_syncmax | Feral Surge, rocket blast |
+| auto_syncdanger | Feral Fatigue, rocket blast |
+| auto_p_myte | Critical Tetradefense, marathoner |
+| auto_myte | Auto Tetradefense, free spirit |
+| auto_p_forc | Critical Vigilance, marathoner |
+| auto_forc | Auto Vigilance, free spirit |
+| auto_p_hast | Critical Haste, no racing skill |
+| auto_hast | Auto Haste, free spirit |
+| auto_p_prot | Critical Protect, blue streak |
+| auto_prot | Auto Protect, perserverance |
+| auto_p_shel | Critical Shell, rocket blast |
+| auto_shel | Auto Shell, perserverance |
+| auto_p_brav | Critical Bravery, sprinter |
+| auto_brav | Auto Bravery, free spirit |
+| auto_p_fait | Critical Faith, free spirit |
+| auto_fait | Auto Faith, free spirit |
+| auto_p_veil | Critical Veil |
+| auto_veil | Auto Veil, perserverance |
+| auto_hpp_2 | 10% HP buff |
+| auto_hpp_5 | 16% HP buff |
+| auto_hpp_8 | 25% HP buff |
+| auto_hpp_9 | 30% HP buff |
+| auto_att_2 | 10% STR buff |
+| auto_att_5 | 16% STR buff |
+| auto_att_6 | 20% STR buff |
+| auto_att_7 | 25% STR buff |
+| auto_att_8 | 35% STR buff |
+| auto_matt 2 | 10% Magic buff |
+| auto_matt 5 | 16% Magic buff |
+| auto_matt 6 | 20% Magic buff |
+| auto_matt_7 | 25% Magic buff |
+| auto_matt_8 | 35% Magic buff |
 
 ### Weapons
 | ID | Name |
