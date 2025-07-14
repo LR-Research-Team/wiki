@@ -57,10 +57,12 @@ The filelist file has to be decrypted with the [WhiteCryptTool](https://github.c
 #### Filelist Encryption header
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
-| 0x0 | 0x10 | UInt32[4] | Encryption Seed |
+| 0x0 | 0x10 | UInt32[4] | Encryption Seed, MD5 hash of the decrypted filelist data |
 | 0x10 | 0x4 | UInt32 (BE) | Filelist data size |
 | 0x14 | 0x4 | UInt32 | Encryption tag. value is always 501232760 |
 | 0x18 | 0x8 | UInt32[2] | Reserved, always null |
+
+Note: The MD5 hash is just for the decrypted filelist data without the additional padding at the end of the filelist data, as well as without the [Filelist Encryption Header](#filelist-encryption-header) and [Filelist Encryption Footer](#filelist-encryption-footer) sections.
 
 #### Filelist Header section
 | Offset | Size | Type | Description |
@@ -96,6 +98,6 @@ The following offsets are present at the end of the filelist file and is part of
 | 0x0 | 0x4 | UInt32 | Filelist data size. same as the encryption header but in LE |
 | 0x4 | 0x4 | UInt32 | Filelist checksum |
 
-If you are rebuilding the filelist file, then make sure to update the filelist data size values present in the header, and footer sections. the size of the filelist data has to be divisible by 8 and if its not divisible, then add some null bytes at the end to pad the size to the next closest divisible by 8 value. 
+If you are rebuilding the filelist file, then make sure to update the filelist data size values present in the header, and footer sections. the MD5 hash need not be updated as the game directly uses those bytes in the header as a seed for the decryption process. the size of the filelist data has to be divisible by 8 and if its not divisible, then add some null bytes at the end to pad the size to the next closest divisible by 8 value. 
 
 After you are done building the filelist, encrypt the file with WhiteCryptTool's encryption function. this will also calculate the checksum of the filelist before encrypting it.
