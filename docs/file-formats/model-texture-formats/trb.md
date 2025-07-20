@@ -60,8 +60,9 @@ N.B.: This chunk is in Big Endian.
 
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
-| 0x0 | 0x4 | UInt32| FourCC. Always 0x47544558 (GTEX), Game Texture? |
-| 0x4 | 0x2 | UInt16| Version |
+| 0x0 | 0x4 | UInt32 | FourCC. Always 0x47544558 (GTEX), Game Texture? |
+| 0x4 | 0x1 | UInt8 | Version |
+| 0x5 | 0x1 | UInt8 | Unknown |
 | 0x6 | 0x1 | UInt8 | [Texture format](#texture-format) |
 | 0x7 | 0x1 | UInt8 | Mipmap Count |
 | 0x8 | 0x1 | UInt8 | Unknown (srgb flag or something ?) |
