@@ -141,6 +141,11 @@ nav:
       - CLB: file-formats/script-format/clb.md
     - Save Format:
       - DAT:  file-formats/save-format/dat.md
+    - VFX Format:
+      - VTEX: file-formats/vfx-formats/vtex.md
+      - VEFF: file-formats/vfx-formats/veff.md
+      - VMDL: file-formats/vfx-formats/vmdl.md
+      - VANM: file-formats/vfx-formats/vanm.md
   - User Guide:
     - user-guide/index.md
     - Setting up Nova: user-guide/setting-up-nova.md
