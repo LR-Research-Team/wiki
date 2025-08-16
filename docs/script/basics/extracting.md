@@ -1,6 +1,6 @@
 In this section, you will learn how to generate your codebase from the game files and setup the necessary tools for editing the scripts.
 
-* Download the [WhiteCLBtool archive](https://mega.nz/file/2xQhQb6J#159nnTL5CRr2iCIZsInbrtX2YG03ffumoiWqI-LUkPk) and unzip it. by doing so, you will get a folder, inside which the WhiteCLBtool program will be present along with a Libraries folder.
+* Download the [WhiteCLBtool archive](https://mega.nz/file/Gs4BTagZ#8WBXdNcNnv8C0t94Lwe-bl7AhUkL-Fl7dV-qvfi4oVI) and unzip it. by doing so, you will get a folder, inside which the WhiteCLBtool program will be present along with a Libraries folder.
 
 * We will need to install Java SDK version 19 or above, for decompilng the CLB files with the WhiteCLBtool. go to the [Oracle website and download the Java SDK](https://www.oracle.com/in/java/technologies/downloads/) and install it.
 
