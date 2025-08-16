@@ -1,0 +1,6085 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../map-format/lyb/">
+      
+      
+        <link rel="next" href="../imgb/">
+      
+      
+      <link rel="icon" href="../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>TRB - Fabula Nova Crystallis Modding Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.00c04c01.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sections" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Join the
+  <a rel="me" href="https://discord.gg/xwCHwRc4zU">
+    <span class="twemoji discord">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </span>
+    <strong>Discord server</strong>
+  </a>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Fabula Nova Crystallis Modding Wiki" class="md-header__button md-logo" aria-label="Fabula Nova Crystallis Modding Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fabula Nova Crystallis Modding Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TRB
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../script/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CLB scripting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  File formats
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-resource/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Resource
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Fabula Nova Crystallis Modding Wiki" class="md-nav__button md-logo" aria-label="Fabula Nova Crystallis Modding Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Fabula Nova Crystallis Modding Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../script/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CLB scripting
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CLB scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/extracting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up the codebase
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/setup-intellij/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up IntelliJ IDEA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/setup-vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up VS Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/repacking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up the exporter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Writing scripts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Writing scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Api
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FINAL FANTASY XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FINAL FANTASY XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LIGHTNING RETURNS FINAL FANTASY XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    File formats
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            File formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive-formats/white-bin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    White BIN files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive-formats/wpd-pack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WPD Pack files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Animation Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Animation Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation-formats/mcb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MCB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation-formats/mtb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MTB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Audio Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Audio Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio-format/scd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Database Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Database Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database-format/wdb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database-format/wdb-contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB Contents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database-format/wdb-field-names/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB Field Names
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Event Schedule Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Event Schedule Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/xwb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    XWB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/scb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/srb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SRB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Map Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Map Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../map-format/lyb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LYB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model/Texture Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Model/Texture Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    TRB
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    TRB
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Header
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sedbres" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBRES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBRES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsection-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsection Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbtxb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBtxb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBtxb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gtex" class="md-nav__link">
+    <span class="md-ellipsis">
+      GTEX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mipmap-specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mipmap Specs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbshd" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBshd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbmsst" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBmsst
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBmsst">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wpd-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPD Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wpd-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPD Record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msst-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSST Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbdepb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBdepb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBdepb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-section-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Section Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbwrb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBwrb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbskl" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBSKL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBSKL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skl-subsection-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      SKL Subsection Header
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skl-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      SKL Subsection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SKL Subsection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy-data-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hierarchy data subsection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinedriver-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      KineDriver subsection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbelb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBelb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbphb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBPHB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imgb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMGB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Text Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Text Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/ztr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ZTR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-common/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys Common
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys LR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Script Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            Script Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../script-format/clb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CLB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Save Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Save Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../save-format/dat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DAT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    VFX Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            VFX Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vtex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VTEX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/veff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VEFF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vmdl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VMDL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vanm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VANM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../user-guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/setting-up-nova/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up Nova
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/installing-mods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing Mods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/importing-bgm-with-looping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importing Custom BGM with looping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../user-resource/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    User Resource
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            User Resource
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/additional-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/dirs-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Directory Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/file-ids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File IDs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/file-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Internal IDs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs LR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/zone-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zone Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Header
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sedbres" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBRES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBRES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsection-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsection Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbtxb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBtxb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBtxb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gtex" class="md-nav__link">
+    <span class="md-ellipsis">
+      GTEX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Texture Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mipmap-specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mipmap Specs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbshd" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBshd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbmsst" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBmsst
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBmsst">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wpd-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPD Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wpd-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPD Record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msst-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSST Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbdepb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBdepb
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBdepb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-section-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Section Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbwrb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBwrb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbskl" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBSKL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEDBSKL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skl-subsection-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      SKL Subsection Header
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skl-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      SKL Subsection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SKL Subsection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy-data-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hierarchy data subsection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinedriver-subsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      KineDriver subsection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbelb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBelb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sedbphb" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEDBPHB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>The TRB files are containers with various sections used to define the model (textures, shaders, skeleton, geometry etc). A binary template for this file format can be found <a href="https://github.com/LR-Research-Team/010-binary-templates/tree/main/Model%20formats">here</a>.</p>
+<h1 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h1>
+<h2 id="section-header">Section Header<a class="headerlink" href="#section-header" title="Permanent link">&para;</a></h2>
+<p>The following header is for all the different sections.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC. Always 0x53454442 (SEDB, "Section Data Binary")</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Resource FourCC, gives the section type</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Version</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x2</td>
+<td>UInt16 (BE)</td>
+<td>Resource type 2, seems to define a subtype</td>
+</tr>
+<tr>
+<td>0xE</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Header size, gives the section data offset</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Section size, header included</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x1C</td>
+<td>UInt32[7]</td>
+<td>Reserved, always null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-types">Section Types<a class="headerlink" href="#section-types" title="Permanent link">&para;</a></h2>
+<h3 id="sedbres">SEDBRES<a class="headerlink" href="#sedbres" title="Permanent link">&para;</a></h3>
+<p>This section is used to define and encapsulate all the other ones. It contains information such as the sections count, offsets and other info. To avoid confusion, sections contained in this one will be called "subsections".</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>File paths count, this should match the subsection count</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>File paths offset, relative to the beginning of the first subsection</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection count</td>
+</tr>
+<tr>
+<td>0x3C</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC. Always 0x627274 (brt, "trb" in LE)</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>0x10 x Subsection count</td>
+<td><a href="#subsection-definition">Subsection Definition</a>[Subsection count]</td>
+<td>Subsection offsets and lengths</td>
+</tr>
+</tbody>
+</table>
+<h4 id="subsection-definition">Subsection Definition<a class="headerlink" href="#subsection-definition" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection index, increments 1 by 1</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection offset, relative to the beginning of the first subsection</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection size</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection type 2 (not sure)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbtxb">SEDBtxb<a class="headerlink" href="#sedbtxb" title="Permanent link">&para;</a></h3>
+<p>This section is used to define a single texture (so each texture used by the model will have an associated SEDBtxb section).</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>GTEX Chunk offset ?</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0xC</td>
+<td>UInt32[3]</td>
+<td>Reserved, always null</td>
+</tr>
+<tr>
+<td>GTEX Chunk Offset</td>
+<td>Variable</td>
+<td><a href="#gtex">GTEX</a></td>
+<td>GTEX Chunk</td>
+</tr>
+</tbody>
+</table>
+<p>N.B.: The SEDBtxb section is 16 bytes aligned, some 0 padding is used to properly align if necessary.</p>
+<h4 id="gtex">GTEX<a class="headerlink" href="#gtex" title="Permanent link">&para;</a></h4>
+<p>N.B.: This chunk is in Big Endian.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC. Always 0x47544558 (GTEX), Game Texture?</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td>Version</td>
+</tr>
+<tr>
+<td>0x5</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x6</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td><a href="#texture-format">Texture format</a></td>
+</tr>
+<tr>
+<td>0x7</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td>Mipmap Count</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td>Unknown (srgb flag or something ?)</td>
+</tr>
+<tr>
+<td>0x9</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td><a href="#texture-type">Texture type</a></td>
+</tr>
+<tr>
+<td>0xA</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Width</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Height</td>
+</tr>
+<tr>
+<td>0xE</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Depth</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Mipmap information offset (relative to the GTEX start)</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Reserved (always null)</td>
+</tr>
+<tr>
+<td>Mip Info Offset</td>
+<td>0x8 x Mipmap Count</td>
+<td><a href="#mipmap-specs">Mipmap Specs</a>[Mipmap Count]</td>
+<td>The mipmaps' information</td>
+</tr>
+</tbody>
+</table>
+<h4 id="texture-format">Texture Format<a class="headerlink" href="#texture-format" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x3</td>
+<td>R8G8B8A8 (Can have Mips)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>R8G8B8A8 (No Mips)</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>DXT1</td>
+</tr>
+<tr>
+<td>0x19</td>
+<td>DXT3</td>
+</tr>
+<tr>
+<td>0x1A</td>
+<td>DXT5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="texture-type">Texture Type<a class="headerlink" href="#texture-type" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>Classic</td>
+<td>A Single texture</td>
+</tr>
+<tr>
+<td>0x1</td>
+<td>Cubemap</td>
+<td>6 textures with similar dimensions and mips</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>Stacked</td>
+<td>XIII-LR only, multiple textures with similar dimensions</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mipmap-specs">Mipmap Specs<a class="headerlink" href="#mipmap-specs" title="Permanent link">&para;</a></h4>
+<p>This struct defines the necessary information to extract the texture data from the associated <strong>IMGB</strong> file.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Mip data offset (in the paired imgb file)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Mip data size</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbshd">SEDBshd<a class="headerlink" href="#sedbshd" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>Variable</td>
+<td><a href="#shd">SHD</a></td>
+<td>SHD Chunk</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbmsst">SEDBmsst<a class="headerlink" href="#sedbmsst" title="Permanent link">&para;</a></h3>
+<p>This section is used to define the necessary semantics in case of data spread into several TRBs. The attribute definition is similar to the ones in the STMS chunk. See m253/583 on ps3/win32 for examples.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>Variable</td>
+<td><a href="#wpd-container">WPDContainer</a></td>
+<td>Beginning of a WPD Container</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wpd-container">WPD Container<a class="headerlink" href="#wpd-container" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Record count</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x8</td>
+<td>UInt32[2]</td>
+<td>Reserved, always null</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x20</td>
+<td><a href="#wpd-record">WPDRecord</a>[Record count]</td>
+<td>WPD record definitions</td>
+</tr>
+<tr>
+<td>0x10 + 0x20 x Record count</td>
+<td>Variable</td>
+<td>Binary</td>
+<td>Data as per record definition</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wpd-record">WPD Record<a class="headerlink" href="#wpd-record" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td>String</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x04</td>
+<td>UInt32</td>
+<td>Byte offset from end of the record definition</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x04</td>
+<td>Uint32</td>
+<td>Length</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x08</td>
+<td>String</td>
+<td>Data type</td>
+</tr>
+</tbody>
+</table>
+<h4 id="msst-data">MSST Data<a class="headerlink" href="#msst-data" title="Permanent link">&para;</a></h4>
+<p>Data as defined by the STMS Header.  Matches the data format in the calling trb file.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>0x10</td>
+<td><a href="#stms-header">STMS Header</a></td>
+<td>Buffer Data Definition</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>[STMS Header]Attribute Count x 0x10</td>
+<td><a href="#attribute-info">Attribute Info</a>[Attribute count]</td>
+<td>Attribute properties to parse the buffer</td>
+</tr>
+<tr>
+<td>0x10 + [STMS Header]Attribute Count x 0x10</td>
+<td>[STMS Header]Entry Count x [STMS Header]Stride</td>
+<td>Variable</td>
+<td>Buffer</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbdepb">SEDBdepb<a class="headerlink" href="#sedbdepb" title="Permanent link">&para;</a></h3>
+<p>This section is used to reference another trb file with the missing data to build the model, only used when the data is spread into several TRBs.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Section count</td>
+</tr>
+<tr>
+<td>0x32</td>
+<td>0x2</td>
+<td>Uint16</td>
+<td>Model count (Typ. 1)</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0x4</td>
+<td>Uint16[2]</td>
+<td>Reserved, always null</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x28 x Section count</td>
+<td><a href="#remote-section-data">Remote Section</a>[Section count]</td>
+<td>Section data</td>
+</tr>
+<tr>
+<td>0x38 + 0x28 x Section count</td>
+<td>0x20</td>
+<td><a href="#model-reference">Model Reference</a>[Model count]</td>
+<td>Linked model names</td>
+</tr>
+</tbody>
+</table>
+<h4 id="remote-section-data">Remote Section Data<a class="headerlink" href="#remote-section-data" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td>String</td>
+<td>Remote file name</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>String</td>
+<td>Remote section type</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x10</td>
+<td>String</td>
+<td>Remote model (c_xxxx)</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x4</td>
+<td>String</td>
+<td>Remote model type</td>
+</tr>
+</tbody>
+</table>
+<h4 id="model-reference">Model Reference<a class="headerlink" href="#model-reference" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td>String</td>
+<td>This model name</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>String</td>
+<td>Remote model name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbwrb">SEDBwrb<a class="headerlink" href="#sedbwrb" title="Permanent link">&para;</a></h3>
+<p>This section is used to define the geometry data (attributes, skinning information, submeshes etc).</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>Variable</td>
+<td><a href="#wrb">WRB</a></td>
+<td>WRB Chunk</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sedbskl">SEDBSKL<a class="headerlink" href="#sedbskl" title="Permanent link">&para;</a></h3>
+<p>This section is used to define the model's skeleton.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsections count</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Name table offset</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Names count</td>
+</tr>
+<tr>
+<td>0x3C</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC. Always 0x736B6C (skl in LE)</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>Subsections count * 0x10</td>
+<td><a href="#skl-subsection-header">SKL Subsection Header</a>[Subsections count]</td>
+<td>Subsections' headers</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#skl-subsection">SKL Subsections</a></td>
+<td>The actual subsections</td>
+</tr>
+<tr>
+<td>Name table offset</td>
+<td>Variable</td>
+<td>Stringz[names count]</td>
+<td>Name table, with the joint names, type names, subsection names etc</td>
+</tr>
+</tbody>
+</table>
+<h4 id="skl-subsection-header">SKL Subsection Header<a class="headerlink" href="#skl-subsection-header" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection name index (index in the name table, gives the purpose of the subsection)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection start offset (relative to the end of the subsection headers)</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Subsection end offset (relative to the end of the subsection headers)</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Unknown (always 1?)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="skl-subsection">SKL Subsection<a class="headerlink" href="#skl-subsection" title="Permanent link">&para;</a></h4>
+<p>The subsections seen so far are the following:</p>
+<h5 id="hierarchy-data-subsection"><strong>Hierarchy data subsection</strong><a class="headerlink" href="#hierarchy-data-subsection" title="Permanent link">&para;</a></h5>
+<p>This subsection has the necessary information to construct the skeleton (parenting, position, rotation etc). The number of joint entries is equal to the subsection size divided by 0xB0 (size of the joint structure). The joint structure is defined the following way:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Name index (index in the name table)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Type index (index in the name table)</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Unknown index (index in the name table, probably reserved)</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x4</td>
+<td>Int32</td>
+<td>Always -1, probably padding</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Joint location, in local space (i.e. relative to the parent joint)</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0x10</td>
+<td>Float32[4]</td>
+<td>Joint rotation, in local space (i.e. relative to the parent joint). As a quaternion.</td>
+</tr>
+<tr>
+<td>0x2C</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Joint scale, in local space (i.e. relative to the parent joint). Always (1,1,1) it seems.</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x4</td>
+<td>Int32</td>
+<td>Parent index (index in the joint hierarchy)</td>
+</tr>
+<tr>
+<td>0x3C</td>
+<td>0x4</td>
+<td>Int32</td>
+<td>Child 1 index (index in the joint hierarchy)</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>0x4</td>
+<td>Int32</td>
+<td>Child 2 index (index in the joint hierarchy)</td>
+</tr>
+<tr>
+<td>0x44</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Joint hash or joint index (For FF XIII)</td>
+</tr>
+<tr>
+<td>0x48</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Bitfield (assumption) of unknown purpose. Seen values: 0x2 (very common), 0x12 (XIII), 0x22 (LR garbs)</td>
+</tr>
+<tr>
+<td>0x4C</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Group ID, referenced by animation files.</td>
+</tr>
+<tr>
+<td>0x50</td>
+<td>0x60</td>
+<td>UInt32[24]</td>
+<td>Reserved, always null.</td>
+</tr>
+</tbody>
+</table>
+<p>N.B. The child indices do not seem to be used within the game other than determining the load order of the bones.  Bones that are not 
+listed in a “child” index are not created but the specific order of the child index does not seem to matter.  i.e. if each bone utilizes a single child index pointing to the next bone (0 -&gt; 1, 1 -&gt; 2, etc.) for the whole list, then it all still loads and works fine.  The only restriction is that a bone listed as a “parent” MUST be created before the parent index is used.  A parent or child index of -1 is not used.</p>
+<p>For the group ID, the purpose seems to vary between the games: In XIII the joint groups seemed to be fairly well defined as</p>
+<p>0 = Main
+1 = Accessory/Clothing/Hair
+2 = Body
+3 = Head</p>
+<p>Whereas in XIII-2/LR it seems to split the skeleton into "limbs".</p>
+<h5 id="kinedriver-subsection"><strong>KineDriver subsection</strong><a class="headerlink" href="#kinedriver-subsection" title="Permanent link">&para;</a></h5>
+<p>Research needed.</p>
+<hr />
+<h3 id="sedbelb">SEDBelb<a class="headerlink" href="#sedbelb" title="Permanent link">&para;</a></h3>
+<p>This section is used to define the <a href="https://docs.unrealengine.com/4.27/en-US/WorkingWithContent/Types/SkeletalMeshes/Sockets/">"sockets"</a>, which are used as location to attach weapons, accessories etc.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x30</td>
+<td><a href="#section-header">SectionHeader</a></td>
+<td>The header of this section</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Socket count</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0xC</td>
+<td>UInt32[3]</td>
+<td>Reserved, always null</td>
+</tr>
+</tbody>
+</table>
+<p>Next are some structs (socket count of them) used to define the names, bone parenting and location info of the sockets. </p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Parent bone name offset (relative to the beginning of the SEDBelb section)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Socket name offset (relative to the beginning of the SEDBelb section)</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Socket location, in local space (i.e. relative to the parent bone)</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Reserved, always null. May be padding.</td>
+</tr>
+</tbody>
+</table>
+<p>Next some euler angles (socket count of them), used to define the socket rotation.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>Float32</td>
+<td>X axis rotation (in radians)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>Float32</td>
+<td>Y axis rotation (in radians)</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>Float32</td>
+<td>Z axis rotation (in radians)</td>
+</tr>
+</tbody>
+</table>
+<p>Finally, a section where all the null-terminated strings referenced by the previous offsets are packed. Socket names and their bone parent names can be found here.</p>
+<hr />
+<h3 id="sedbphb">SEDBPHB<a class="headerlink" href="#sedbphb" title="Permanent link">&para;</a></h3>
+<hr />
+<h1 id="chunks">Chunks<a class="headerlink" href="#chunks" title="Permanent link">&para;</a></h1>
+<p>Chunks are structures used to subdivide the above sections in several blocks of information. There are two chunk types : chunks and chunk containers. The latter are used to "pack" several chunks, which will be referred to as their "children".</p>
+<h2 id="chunks_1">Chunks<a class="headerlink" href="#chunks_1" title="Permanent link">&para;</a></h2>
+<h3 id="chunk-header">Chunk Header<a class="headerlink" href="#chunk-header" title="Permanent link">&para;</a></h3>
+<p>The following header is for all the different chunks.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>FourCC, used to define the chunk</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Version</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Chunk Size (arbitrary, depending on the chunk it may be the size, size - 0xC, size - 0x4 etc)</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Next chunk offset (a 0 value means there's none)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="file">FILE<a class="headerlink" href="#file" title="Permanent link">&para;</a></h3>
+<p>This chunk contains the actual DX9 shader code and name. As of now the best way to disassemble/decompile the bytecode is to use the following <a href="https://github.com/spacehamster/DXDecompiler/pull/10">PR build</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Shader block size (starting from the checksum, see below)</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Shader name offset (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Shader block offset (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>Shader name offset</td>
+<td>Variable</td>
+<td>Stringz</td>
+<td>Shader name</td>
+</tr>
+<tr>
+<td>Shader block offset</td>
+<td>0x10</td>
+<td>UInt8[16]</td>
+<td>MD5 checksum of the shader bytecode</td>
+</tr>
+<tr>
+<td>Shader block offset + 0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Shader bytecode length</td>
+</tr>
+<tr>
+<td>Shader block offset + 0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>Shader block offset + 0x18</td>
+<td>0x8</td>
+<td>UInt32[2]</td>
+<td>Reserved (always null ?)</td>
+</tr>
+<tr>
+<td>Shader block offset + 0x20</td>
+<td>Variable</td>
+<td>Bytecode</td>
+<td>DX9 shader bytecode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vcap">VCAP<a class="headerlink" href="#vcap" title="Permanent link">&para;</a></h3>
+<p>The purpose of this chunk is currently unknown. It seems to always have the same size and content.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Unknow (always 4095 ?)</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0xC</td>
+<td>UInt32[3]</td>
+<td>Reserved ? (always null ?)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pcap">PCAP<a class="headerlink" href="#pcap" title="Permanent link">&para;</a></h3>
+<p>The purpose of this chunk is currently unknown. It seems to always have the same size and content.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x80</td>
+<td>UInt32[32]</td>
+<td>Unknow (always the same values ?)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pram">PRAM<a class="headerlink" href="#pram" title="Permanent link">&para;</a></h3>
+<p>This chunk contains the shader parameter values and the samplers' data.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x12</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Parameter count</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>The offset of a table containing the parameters' data offsets (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>The offset of a table containing the parameter names' offsets (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Sampler count</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>The offset of a table containing the samplers' data offsets (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>The offset of a table containing the samplers' names' offsets (relative to the chunk header's end)</td>
+</tr>
+<tr>
+<td>Parameter data offset table offset</td>
+<td>parameter count x 0x4</td>
+<td>UInt32[parameter count]</td>
+<td>Parameter data offset table</td>
+</tr>
+<tr>
+<td>Parameter name offset table offset</td>
+<td>parameter count x 0x4</td>
+<td>UInt32[parameter count]</td>
+<td>Parameter names offset table</td>
+</tr>
+<tr>
+<td>Sampler data offset table offset</td>
+<td>sampler count x 0x4</td>
+<td>UInt32[sampler count]</td>
+<td>Sampler data offset table</td>
+</tr>
+<tr>
+<td>Sampler name offset table offset</td>
+<td>sampler count x 0x4</td>
+<td>UInt32[sampler count]</td>
+<td>Sampler names offset table</td>
+</tr>
+</tbody>
+</table>
+<p>A parameter data entry has the following structure:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Boolean, 1 if it's a pixel shader parameter, 0 otherwise.</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>0x4</td>
+<td>UInt16</td>
+<td>Data size, scalar if one, vec&#8532;/4 otherwise.</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0xC</td>
+<td>UInt32[3]</td>
+<td>Reserved, always null.</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>Float[4]</td>
+<td>Data, always 4 floats (extra components zeroed out if needed)</td>
+</tr>
+</tbody>
+</table>
+<p>A sampler data entry has the following structure:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x1</td>
+<td>UInt8</td>
+<td>Unknown (always 2 ?)</td>
+</tr>
+<tr>
+<td>0x1</td>
+<td>0x2</td>
+<td>UInt8</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>0x3</td>
+<td>UInt8</td>
+<td>String section size</td>
+</tr>
+<tr>
+<td>0x3</td>
+<td>0x4</td>
+<td>UInt8</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x1C</td>
+<td>UInt32[7]</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>Variable</td>
+<td>Stringz[Variable]</td>
+<td>String section (parsing logic tbd)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mdlc-header">MDLC Header<a class="headerlink" href="#mdlc-header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>Char[16]</td>
+<td>Fixed size string</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x24</td>
+<td>UInt32</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x28</td>
+<td>UInt32</td>
+<td>MDL count</td>
+</tr>
+<tr>
+<td>0x28</td>
+<td>0x2C</td>
+<td>UInt32</td>
+<td>Unknown (bitfield, byte field ? Seen values : 0x1000000 in XIII, 0x3000000 in other games)</td>
+</tr>
+<tr>
+<td>0x2C</td>
+<td>0x30</td>
+<td>UInt32</td>
+<td>Reserved (always null ?)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mdl-header">MDL Header<a class="headerlink" href="#mdl-header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>Char[16]</td>
+<td>Fixed size string, duplicate of the one in the NAME chunk above with a 16 char limit.</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x24</td>
+<td>UInt32</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x24</td>
+<td>0x28</td>
+<td>UInt32</td>
+<td>MESH count</td>
+</tr>
+<tr>
+<td>0x28</td>
+<td>0x2C</td>
+<td>UInt32</td>
+<td>Unknown (bitfield, byte field ? Different values, possibly be four byte fields with the 3<sup>rd</sup> and 4<sup>th</sup> bytes always being 0.  1<sup>st</sup> and 2<sup>nd</sup> can have different values. (more so in the environment trb))</td>
+</tr>
+<tr>
+<td>0x2C</td>
+<td>0x30</td>
+<td>UInt32</td>
+<td>Reserved (always null ?)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mesh-header">MESH Header<a class="headerlink" href="#mesh-header" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>Unknown count</td>
+</tr>
+<tr>
+<td>0x11</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>PGRP Chunk Count</td>
+</tr>
+<tr>
+<td>0x12</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>STMS Chunk Count</td>
+</tr>
+<tr>
+<td>0x13</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>ENVD Chunk Count</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Shader index as loaded in memory ?</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Vertex count</td>
+</tr>
+<tr>
+<td>0x1A</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Face count</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Reserved (always null ?)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="name">NAME<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
+<p>This chunk stores a string. As its name suggests it's used to store a name.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>Variable</td>
+<td>Stringz</td>
+<td>The name stored in this chunk, either 0x10 or 0x20 padded</td>
+</tr>
+</tbody>
+</table>
+<h3 id="str">STR<a class="headerlink" href="#str" title="Permanent link">&para;</a></h3>
+<p>This chunk stores a null terminated string. </p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>Stringz</td>
+<td>The string stored in this chunk.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stms">STMS<a class="headerlink" href="#stms" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td><a href="#stms-header">STMS Header</a></td>
+<td>Buffer Data Definition</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>[STMS Header]Attribute Count x 0x10</td>
+<td><a href="#attribute-info">Attribute Info</a>[Attribute count]</td>
+<td>Attribute properties to parse the buffer</td>
+</tr>
+<tr>
+<td>0x20 + [STMS Header]Attribute Count x 0x10</td>
+<td>[STMS Header]Entry Count x [STMS Header]Stride</td>
+<td>Variable</td>
+<td>Buffer - May not be present if trb data is found in another file. See <a href="#sedbmsst">SEDBmsst</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="stms-header">STMS Header<a class="headerlink" href="#stms-header" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>-1 if data found in another trb, 0 otherwise (see ps3 m583 TRB, paired with m253)</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Attribute count</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Entry count</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>MDL (6 bits) / MESH (5 bits) / STMS (5 bits) id</td>
+</tr>
+<tr>
+<td>0xA</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Stride</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>-1 if data found in another trb, offset in imgb otherwise if there is some (ps3)</td>
+</tr>
+<tr>
+<td>0xE</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>1 if data in imgb, 0 if not</td>
+</tr>
+<tr>
+<td>0xF</td>
+<td>0x1</td>
+<td>UByte</td>
+<td>Padding</td>
+</tr>
+</tbody>
+</table>
+<h4 id="attribute-info">Attribute Info<a class="headerlink" href="#attribute-info" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Offset (in the buffer)</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td><a href="#data-type">Data type</a></td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Count</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td><a href="#semantic">Semantic</a></td>
+</tr>
+<tr>
+<td>0xE</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Padding</td>
+</tr>
+</tbody>
+</table>
+<p>N.B.: For the bone indices, these are not the absolute indices as defined in the SEDBSKL section. Instead, a bone map is made using the ENVD chunks and the indices refer to the bones defined in the latter.</p>
+<h4 id="data-type">Data type<a class="headerlink" href="#data-type" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>UInt16</td>
+</tr>
+<tr>
+<td>0x1</td>
+<td>Float32</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>Float16</td>
+</tr>
+<tr>
+<td>0x3</td>
+<td>UByte</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>Int16</td>
+</tr>
+<tr>
+<td>0x6</td>
+<td>Byte</td>
+</tr>
+</tbody>
+</table>
+<h4 id="semantic">Semantic<a class="headerlink" href="#semantic" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Semantic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>Position</td>
+</tr>
+<tr>
+<td>0x2</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>0x3</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>0x4</td>
+<td>Binormal</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>UV1</td>
+</tr>
+<tr>
+<td>0x9</td>
+<td>UV2</td>
+</tr>
+<tr>
+<td>0xA</td>
+<td>UV3</td>
+</tr>
+<tr>
+<td>0xB</td>
+<td>UV4</td>
+</tr>
+<tr>
+<td>0xD</td>
+<td>Tangent</td>
+</tr>
+<tr>
+<td>0xE</td>
+<td>Bone weight</td>
+</tr>
+<tr>
+<td>0xF</td>
+<td>Bone index</td>
+</tr>
+<tr>
+<td>0xFF</td>
+<td>Index</td>
+</tr>
+</tbody>
+</table>
+<p>N.B: Color : while this can be used to color shade the model somewhat, it's used more for shadowing areas of the model independently.  For example, Hope's wrists as they come out of his gloves are darkened by using this.  4 byte values, in RGBx.  255 being full brightness/color and lower values darkening the specific color. The game always keeps the last value at 255., which is most likely the alpha channel.</p>
+<h3 id="mpr">MPR<a class="headerlink" href="#mpr" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown. (PS3)</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>UInt32[4]</td>
+<td>Unknown data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mdr">MDR<a class="headerlink" href="#mdr" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown. (PS3)</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>UInt32[4]</td>
+<td>Unknown data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="envd">ENVD<a class="headerlink" href="#envd" title="Permanent link">&para;</a></h3>
+<p>This chunk defines which vertices are affected by a given bone (referenced by its name) and by how much (weight). It is redundant since this info is already given by the STMS buffer, however the game uses the ENVD order as a bone map. </p>
+<p>For example if the first ENVD of a MESH chunk container references the bone "larm", then a 0 bone index in the STMS buffer will refer to "larm", whereas the 0 index in the skeleton would normally refer to the bone "trans". Therefore, when combined together, the ENVD chunks form a bone map, defining a skeleton subset that deforms the submesh.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Bone name offset (relative to the end of the chunk header)</td>
+</tr>
+<tr>
+<td>0x12</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Vertex indices count</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Vertex indices offset (relative to the end of the chunk header)</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Weights offset (relative to the end of the chunk header)</td>
+</tr>
+<tr>
+<td>0x1A</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Weight count (should match the vertex count)</td>
+</tr>
+<tr>
+<td>0x12</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Vertex indices offset duplicate</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Weights offset duplicate</td>
+</tr>
+<tr>
+<td>0x16</td>
+<td>0x2</td>
+<td>UInt16</td>
+<td>Padding</td>
+</tr>
+<tr>
+<td>Bone name offset</td>
+<td>Variable</td>
+<td>String</td>
+<td>Bone name</td>
+</tr>
+<tr>
+<td>Vertex indices offset</td>
+<td>Vertex indices count x 0x2</td>
+<td>UInt16[Vertex indices count]</td>
+<td>The indices of the vertices deformed by the bone</td>
+</tr>
+<tr>
+<td>Weights offset</td>
+<td>Weight count</td>
+<td>UByte[Weight count]</td>
+<td>The weight influence of the bone on the vertex, as a normalized UByte (value/255)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rsid">RSID<a class="headerlink" href="#rsid" title="Permanent link">&para;</a></h3>
+<p>Resource ID?  References a resource located in another file.  Typically seen in the environment files referencing a shader.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>String</td>
+<td>Resource Name</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rstp">RSTP<a class="headerlink" href="#rstp" title="Permanent link">&para;</a></h3>
+<p>Resource Type?  Type of resource identified in RSID.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>String</td>
+<td>Resource Type (e.g. sdrb)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="prid">PRID<a class="headerlink" href="#prid" title="Permanent link">&para;</a></h3>
+<p>Source location of remote resource</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>String</td>
+<td>Source File</td>
+</tr>
+</tbody>
+</table>
+<h3 id="prtp">PRTP<a class="headerlink" href="#prtp" title="Permanent link">&para;</a></h3>
+<p>File type (or extension) of remote resource</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>String</td>
+<td>File Extension (e.g. trb)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aabb-comp">AABB / COMP<a class="headerlink" href="#aabb-comp" title="Permanent link">&para;</a></h3>
+<p>This chunk contains some bounding box info.  AABB chunks are used for identifying viewable meshes in-game while
+COMP chunks use some bounding box like information used to determine the scale/bias, which is then used to
+dequantize the submeshes' position data.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Bounding box minimum coordinates</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0xC</td>
+<td>Float32[3]</td>
+<td>Bounding box maximum coordinates</td>
+</tr>
+<tr>
+<td>0x28</td>
+<td>0x8</td>
+<td>UInt32[2]</td>
+<td>Reserved, always null ?</td>
+</tr>
+</tbody>
+</table>
+<p>The dequantization is done in the vertex shader, using the following routine :
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>scale = BBoxMax - BBoxMin;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>scale *= 0.5;
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>bias = BBoxMax - posScale;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>position = position/32767 * scale + bias
+</span></code></pre></div></p>
+<h3 id="pesh">PESH<a class="headerlink" href="#pesh" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x28</td>
+<td>Float32[10]</td>
+<td>Unknown data</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x10</td>
+<td>Char[16]</td>
+<td>Not always alpha-numeric, sometimes has a <SOH> 1<sup>st</sup> character</td>
+</tr>
+<tr>
+<td>0x48</td>
+<td>0x8</td>
+<td>Float32[2]</td>
+<td>Unknown data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ltcd-header">LTCD Header<a class="headerlink" href="#ltcd-header" title="Permanent link">&para;</a></h3>
+<p>Always empty so probably unused by the game.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x10</td>
+<td>UInt32[4]</td>
+<td>Reserved, always null.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mins-header">MINS Header<a class="headerlink" href="#mins-header" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x04</td>
+<td>Int32</td>
+<td>Associated Skeleton Joint Index/Hash</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x04</td>
+<td>UInt32</td>
+<td>Associated MDL #</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x28</td>
+<td>UInt32[10]</td>
+<td>Unknown data</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="chunk-containers">Chunk Containers<a class="headerlink" href="#chunk-containers" title="Permanent link">&para;</a></h2>
+<h3 id="chunk-container-header">Chunk Container Header<a class="headerlink" href="#chunk-container-header" title="Permanent link">&para;</a></h3>
+<p>The following header is for all the different chunks.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x10</td>
+<td><a href="#chunk-header">Chunk Header</a></td>
+<td>Chunk Header</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>0x4</td>
+<td>UInt32</td>
+<td>Children chunk count</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0xC</td>
+<td>UInt32[3]</td>
+<td>Reserved, always null.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shd">SHD<a class="headerlink" href="#shd" title="Permanent link">&para;</a></h3>
+<p>This is the main chunk container for the shader section.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>Variable</td>
+<td><a href="#file">FILE[Count depending on the game]</a></td>
+<td>FILE Chunks</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#vcap">VCAP</a></td>
+<td>VCAP Chunk</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x90</td>
+<td><a href="#pcap">PCAP</a></td>
+<td>PCAP Chunk</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#pram">PRAM</a></td>
+<td>PRAM Chunk</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wrb">WRB<a class="headerlink" href="#wrb" title="Permanent link">&para;</a></h3>
+<p>This is the main chunk container for the geometry section. Its underlying chunk containers are all in Big Endian.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>Variable</td>
+<td><a href="#mdlc">MDLC</a></td>
+<td>MDLC Chunk Container</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x40</td>
+<td><a href="#ltcd">LTCD</a></td>
+<td>LTCD Chunk Container</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#mict">MICT</a></td>
+<td>MICT Chunk Container</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x70</td>
+<td><a href="#pesr">PESR</a></td>
+<td>PESR Chunk Container (not always present)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mdlc">MDLC<a class="headerlink" href="#mdlc" title="Permanent link">&para;</a></h3>
+<p>This chunk container has the "main" model geometry information embedded. It's the biggest one of the 3 containers defined in the SEDBwrb section.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x30</td>
+<td><a href="#mdlc-header">MDLC Header Chunk</a></td>
+<td>MDLC Header Chunk</td>
+</tr>
+<tr>
+<td>0x50</td>
+<td>Variable</td>
+<td><a href="#mdl">MDL Chunk</a>[Variable count]</td>
+<td>MDL Chunk Containers (count given in the MDLC Header chunk)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mdl">MDL<a class="headerlink" href="#mdl" title="Permanent link">&para;</a></h3>
+<p>This chunk container defines a mesh and its underlying submeshes, defined in "MESH" chunks.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>Variable</td>
+<td><a href="#name">Name Chunk</a></td>
+<td>The MDL name</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x30</td>
+<td><a href="#mdl-header">MDL Header Chunk</a></td>
+<td>MDL Header Chunk</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#mesh">MESH Chunk</a>[Variable count]</td>
+<td>MESH Chunk Containers (count given in the MDLC Header chunk)</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x80</td>
+<td><a href="#aabb-container">AABB Chunk Container</a></td>
+<td>The MDL's bounding box and scale/bias info</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mesh">MESH<a class="headerlink" href="#mesh" title="Permanent link">&para;</a></h3>
+<p>This chunk container defines a submesh. It has the vertex buffers necessary to construct the geometry.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x20</td>
+<td><a href="#mesh-header">MESH Header Chunk</a></td>
+<td>MESH Header Chunk</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>Variable</td>
+<td><a href="#str">STR Chunk</a></td>
+<td>This chunk defines the shader used for this submesh, giving its name.</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#rsid">RSID Chunk</a></td>
+<td>External resource name info</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#rstp">RSTP Chunk</a></td>
+<td>External resource type info</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#prid">PRID Chunk</a></td>
+<td>External resource source file location info</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#prtp">PRTP Chunk</a></td>
+<td>External resource file type info</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#stms">STMS</a>[Variable count]</td>
+<td>STMS Chunks (count given in the MESH Header chunk)</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#mpr">MPR</a>[Variable count]</td>
+<td>MPR Chunks (not always present, count given in the MESH Header chunk)</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x20</td>
+<td><a href="#mdr">MDR</a>[Variable count]</td>
+<td>MDR Chunks (not always present, count given in the MESH Header chunk)</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Variable</td>
+<td><a href="#envd">ENVD</a>[Variable count]</td>
+<td>ENVD Chunks (count given in the MESH Header chunk)</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>0x50</td>
+<td><a href="#aabb-container">AABB Chunk Container</a></td>
+<td>The mesh's bounding box info</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aabb-container">AABB Container<a class="headerlink" href="#aabb-container" title="Permanent link">&para;</a></h3>
+<p>This chunk container is used to define bounding box information (Mesh &amp; MDL) and scale/bias information (MDL only).</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x30</td>
+<td><a href="#aabb-comp">AABB Chunk</a>[Variable count]</td>
+<td>AABB Chunk</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ltcd">LTCD<a class="headerlink" href="#ltcd" title="Permanent link">&para;</a></h3>
+<p>This chunk container only has a header chunk. Its purpose is currently unknown, considering its size it's probably unused.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x10</td>
+<td><a href="#ltcd-header">LTCD Header Chunk</a></td>
+<td>LTCD Header Chunk</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mict">MICT<a class="headerlink" href="#mict" title="Permanent link">&para;</a></h3>
+<p>This chunk container only has a single embedded chunk container. Its purpose is currently unknown.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>Variable</td>
+<td><a href="#mins">MINS Chunk</a>[Variable count]</td>
+<td>MINS Chunk Containers, which count is always equal to the number of MDL in the MDLC Chunk Container.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mins">MINS<a class="headerlink" href="#mins" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x40</td>
+<td><a href="#mins-header">MINS Header Chunk</a></td>
+<td>MINS Header Chunk</td>
+</tr>
+<tr>
+<td>0x60</td>
+<td>Variable</td>
+<td><a href="#name">NAME Chunk</a></td>
+<td>Associated Skeleton Joint Name</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pesr">PESR<a class="headerlink" href="#pesr" title="Permanent link">&para;</a></h3>
+<p>Purpose currently unknown</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Size</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x20</td>
+<td><a href="#chunk-container-header">Chunk Container Header</a></td>
+<td>Chunk Container Header</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x50</td>
+<td><a href="#pesh">PESH Chunk</a>[Variable count]</td>
+<td>PESH Chunk</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../map-format/lyb/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LYB">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                LYB
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../imgb/" class="md-footer__link md-footer__link--next" aria-label="Next: IMGB">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                IMGB
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/LR-Research-Team" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/xwCHwRc4zU" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.054acff4.min.js"></script>
+
+  </body>
+</html>

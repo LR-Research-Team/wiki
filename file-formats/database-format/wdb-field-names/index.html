@@ -1,0 +1,7724 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../wdb-contents/">
+      
+      
+        <link rel="next" href="../../event-schedule-formats/xwb/">
+      
+      
+      <link rel="icon" href="../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>WDB Field Names - Fabula Nova Crystallis Modding Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.00c04c01.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#field-name-types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Join the
+  <a rel="me" href="https://discord.gg/xwCHwRc4zU">
+    <span class="twemoji discord">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </span>
+    <strong>Discord server</strong>
+  </a>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Fabula Nova Crystallis Modding Wiki" class="md-header__button md-logo" aria-label="Fabula Nova Crystallis Modding Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fabula Nova Crystallis Modding Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WDB Field Names
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../script/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CLB scripting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  File formats
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../user-resource/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Resource
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Fabula Nova Crystallis Modding Wiki" class="md-nav__button md-logo" aria-label="Fabula Nova Crystallis Modding Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Fabula Nova Crystallis Modding Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../script/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    CLB scripting
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CLB scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/extracting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up the codebase
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/setup-intellij/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up IntelliJ IDEA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/setup-vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up VS Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/basics/repacking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up the exporter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Writing scripts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Writing scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Api
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FINAL FANTASY XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FINAL FANTASY XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/api-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LIGHTNING RETURNS FINAL FANTASY XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../script/writing/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    File formats
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            File formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive-formats/white-bin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    White BIN files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive-formats/wpd-pack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WPD Pack files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Animation Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Animation Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation-formats/mcb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MCB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation-formats/mtb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MTB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Audio Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Audio Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audio-format/scd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Database Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Database Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wdb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wdb-contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB Contents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    WDB Field Names
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    WDB Field Names
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#field-name-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field name types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-names-for-final-fantasy-xiiis-wdbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field names for FINAL FANTASY XIII's WDBs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field names for FINAL FANTASY XIII&#39;s WDBs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto_clipwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_clip.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actioneffectwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      actioneffect.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attreffectwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      attreffect.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attreffectstatewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      attreffectstate.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_auto_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_auto_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_chainbonuswdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_chainbonus.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_chara_propwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_chara_prop.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_constantswdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_constants.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_summonwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_summon.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charasetwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      charaset.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-wdb-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      crystal wdb files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emotion_voicewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      emotion_voice.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event_flagwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      event_flag.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldcamerawdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      fieldcamera.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item_consumewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item_consume.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item_weaponwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item_weapon.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapsetwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      mapset.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missionwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      mission.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monster_bookwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      monster_book.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moviewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      movie.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movie_itemswin32wdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      movie_items.win32.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      party.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savepointwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      savepoint.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scriptwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      script.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shopwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      shop.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound_fileid_dicwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      sound_fileid_dic.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound_filename_dicwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      sound_filename_dic.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      special_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#successionwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      succession.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treasureboxwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      treasurebox.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      white.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zonelistwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      zonelist.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      z###.wdb
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Event Schedule Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Event Schedule Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/xwb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    XWB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/scb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SCB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-schedule-formats/srb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SRB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Map Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Map Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../map-format/lyb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LYB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model/Texture Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Model/Texture Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model-texture-formats/trb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TRB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model-texture-formats/imgb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMGB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Text Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Text Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/ztr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ZTR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-common/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys Common
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../text-format/encoding-keys-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encoding Keys LR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Script Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            Script Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../script-format/clb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CLB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Save Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Save Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../save-format/dat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DAT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    VFX Format
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            VFX Format
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vtex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VTEX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/veff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VEFF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vmdl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VMDL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfx-formats/vanm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VANM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../user-guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/setting-up-nova/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up Nova
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/installing-mods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing Mods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/importing-bgm-with-looping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importing Custom BGM with looping
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../user-resource/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    User Resource
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            User Resource
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/additional-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/dirs-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Directory Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/file-ids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File IDs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/file-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Internal IDs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-xiii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs XIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-xiii2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs XIII-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/internal-ids-lr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal IDs LR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-resource/zone-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zone Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#field-name-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field name types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-names-for-final-fantasy-xiiis-wdbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field names for FINAL FANTASY XIII's WDBs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field names for FINAL FANTASY XIII&#39;s WDBs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto_clipwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_clip.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actioneffectwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      actioneffect.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attreffectwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      attreffect.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attreffectstatewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      attreffectstate.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_auto_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_auto_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_chainbonuswdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_chainbonus.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_chara_propwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_chara_prop.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_constantswdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_constants.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bt_summonwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      bt_summon.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charasetwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      charaset.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-wdb-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      crystal wdb files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emotion_voicewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      emotion_voice.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event_flagwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      event_flag.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldcamerawdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      fieldcamera.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item_consumewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item_consume.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item_weaponwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      item_weapon.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapsetwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      mapset.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missionwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      mission.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monster_bookwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      monster_book.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moviewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      movie.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movie_itemswin32wdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      movie_items.win32.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      party.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savepointwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      savepoint.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scriptwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      script.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shopwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      shop.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound_fileid_dicwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      sound_fileid_dic.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound_filename_dicwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      sound_filename_dic.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special_abilitywdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      special_ability.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#successionwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      succession.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treasureboxwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      treasurebox.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitewdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      white.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zonelistwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      zonelist.wdb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zwdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      z###.wdb
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>The field names in the WDB files indicates how to parse each record's binary data and is present only in XIII-2 and XIII-LR's WDB files. each field would begin with a single letter that indicates the type of field, a number that indicates the amount of bits used by that field's value, and a small description about what the field is supposed to do ingame. </p>
+<h2 id="field-name-types">Field name types<a class="headerlink" href="#field-name-types" title="Permanent link">&para;</a></h2>
+<p>The following list contains commonly used starting letters for the field names.</p>
+<table>
+<thead>
+<tr>
+<th>Field Letter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f</td>
+<td>represents a floating point value field</td>
+</tr>
+<tr>
+<td>f#</td>
+<td>represents a non decimal signed integer value field</td>
+</tr>
+<tr>
+<td>i#</td>
+<td>represents a signed integer value field</td>
+</tr>
+<tr>
+<td>s</td>
+<td>represents a string value field</td>
+</tr>
+<tr>
+<td>s#</td>
+<td>represents a string value field. the value points to the string item's index in the !!strArray section</td>
+</tr>
+<tr>
+<td>u#</td>
+<td>represents an unsigned integer value field</td>
+</tr>
+</tbody>
+</table>
+<h1 id="field-names-for-final-fantasy-xiiis-wdbs">Field names for FINAL FANTASY XIII's WDBs<a class="headerlink" href="#field-names-for-final-fantasy-xiiis-wdbs" title="Permanent link">&para;</a></h1>
+<p>This section contains manually reversed field names for each WDB file from FINAL FANTASY XIII. as of now the field names are given only for some of the WDB files and more will be added to this page slowly when their field names are identified. do know that some of them may not be correct and if you encounter such incorrect fields, please report them in the Fabula Nova Chrystalis discord server.</p>
+<p><br>All the offsets values are stored in Big Endian order. for non 32bit type fields, the fields would have to be applied from a right to left order on a 4byte set of a record's data. if you run out of bits in that 4bytes set, then apply the fields to the next 4bytes set, in the same right to left order.</p>
+<h2 id="auto_clipwdb">auto_clip.wdb<a class="headerlink" href="#auto_clipwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sTitle</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sTarget</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sTarget2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sText</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sPicture</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u4Category</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u7Sort</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u4Chapter</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="actioneffectwdb">actioneffect.wdb<a class="headerlink" href="#actioneffectwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sEffectId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iEffectArg1</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sSoundId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attreffectwdb">attreffect.wdb<a class="headerlink" href="#attreffectwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sFootSoundResourceNameDefaultAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameDrySoilAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameDampSoilAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameGrassAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameBushAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameSandAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameWoodAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameBoardAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameFlooringAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameStoneAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameGravelAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameIronAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameThinIronAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameClothAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameEartenwareAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameCrystalAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameGlassAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameIceAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameWaterAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameAsphaltAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameNoneAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameWireNetAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameBranchOfMachineAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameBranchOfNatureAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameCorkAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameMarbleAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootSoundResourceNameHologramAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameDefaultAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameDrySoilAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameDampSoilAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameGrassAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameBushAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameSandAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameWoodAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameBoardAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameFlooringAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameStoneAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameGravelAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameIronAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameThinIronAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameClothAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameEartenwareAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameCrystalAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameGlassAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameIceAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameWaterAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameAsphaltAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameNoneAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameWireNetAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameBranchOfMachineAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameBranchOfNatureAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameCorkAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameMarbleAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFootVfxResourceNameHologramAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attreffectstatewdb">attreffectstate.wdb<a class="headerlink" href="#attreffectstatewdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sWalk</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRun</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sJump</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRetreat</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sLanding</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSliding</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSquat</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sStand</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFly</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_abilitywdb">bt_ability.wdb<a class="headerlink" href="#bt_abilitywdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sStringResId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sInfoStResId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sScriptId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAblArgStr0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAblArgStr1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAutoAblStEff0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>fDistanceMin</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fDistanceMax</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fMaxJumpHeight</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fYDistanceMin</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fYDistanceMax</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fAirJpHeight</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fAirJpTime</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>sReplaceAirAttack</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sReplaceAirAir</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sReplaceRangeAtk</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sReplaceFinAtk</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sReplaceEnAttr</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iExceptionID</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sActionId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sActionId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sActionId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sActionId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtDamSrc</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRefDamSrc</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubRefDamSrc</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSlamDamSrc</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCamArtsSeqId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCamArtsSeqId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCamArtsSeqId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCamArtsSeqId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectAbility0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectTo0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectAbility1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectTo1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectAbility2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectTo2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectAbility3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRedirectTo3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSysEffId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iSysEffArg0</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sSysSndId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtEffId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iRtEffArg0</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sRtSndId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtEffId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iRtEffArg1</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sRtSndId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtEffId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iRtEffArg2</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sRtSndId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtEffId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iRtEffArg3</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sRtSndId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRtEffId4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iRtEffArg4</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sRtSndId4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u1ComAbility</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag0</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag4</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag5</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag6</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u4ArtsNameHideKd</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u16ArtsNameFrame</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u4UseRole</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u8AblSndKind</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u4MenuCategory</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>i16MenuSortNo</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u1NoDespel</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>i16ScriptArg0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16ScriptArg1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u8AbilityKind</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u4TargetListKind</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>i16AblArgInt0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u4UpAblKind</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>i16AblArgInt1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16AtbCount</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16AtRnd</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16KeepVal</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16IntRsv0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16IntRsv1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u1TgFoge</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1NoBackStep</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1AIWanderFlag</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u16TgElemId</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u10OpProp0</td>
+<td>Bits</td>
+<td>Unsigned 10 bits</td>
+</tr>
+<tr>
+<td>u1AutoAblStEfEd0</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1CheckAutoRpl</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1SeqParts</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>i16AutoAblStEfTi0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u4YRgCheckType</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AtDistKind</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4JumpAttackType</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u1SeqTermination</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u5ActSelType</td>
+<td>Bits</td>
+<td>Unsigned 5 bits</td>
+</tr>
+<tr>
+<td>u4LoopFinCond</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u16LoopFinArg</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u4RedirectMargeNof0</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>i16RefDamSrcRpt</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16SubRefDamSrcRp</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i8AreaRad</td>
+<td>Bits</td>
+<td>Signed 8 bits</td>
+</tr>
+<tr>
+<td>u8CamArtsSelType</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u4RedirectMargeNof1</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RedirectMargeNof2</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RedirectMargeNof3</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u16SysEffPos0</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16RtEffPos0</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16RtEffPos1</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16RtEffPos2</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16RtEffPos3</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16RtEffPos4</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_auto_abilitywdb">bt_auto_ability.wdb<a class="headerlink" href="#bt_auto_abilitywdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sStringResId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sInfoStResId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sScriptId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAutoAblArgStr0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAutoAblArgStr1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u1RsvFlag0</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1RsvFlag3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u4UseRole</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4MenuCategory</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>i16MenuSortNo</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16ScriptArg0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16ScriptArg1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u8AutoAblKind</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>i16AutoAblArgInt0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16AutoAblArgInt1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16WepLvArg0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16WepLvArg1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_chainbonuswdb">bt_chainbonus.wdb<a class="headerlink" href="#bt_chainbonuswdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u6WhoFrom</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6When0</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6When1</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6When2</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6WhatState</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6WhoTo</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6DoWhat</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6Where</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u6How</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u16Bonus</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_chara_propwdb">bt_chara_prop.wdb<a class="headerlink" href="#bt_chara_propwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sInfoStrId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sOpenCondArgS0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u1NoLibra</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u8OpenCond</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8AiOrderEn</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8AiOrderJm</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u4FlavorAtk</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4FlavorBla</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4FlavorDef</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_constantswdb">bt_constants.wdb<a class="headerlink" href="#bt_constantswdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iiVal</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>ffVal</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>ssVal</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bt_summonwdb">bt_summon.wdb<a class="headerlink" href="#bt_summonwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iSummonKind</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sCharaSet</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSet</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sBtChSpec0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sBtChSpec1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSummonInEv</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sDriveInEv</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFinishArtsEv</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iMaxSp0</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp1</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp2</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp3</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp4</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp5</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp6</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp7</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp8</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp9</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp10</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp11</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp12</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp13</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp14</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp15</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iMaxSp16</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>u16Str0</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str1</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str2</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str3</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str4</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str5</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str6</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str7</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str8</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str9</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str10</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str11</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str12</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str13</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str14</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str15</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Str16</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag0</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag1</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag2</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag3</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag4</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag5</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag6</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag7</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag8</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag9</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag10</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag11</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag12</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag13</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag14</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag15</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Mag16</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="charasetwdb">charaset.wdb<a class="headerlink" href="#charasetwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iMemorySizeLimit</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iVideoMemorySizeLimit</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sCharaSpecId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId5</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId6</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId7</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId8</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId9</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId10</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId11</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId12</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId13</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId14</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId15</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId16</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId17</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId18</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId19</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId20</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId21</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId22</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId23</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId24</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId25</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId26</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId27</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId28</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId29</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId30</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId31</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId32</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId33</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId34</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId35</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId36</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId37</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId38</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId39</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId40</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId41</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId42</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId43</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId44</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId45</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId46</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId47</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId48</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId49</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId50</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId51</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId52</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId53</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId54</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId55</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId56</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId57</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId58</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId59</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId60</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId61</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId62</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaSpecId63</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex0</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex4</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1PartyLoadRequestIndex5</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="crystal-wdb-files">crystal wdb files<a class="headerlink" href="#crystal-wdb-files" title="Permanent link">&para;</a></h2>
+<ul>
+<li>crystal_fang.wdb</li>
+<li>crystal_hope.wdb</li>
+<li>crystal_lightning.wdb</li>
+<li>crystal_sazh.wdb</li>
+<li>crystal_snow.wdb</li>
+<li>crystal_vanille.wdb</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uCPCost</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>sAbilityID</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u4Role</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4CrystalStage</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u8NodeType</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u16NodeVal</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emotion_voicewdb">emotion_voice.wdb<a class="headerlink" href="#emotion_voicewdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u4RandomMax0</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax1</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax2</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax3</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax4</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax5</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax6</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax7</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax8</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4RandomMax9</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax0</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax1</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax2</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax3</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax4</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax5</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax6</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax7</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax8</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u4AIRandomMax9</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="event_flagwdb">event_flag.wdb<a class="headerlink" href="#event_flagwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iFlagIndex</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fieldcamerawdb">fieldcamera.wdb<a class="headerlink" href="#fieldcamerawdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fFreeCameraRotationInterporationSpeedAdjustMode</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraRunStopMoveSpeed</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraAimRotationSpeedAtMoving</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraCompositionAimRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraAimHeight</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraAimHeightDuringWatchingFoot</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCollisionSolveInterporationRateX</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCollisionSolveInterporationRateY</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCollisionSolveInterporationRateZ</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fInterporationRateAtForward</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fInterporationRateAtBack</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fInterporationRateAtForwardRunning</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fInterporationRateAtBackRunning</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraYAxisRotateAttenuationRateRunning</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraXAxisRotateAttenuationRateRunning</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraYAxisRotateAttenuationRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraXAxisRotateAttenuationRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraYaxisRotationSpeedRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraYaxisRotationSpeedRateAtIdle</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraXaxisRotationSpeedRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraXaxisRotationSpeedRateAtIdle</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fFreeCameraFollowingSpeedRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCharacterChangingAlphaTime</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fRailCameraFollowingDistance</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fRailCameraFollowingRate</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fRailCameraYOffset</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCameraNearZDefault</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fCameraFarZDefault</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fAspectRateDefault</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>f9FreeCameraEyeHeight</td>
+<td>Bits</td>
+<td>signed 9 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f10EyeAimDistanceAtMoving</td>
+<td>Bits</td>
+<td>signed 10 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f10EyeAimDistanceDuringWatchingFoot</td>
+<td>Bits</td>
+<td>signed 10 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f10EyeAimDistanceAtStop</td>
+<td>Bits</td>
+<td>signed 10 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14FreeCameraeFov</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14CompositAimChangeAngleThrreshold</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f16DelayTimeBetweenPlayerAndCamera</td>
+<td>Bits</td>
+<td>signed 16 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18CharacterChangingAlphaDistanceMax</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14FreeCameraXaxisRotationLimitAngle</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18CharacterChangingAlphaDistanceMax_PC</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14FreeRailSwitchAngle</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18CharacterChangingAlphaDistanceMin</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14CameraRadius</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18CharacterChangingAlphaDistanceMin_PC</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f14FreeCameraPullupLimitAngle</td>
+<td>Bits</td>
+<td>signed 14 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f19CameraInterporationTimeDefault</td>
+<td>Bits</td>
+<td>signed 19 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18CharacterChangingAlphaLosen</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+<tr>
+<td>f18FreeCameraPullupTimeAtJump</td>
+<td>Bits</td>
+<td>signed 18 bits parsed as float value</td>
+</tr>
+</tbody>
+</table>
+<h2 id="itemwdb">item.wdb<a class="headerlink" href="#itemwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sItemNameStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sHelpStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sScriptId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>uPurchasePrice</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>uSellPrice</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>u8MenuIcon</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8ItemCategory</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>i16ScriptArg0</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16ScriptArg1</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u1IsUseBattleMenu</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1IsUseMenu</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1IsDisposable</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1IsSellable</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u5Rank</td>
+<td>Bits</td>
+<td>Unsigned 5 bits</td>
+</tr>
+<tr>
+<td>u6Genre</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u1IsIgnoreGenre</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u16SortAllByKCategory</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16SortCategoryByCategory</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16Experience</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>i8Mulitplier</td>
+<td>Bits</td>
+<td>Signed 8 bits</td>
+</tr>
+<tr>
+<td>u1IsUseItemChange</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="item_consumewdb">item_consume.wdb<a class="headerlink" href="#item_consumewdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sAbilityId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sLearnAbilityId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u1IsUseRemodel</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1IsUseGrow</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u16ConsumeAP</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="item_weaponwdb">item_weapon.wdb<a class="headerlink" href="#item_weaponwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: Only reversed partially</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sWeaponCharaSpecId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sWeaponCharaSpecId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAbility</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAbility2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAbility3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sUpgradeAbility</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAbilityHelpStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>uBuyPriceIncrement</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>uSellPriceIncrement</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>sDisasItem1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sDisasItem2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sDisasItem3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sDisasItem4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sDisasItem5</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u8UnkVal1</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8UnkVal2</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u2UnkVal3</td>
+<td>Bits</td>
+<td>Unsigned 2 bits</td>
+</tr>
+<tr>
+<td>u7MaxLvl</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u4UnkVal4</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u1UnkBool1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>i10ExpRate1</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10ExpRate2</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10ExpRate3</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>u1UnkBool4</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool5</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u8StatusModKind0</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8StatusModKind1</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u4StatusModType</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u1UnkBool6</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool7</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u16UnkVal5</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>i16StatusModVal</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u16UnkVal6</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>i16AttackModVal</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u16UnkVal7</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>i16MagicModVal</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16AtbModVal</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>u16UnkVal8</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16UnkVal9</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u16UnkVal10</td>
+<td>Bits</td>
+<td>Unsigned 16 bits</td>
+</tr>
+<tr>
+<td>u14DisasRate1</td>
+<td>Bits</td>
+<td>Unsigned 14 bits</td>
+</tr>
+<tr>
+<td>u7UnkVal11</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u7UnkVal12</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u14DisasRate2</td>
+<td>Bits</td>
+<td>Unsigned 14 bits</td>
+</tr>
+<tr>
+<td>u14DisasRate3</td>
+<td>Bits</td>
+<td>Unsigned 14 bits</td>
+</tr>
+<tr>
+<td>u7UnkVal13</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u14DisasRate4</td>
+<td>Bits</td>
+<td>Unsigned 14 bits</td>
+</tr>
+<tr>
+<td>u7UnkVal14</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u14DisasRate5</td>
+<td>Bits</td>
+<td>Unsigned 14 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mapsetwdb">mapset.wdb<a class="headerlink" href="#mapsetwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: also applies to mapset_loc###.wdb files present inside the db\bg folder</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iMemorySizeLimit</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iVideoMemoryLimit</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sScriptIdOnLoaded</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMapNameResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sBattleFreeSpaceResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>i20LoadingTime</td>
+<td>Bits</td>
+<td>Signed 20 bits</td>
+</tr>
+<tr>
+<td>i11LocationNum</td>
+<td>Bits</td>
+<td>Signed 11 bits</td>
+</tr>
+<tr>
+<td>i16FieldSceneDataNum</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i16BattleSceneDataNum</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+<tr>
+<td>i12PartyPositionMarkerGroup</td>
+<td>Bits</td>
+<td>Signed 12 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum0</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum1</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum2</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum3</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum4</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum5</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum6</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum7</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum8</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum9</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum10</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum11</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum12</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum13</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum14</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum15</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum16</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum17</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum18</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10FieldMapNum19</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10VfxMapNum0</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10VfxMapNum1</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10VfxMapNum2</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10VfxMapNum3</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum0</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum1</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum2</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum3</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum4</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+<tr>
+<td>i10BattleMapNum5</td>
+<td>Bits</td>
+<td>Signed 10 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="missionwdb">mission.wdb<a class="headerlink" href="#missionwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sMissionTitleStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMissionExplanationStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMissionTargetStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMissionPosStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMissionMarkPosStringId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sPosMarkerName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sTreasureBoxId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sTreasureBoxId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sTreasureBoxId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharasetId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharasetId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharasetId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharasetId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaspecId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaspecId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaspecId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaspecId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sCharaspecId4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAreaActivationName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iBattleSceneNum</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>u8ZoneNum</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u6IndexInMapMenu</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u4Class</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u6MissionPictureId</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u1UnkBool1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1UnkBool3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="monster_bookwdb">monster_book.wdb<a class="headerlink" href="#monster_bookwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u6MbookId</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u9SortId</td>
+<td>Bits</td>
+<td>Unsigned 9 bits</td>
+</tr>
+<tr>
+<td>u9PictureId</td>
+<td>Bits</td>
+<td>Unsigned 9 bits</td>
+</tr>
+<tr>
+<td>u1UnkBool</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="moviewdb">movie.wdb<a class="headerlink" href="#moviewdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sZone0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sZone1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="movie_itemswin32wdb">movie_items.win32.wdb<a class="headerlink" href="#movie_itemswin32wdb" title="Permanent link">&para;</a></h2>
+<p>N.B: also applies to movie_items.win32_us.wdb file</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sZoneName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>uCinemaSize</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>uReserved</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+<tr>
+<td>uCinemaStart</td>
+<td>UInt32</td>
+<td>uint32 value</td>
+</tr>
+</tbody>
+</table>
+<p>The ps3 version of this file uses the uReserved and uCinemaStart fields together as an UInt64 value.</p>
+<h2 id="partywdb">party.wdb<a class="headerlink" href="#partywdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sCharaSpecId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId5</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId6</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId7</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSubCharaSpecId8</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRideObjectCharaSpecId0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sRideObjectCharaSpecId1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sFieldFreeCameraSettingResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sIconResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sScriptIdOnPartyCharaAIStarted</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sScriptIdOnIdle</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sBattleCharaSpecId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSummonId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>fStopDistance</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fWalkDistance</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fPlayerRestraint</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>u1IsEnableUserControl</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u5OrderNumForCrest</td>
+<td>Bits</td>
+<td>Unsigned 5 bits</td>
+</tr>
+<tr>
+<td>u8OrderNumForTool</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u7Expresspower</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u7Willpower</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u7Brightness</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+<tr>
+<td>u7Cognition</td>
+<td>Bits</td>
+<td>Unsigned 7 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="savepointwdb">savepoint.wdb<a class="headerlink" href="#savepointwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sLoadScriptId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>i17PartyPositionMarkerGroupIndex</td>
+<td>Bits</td>
+<td>Signed 17 bits</td>
+</tr>
+<tr>
+<td>u15SaveIconBackgroundImageIndex</td>
+<td>Bits</td>
+<td>Unsigned 15 bits</td>
+</tr>
+<tr>
+<td>i16SaveIconOverrideImageIndex</td>
+<td>Bits</td>
+<td>Signed 16 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scriptwdb">script.wdb<a class="headerlink" href="#scriptwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: also applies to script#####.wdb files present inside the db\script folder</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sClassName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sMethodName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iAdditionalArgCount</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iAdditionalArg0</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iAdditionalArg1</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iAdditionalArg2</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iAdditionalArg3</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>iAdditionalStringArgCount</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sAdditionalStringArg0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAdditionalStringArg1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sAdditionalStringArg2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="shopwdb">shop.wdb<a class="headerlink" href="#shopwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sFlagItemId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sUnlockEventID</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sShopNameLabel</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sSignId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sExplanationLabel</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sUnkStringVal1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel2</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel3</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel4</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel5</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel6</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel7</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel8</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel9</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel10</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel11</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel12</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel13</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel14</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel15</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel16</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel17</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel18</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel19</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel20</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel21</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel22</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel23</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel24</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel25</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel26</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel27</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel28</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel29</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel30</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel31</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sItemLabel32</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u4Version</td>
+<td>Bits</td>
+<td>Unsigned 4 bits</td>
+</tr>
+<tr>
+<td>u13ZoneNum</td>
+<td>Bits</td>
+<td>Unsigned 13 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sound_fileid_dicwdb">sound_fileid_dic.wdb<a class="headerlink" href="#sound_fileid_dicwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: also applies to sound_fileid_dic_us.wdb file</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i31FileId</td>
+<td>Bits</td>
+<td>Signed 31 bits</td>
+</tr>
+<tr>
+<td>u1IsStream</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sound_filename_dicwdb">sound_filename_dic.wdb<a class="headerlink" href="#sound_filename_dicwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: also applies to sound_filename_dic_us.wdb</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sResourceName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="special_abilitywdb">special_ability.wdb<a class="headerlink" href="#special_abilitywdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sAbility</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>u6Genre</td>
+<td>Bits</td>
+<td>Unsigned 6 bits</td>
+</tr>
+<tr>
+<td>u3Count</td>
+<td>Bits</td>
+<td>Unsigned 3 bits</td>
+</tr>
+</tbody>
+</table>
+<h2 id="successionwdb">succession.wdb<a class="headerlink" href="#successionwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u1RideOffChocobo</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>i2NaviMapMode</td>
+<td>Bits</td>
+<td>Signed 2 bits</td>
+</tr>
+<tr>
+<td>i2PartyCharaAIMode</td>
+<td>Bits</td>
+<td>Signed 2 bits</td>
+</tr>
+<tr>
+<td>i2UserControlMode</td>
+<td>Bits</td>
+<td>Signed 2 bits</td>
+</tr>
+<tr>
+<td>i9ZoneStateChangeTriggerOnEnter</td>
+<td>Bits</td>
+<td>Signed 9 bits</td>
+</tr>
+<tr>
+<td>i9ZoneStateWait</td>
+<td>Bits</td>
+<td>Signed 9 bits</td>
+</tr>
+<tr>
+<td>u1EventSkipAble</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1FieldCommonObjectHide</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1EnablePause</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1SuspendFieldObject</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1DisableTalk</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>i9ZoneStateChangeTriggerOnExit</td>
+<td>Bits</td>
+<td>Signed 9 bits</td>
+</tr>
+<tr>
+<td>i9ZoneStateExit</td>
+<td>Bits</td>
+<td>Signed 9 bits</td>
+</tr>
+<tr>
+<td>u13CameraInterporationTimeOnEnter</td>
+<td>Bits</td>
+<td>Unsigned 13 bits</td>
+</tr>
+<tr>
+<td>u1FieldActiveFlag</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u13CameraInterporationTimeOnExit</td>
+<td>Bits</td>
+<td>Unsigned 13 bits</td>
+</tr>
+<tr>
+<td>u1HighModelEventFlag</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1ApplyFieldCameraByPlayerMatrix</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="treasureboxwdb">treasurebox.wdb<a class="headerlink" href="#treasureboxwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sItemResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>iItemCount</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sNextTreasureBoxResourceId</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="whitewdb">white.wdb<a class="headerlink" href="#whitewdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fVal</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>iVal1</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sResourceName</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>fPosX</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fPosY</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>fPosZ</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zonelistwdb">zonelist.wdb<a class="headerlink" href="#zonelistwdb" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fMovieTotalTimeSec</td>
+<td>Float32</td>
+<td>float value</td>
+</tr>
+<tr>
+<td>iImageSize</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>u8RefZoneNum0</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum1</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum2</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum3</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum4</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum5</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum6</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum7</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum8</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum9</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u8RefZoneNum10</td>
+<td>Bits</td>
+<td>Unsigned 8 bits</td>
+</tr>
+<tr>
+<td>u1OnDisk0</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1OnDisk1</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1OnDisk2</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1OnDisk3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1On1stLayerPS3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+<tr>
+<td>u1On2ndtLayerPS3</td>
+<td>Bits</td>
+<td>Unsigned 1 bit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zwdb">z###.wdb<a class="headerlink" href="#zwdb" title="Permanent link">&para;</a></h2>
+<p>N.B: applies to the wdb files present inside each zone\z### folders</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iBaseNum</td>
+<td>Int32</td>
+<td>int32 value</td>
+</tr>
+<tr>
+<td>sName0</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+<tr>
+<td>sName1</td>
+<td>UInt32</td>
+<td>relative offset in !!string section</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../wdb-contents/" class="md-footer__link md-footer__link--prev" aria-label="Previous: WDB Contents">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                WDB Contents
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../event-schedule-formats/xwb/" class="md-footer__link md-footer__link--next" aria-label="Next: XWB">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                XWB
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/LR-Research-Team" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/xwCHwRc4zU" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.copy", "content.code.select", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.054acff4.min.js"></script>
+
+  </body>
+</html>
