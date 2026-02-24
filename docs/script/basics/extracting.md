@@ -35,4 +35,10 @@ WhiteCLBtool -d "S:\Steam Library Games 2\steamapps\common\FINAL FANTASY XIII"
 
 That's it, the codebase is now ready to be used for reading and writing clb scripts.
 
+* This is an optional step and I recommend doing it only if you are interested in doing so. <br>You can use WhiteCLBtool to arrange the decompiled java files, into nicely organized directories which can help in getting a proper codebase folder structure used during development before building the game project from the engine. this can be done by running the tool with the `-a` switch along with the clbs_decompiled folder as the argument.<br>example with Final Fantasy XIII's game folder path on my PC, is once again given below:
+```
+WhiteCLBtool -a "S:\Steam Library Games 2\steamapps\common\FINAL FANTASY XIII\clbs_decompiled"
+```
+Once the function has finished executing, all the java files should be copied into a **clbs_arranged** folder in correct directories. do keep in mind that the zone java files requires the cmn, fake, and fld folders to be placed inside each z#### folder. the mentioned folders contain important java related scripts, which the zone scripts can access and the reason this tool doesn't do this automatically with the arrange function, is due to the issue of duplication. so this is left to you the user, to manually do it for whatever zone's scripts you are interested in looking at.
+
 You can now proceed to this [page](./repacking.md) to setup the repacking utilities.
