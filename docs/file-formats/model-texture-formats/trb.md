@@ -86,11 +86,11 @@ N.B.: This chunk is in Big Endian.
 
 #### Texture Type
 
-| Value | Type | Description |
-| --- | --- | --- |
-| 0x0 | Classic | A Single texture |
-| 0x1 | Cubemap | 6 textures with similar dimensions and mips |
-| 0x2 | Stacked | XIII-LR only, multiple textures with similar dimensions |
+| Value | Type |
+| --- | --- |
+| 0x0 | Classic |
+| 0x1 | Cubemap |
+| 0x2 | Volumemap |
 
 #### Mipmap Specs
 
