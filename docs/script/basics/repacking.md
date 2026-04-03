@@ -98,7 +98,7 @@ We are going to setup a VS Code task, that can be used to quickly compile .java 
         "args": [
             "-c", 
             "C:\\Program Files\\Java\\jdk1.5.0_22\\bin\\javac.exe",
-            "${fileBasename}"
+            "${relativeFile}"
         ],
         "group": {
             "kind": "build"
