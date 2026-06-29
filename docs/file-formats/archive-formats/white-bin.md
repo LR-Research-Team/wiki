@@ -78,16 +78,21 @@ These offsets have to be taken relatively from position 0x20 onwards due to the 
 | Offset | Size | Type | Description |
 | --- | --- | --- | --- |
 | 0x0 | 0x4 | UInt32 | The File Code |
-| 0x4 | 0x2 | UInt16 | Position of the file info string in the chunk |
-| 0x6 | 0x1 | UInt8 | Chunk number in which the file info string is stored |
+| 0x4 | 0x2 | UInt16 | Bits [14-0] position of the file info string in chunk, and bit [15] stores a bit for chunk number |
+| 0x6 | 0x1 | UInt8 | High bits of the chunk number of the file info string, merge with bit [15] from the position offset to get proper chunk number |
 | 0x7 | 0x1 | UInt8 | File type ID |
 
-The position value of the file info string in the odd number chunks, will start from 32768 onwards and resets to 0 after an odd numbered chunk. it again starts from 32768 for the next odd numbered chunk and again switches back to 0 after that chunk. 
-
-You have to take the actual position value of the file path string in the chunk and add it to 32768. the resulting value will be the position value in this Entry section.
-
-For example 32768 would be position 0, 32819 would be position 51 and so on. (32768 + 51 = 32819)
+The position offset stores the position value in the low bits [14-0], while the high bit [15] contains a low bit for the chunk number. to get the position value, you have to get the value without the high bit [15] and to get the proper chunk number, you have to merge the high bit with the next offset that contains the rest of the high bits of the chunk number.
 <br>
+
+For Example:
+```
+Position Offset Value = 32821
+Chunk Number Offset Value = 0
+
+Chunk Number = (Chunk Number Offset Value << 1) | (Position Offset Value >> 15)  // result will be 1
+Position = 0x7FFF & Position Offset Value  // result will be 53
+```
 
 #### Filelist Encryption Footer
 
