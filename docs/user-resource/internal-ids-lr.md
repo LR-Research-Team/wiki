@@ -987,185 +987,78 @@ Attacks and Abilties refers to any ability that can be performed in-battle, but 
 
 
 
-### Abilities
+### Garb Abilities
+These are the abilities that are assigned to a garb.<br>
+The ID of the targeted garb is part of the ID, after the `abi_` prefix. Meaning `abi_ba00_0` refers to Costume `cos_ba00`, slot 0. `abi_ba00_1` would refer to slot 1.<br>
+Empty entries are most likely kept around for consistency-sake. Any ability can be assigned to a garb using this system.
 
 | ID | Name |
 | -- | -- |
 | abi_ba00_0 | Attack |
-| abi_ba01_2 | Beat Down |
-| abi_ba02_2 | Ruinga |
-| abi_ba03_0 | Attack |
-| abi_ba03_1 | Ruin |
-| abi_ba04_2 | Ultima |
-| abi_ba05_1 | Defaithga |
-| abi_ba05_2 | Debravega |
-| abi_ba06_3 | Guard |
-| abi_ca00_0 | Attack |
-| abi_ca01_0 | Attack |
-| abi_ca02_0 | Thunder |
-| abi_ca03_0 | Icestorm |
-| abi_ca04_2 | Blitz |
-| abi_ca05_0 | Aero |
-| abi_ca06_2 | Jinx |
-| abi_da00_0 | Thunder |
-| abi_da02_1 | Deshell |
-| abi_da02_2 | Deprotect |
-| abi_da03_1 | Aerora |
-| abi_da03_2 | Thundara |
-| abi_da04_0 | Attack |
-| abi_da04_1 | Charged Strike |
-| abi_da05_3 | Guard |
-| abi_da06_0 | Fire |
-| abi_da06_1 | Blizzard |
-| abi_da06_2 | Dispel |
-| abi_ea00_3 | Guard |
-| abi_ea01_0 | Ruin |
-| abi_ea01_3 | Mediguard |
-| abi_ea02_1 | Wind Slash |
-| abi_ea02_2 | Lightning |
-| abi_ea03_3 | Guard |
-| abi_ea04_3 | Guard |
-| abi_ea05_0 | Attack |
-| abi_ea05_2 | Bravery Feeder |
-| abi_ea06_2 | Shadowbind |
-| abi_fa00_2 | Fira |
-| abi_fa01_2 | Thundaga |
-| abi_fa02_2 | Firaga |
-| abi_fa03_2 | Aeroga |
-| abi_fa04_0 | Attack |
-| abi_fa06_2 | Blizzaga |
-| abi_ga00_3 | Guard |
-| abi_ga01_3 | Heavy Guard |
-| abi_ga02_0 | Attack |
-| abi_ga02_1 | Ruin |
-| abi_ga03_2 | Blitz |
-| abi_ga04_2 | Blitz |
-| abi_ga05_0 | Blizzard |
-| abi_ga06_0 | Light Slash |
-| abi_ga06_1 | Ruin |
-| abi_ga06_3 | Light Guard |
-| abi_ha00_0 | Attack |
-| abi_ha02_2 | Blitz |
-| abi_ha02_3 | Mediguard |
-| abi_ha03_1 | Flamespark |
-| abi_ha03_2 | Icestorm |
-| abi_ha04_0 | Attack |
-| abi_ha05_0 | Ruin |
-| abi_ha06_0 | Ruin |
-| abi_ia00_0 | Light Slash |
-| abi_ia00_2 | Beat Down |
-| abi_ia01_2 | Area Sweep |
-| abi_ia03_1 | Debrave |
-| abi_ia03_2 | Defaith |
-| abi_ia04_0 | Flamespark |
-| abi_ia05_0 | Fire |
-| abi_ia06_3 | Guard |
-| abi_ja00_0 | Thunder |
-| abi_ja01_0 | Blizzard |
-| abi_ja02_1 | Flood |
-| abi_ja02_2 | Flame |
-| abi_ja03_3 | NulAll Guard |
-| abi_ja04_0 | Light Slash |
-| abi_ja04_3 | Light Guard |
-| abi_ja05_1 | Siren Strike |
-| abi_ja06_0 | Attack |
-| abi_ja06_2 | Blitz |
-| abi_ja06_3 | Guard |
-| abi_ka00_2 | Lancet |
-| abi_ka01_1 | Ashura |
-| abi_ka01_2 | Darkness |
-| abi_ka02_2 | Bravery Feeder |
-| abi_ka02_3 | Heavy Guard |
-| abi_ka03_0 | Defensive Strike |
-| abi_ka04_2 | Beat Down |
-| abi_ka05_0 | Flare |
-| abi_ka05_1 | Tornado |
-| abi_ka05_2 | Surge |
-| abi_ka05_3 | Chill |
-| abi_ka06_3 | Heroic Guard |
-| abi_ka08_0 | Relentless Assault |
-| abi_la00_0 | Magic Slash |
-| abi_la00_3 | Mediguard+ |
-| abi_zz99 | Unknown Ability |
-
-### Buffing magic
-> **Note:** These abilities are actually not obtainable in-game, though they have entries in `bt_ability.wdb`. They may or may not work if added.<br>Their effects do exist, but are only obtainable through consuming a potion or having a passive that grants it.
-
-| ID | Name |
-| -- | -- |
-| me000_00 | Bravery |
-| me010_00 | Faith |
-| me020_00 | Haste |
-| me030_00 | Enfire |
-| me040_00 | Enfrost |
-| me050_00 | Enthunder |
-| me070_00 | Vigilance |
-| me080_00 | Enaero |
-| me200_00 | Bravera |
-| me210_00 | Faithra |
-| me500_00 | Protect |
-| me510_00 | Shell |
-| me520_00 | Veil |
-| me530_00 | Barfire |
-| me540_00 | Barfrost |
-| me550_00 | Barthunder |
-| me560_00 | Barwater |
-| me700_00 | Protectra |
-| me710_00 | Shellra |
-
-### Invalid Abilities
-The following Abilities have a valid `record` in `item.wdb`, but do not appear in `txtres_us.ztr`.<br>Possibly these are variants on abilities (such as airborn, finishers etc)
-
-| ID | Name |
-| -- | -- |
 | abi_ba00_1 | N/A |
 | abi_ba00_2 | N/A |
 | abi_ba00_3 | N/A |
 | abi_ba01_0 | N/A |
 | abi_ba01_1 | N/A |
+| abi_ba01_2 | Beat Down |
 | abi_ba01_3 | N/A |
 | abi_ba02_0 | N/A |
 | abi_ba02_1 | N/A |
+| abi_ba02_2 | Ruinga |
 | abi_ba02_3 | N/A |
+| abi_ba03_0 | Attack |
+| abi_ba03_1 | Ruin |
 | abi_ba03_2 | N/A |
 | abi_ba03_3 | N/A |
 | abi_ba04_0 | N/A |
 | abi_ba04_1 | N/A |
+| abi_ba04_2 | Ultima |
 | abi_ba04_3 | N/A |
 | abi_ba05_0 | N/A |
+| abi_ba05_1 | Defaithga |
+| abi_ba05_2 | Debravega |
 | abi_ba05_3 | N/A |
 | abi_ba06_0 | N/A |
 | abi_ba06_1 | N/A |
 | abi_ba06_2 | N/A |
+| abi_ba06_3 | Guard |
 | abi_ba08_0 | N/A |
 | abi_ba08_1 | N/A |
 | abi_ba08_2 | N/A |
 | abi_ba08_3 | N/A |
+| abi_ca00_0 | Attack |
 | abi_ca00_1 | N/A |
 | abi_ca00_2 | N/A |
 | abi_ca00_3 | N/A |
+| abi_ca01_0 | Attack |
 | abi_ca01_1 | N/A |
 | abi_ca01_2 | N/A |
 | abi_ca01_3 | N/A |
+| abi_ca02_0 | Thunder |
 | abi_ca02_1 | N/A |
 | abi_ca02_2 | N/A |
 | abi_ca02_3 | N/A |
+| abi_ca03_0 | Icestorm |
 | abi_ca03_1 | N/A |
 | abi_ca03_2 | N/A |
 | abi_ca03_3 | N/A |
 | abi_ca04_0 | N/A |
 | abi_ca04_1 | N/A |
+| abi_ca04_2 | Blitz |
 | abi_ca04_3 | N/A |
+| abi_ca05_0 | Aero |
 | abi_ca05_1 | N/A |
 | abi_ca05_2 | N/A |
 | abi_ca05_3 | N/A |
 | abi_ca06_0 | N/A |
 | abi_ca06_1 | N/A |
+| abi_ca06_2 | Jinx |
 | abi_ca06_3 | N/A |
 | abi_ca08_0 | N/A |
 | abi_ca08_1 | N/A |
 | abi_ca08_2 | N/A |
 | abi_ca08_3 | N/A |
+| abi_da00_0 | Thunder |
 | abi_da00_1 | N/A |
 | abi_da00_2 | N/A |
 | abi_da00_3 | N/A |
@@ -1174,45 +1067,70 @@ The following Abilities have a valid `record` in `item.wdb`, but do not appear i
 | abi_da01_2 | N/A |
 | abi_da01_3 | N/A |
 | abi_da02_0 | N/A |
+| abi_da02_1 | Deshell |
+| abi_da02_2 | Deprotect |
 | abi_da02_3 | N/A |
 | abi_da03_0 | N/A |
+| abi_da03_1 | Aerora |
+| abi_da03_2 | Thundara |
 | abi_da03_3 | N/A |
+| abi_da04_0 | Attack |
+| abi_da04_1 | Charged Strike |
 | abi_da04_2 | N/A |
 | abi_da04_3 | N/A |
 | abi_da05_0 | N/A |
 | abi_da05_1 | N/A |
 | abi_da05_2 | N/A |
+| abi_da05_3 | Guard |
+| abi_da06_0 | Fire |
+| abi_da06_1 | Blizzard |
+| abi_da06_2 | Dispel |
 | abi_da06_3 | N/A |
 | abi_ea00_0 | N/A |
 | abi_ea00_1 | N/A |
 | abi_ea00_2 | N/A |
+| abi_ea00_3 | Guard |
+| abi_ea01_0 | Ruin |
 | abi_ea01_1 | N/A |
 | abi_ea01_2 | N/A |
+| abi_ea01_3 | Mediguard |
 | abi_ea02_0 | N/A |
+| abi_ea02_1 | Wind Slash |
+| abi_ea02_2 | Lightning |
 | abi_ea02_3 | N/A |
 | abi_ea03_0 | N/A |
 | abi_ea03_1 | N/A |
 | abi_ea03_2 | N/A |
+| abi_ea03_3 | Guard |
 | abi_ea04_0 | N/A |
 | abi_ea04_1 | N/A |
 | abi_ea04_2 | N/A |
+| abi_ea04_3 | Guard |
+| abi_ea05_0 | Attack |
 | abi_ea05_1 | N/A |
+| abi_ea05_2 | Bravery Feeder |
 | abi_ea05_3 | N/A |
 | abi_ea06_0 | N/A |
 | abi_ea06_1 | N/A |
+| abi_ea06_2 | Shadowbind |
 | abi_ea06_3 | N/A |
 | abi_fa00_0 | N/A |
 | abi_fa00_1 | N/A |
+| abi_fa00_2 | Fira |
 | abi_fa00_3 | N/A |
 | abi_fa01_0 | N/A |
 | abi_fa01_1 | N/A |
+| abi_fa01_2 | Thundaga |
 | abi_fa01_3 | N/A |
 | abi_fa02_0 | N/A |
 | abi_fa02_1 | N/A |
+| abi_fa02_2 | Firaga |
 | abi_fa02_3 | N/A |
 | abi_fa03_0 | N/A |
 | abi_fa03_1 | N/A |
+| abi_fa03_2 | Aeroga |
 | abi_fa03_3 | N/A |
+| abi_fa04_0 | Attack |
 | abi_fa04_1 | N/A |
 | abi_fa04_2 | N/A |
 | abi_fa04_3 | N/A |
@@ -1222,25 +1140,37 @@ The following Abilities have a valid `record` in `item.wdb`, but do not appear i
 | abi_fa05_3 | N/A |
 | abi_fa06_0 | N/A |
 | abi_fa06_1 | N/A |
+| abi_fa06_2 | Blizzaga |
 | abi_fa06_3 | N/A |
 | abi_ga00_0 | N/A |
 | abi_ga00_1 | N/A |
 | abi_ga00_2 | N/A |
+| abi_ga00_3 | Guard |
 | abi_ga01_0 | N/A |
 | abi_ga01_1 | N/A |
 | abi_ga01_2 | N/A |
+| abi_ga01_3 | Heavy Guard |
+| abi_ga02_0 | Attack |
+| abi_ga02_1 | Ruin |
 | abi_ga02_2 | N/A |
 | abi_ga02_3 | N/A |
 | abi_ga03_0 | N/A |
 | abi_ga03_1 | N/A |
+| abi_ga03_2 | Blitz |
 | abi_ga03_3 | N/A |
 | abi_ga04_0 | N/A |
 | abi_ga04_1 | N/A |
+| abi_ga04_2 | Blitz |
 | abi_ga04_3 | N/A |
+| abi_ga05_0 | Blizzard |
 | abi_ga05_1 | N/A |
 | abi_ga05_2 | N/A |
 | abi_ga05_3 | N/A |
+| abi_ga06_0 | Light Slash |
+| abi_ga06_1 | Ruin |
 | abi_ga06_2 | N/A |
+| abi_ga06_3 | Light Guard |
+| abi_ha00_0 | Attack |
 | abi_ha00_1 | N/A |
 | abi_ha00_2 | N/A |
 | abi_ha00_3 | N/A |
@@ -1250,79 +1180,120 @@ The following Abilities have a valid `record` in `item.wdb`, but do not appear i
 | abi_ha01_3 | N/A |
 | abi_ha02_0 | N/A |
 | abi_ha02_1 | N/A |
+| abi_ha02_2 | Blitz |
+| abi_ha02_3 | Mediguard |
 | abi_ha03_0 | N/A |
+| abi_ha03_1 | Flamespark |
+| abi_ha03_2 | Icestorm |
 | abi_ha03_3 | N/A |
+| abi_ha04_0 | Attack |
 | abi_ha04_1 | N/A |
 | abi_ha04_2 | N/A |
 | abi_ha04_3 | N/A |
+| abi_ha05_0 | Ruin |
 | abi_ha05_1 | N/A |
 | abi_ha05_2 | N/A |
 | abi_ha05_3 | N/A |
+| abi_ha06_0 | Ruin |
 | abi_ha06_1 | N/A |
 | abi_ha06_2 | N/A |
 | abi_ha06_3 | N/A |
+| abi_ia00_0 | Light Slash |
 | abi_ia00_1 | N/A |
+| abi_ia00_2 | Beat Down |
 | abi_ia00_3 | N/A |
 | abi_ia01_0 | N/A |
 | abi_ia01_1 | N/A |
+| abi_ia01_2 | Area Sweep |
 | abi_ia01_3 | N/A |
 | abi_ia02_0 | N/A |
 | abi_ia02_1 | N/A |
 | abi_ia02_2 | N/A |
 | abi_ia02_3 | N/A |
 | abi_ia03_0 | N/A |
+| abi_ia03_1 | Debrave |
+| abi_ia03_2 | Defaith |
 | abi_ia03_3 | N/A |
+| abi_ia04_0 | Flamespark |
 | abi_ia04_1 | N/A |
 | abi_ia04_2 | N/A |
 | abi_ia04_3 | N/A |
+| abi_ia05_0 | Fire |
 | abi_ia05_1 | N/A |
 | abi_ia05_2 | N/A |
 | abi_ia05_3 | N/A |
 | abi_ia06_0 | N/A |
 | abi_ia06_1 | N/A |
 | abi_ia06_2 | N/A |
+| abi_ia06_3 | Guard |
+| abi_ja00_0 | Thunder |
 | abi_ja00_1 | N/A |
 | abi_ja00_2 | N/A |
 | abi_ja00_3 | N/A |
+| abi_ja01_0 | Blizzard |
 | abi_ja01_1 | N/A |
 | abi_ja01_2 | N/A |
 | abi_ja01_3 | N/A |
 | abi_ja02_0 | N/A |
+| abi_ja02_1 | Flood |
+| abi_ja02_2 | Flame |
 | abi_ja02_3 | N/A |
 | abi_ja03_0 | N/A |
 | abi_ja03_1 | N/A |
 | abi_ja03_2 | N/A |
+| abi_ja03_3 | NulAll Guard |
+| abi_ja04_0 | Light Slash |
 | abi_ja04_1 | N/A |
 | abi_ja04_2 | N/A |
+| abi_ja04_3 | Light Guard |
 | abi_ja05_0 | N/A |
+| abi_ja05_1 | Siren Strike |
 | abi_ja05_2 | N/A |
 | abi_ja05_3 | N/A |
+| abi_ja06_0 | Attack |
 | abi_ja06_1 | N/A |
+| abi_ja06_2 | Blitz |
+| abi_ja06_3 | Guard |
 | abi_ja08_0 | N/A |
 | abi_ja08_1 | N/A |
 | abi_ja08_2 | N/A |
 | abi_ja08_3 | N/A |
 | abi_ka00_0 | N/A |
 | abi_ka00_1 | N/A |
+| abi_ka00_2 | Lancet |
 | abi_ka00_3 | N/A |
 | abi_ka01_0 | N/A |
+| abi_ka01_1 | Ashura |
+| abi_ka01_2 | Darkness |
 | abi_ka01_3 | N/A |
 | abi_ka02_0 | N/A |
 | abi_ka02_1 | N/A |
+| abi_ka02_2 | Bravery Feeder |
+| abi_ka02_3 | Heavy Guard |
+| abi_ka03_0 | Defensive Strike |
 | abi_ka03_1 | N/A |
 | abi_ka03_2 | N/A |
 | abi_ka03_3 | N/A |
 | abi_ka04_0 | N/A |
 | abi_ka04_1 | N/A |
+| abi_ka04_2 | Beat Down |
 | abi_ka04_3 | N/A |
+| abi_ka05_0 | Flare |
+| abi_ka05_1 | Tornado |
+| abi_ka05_2 | Surge |
+| abi_ka05_3 | Chill |
 | abi_ka06_0 | N/A |
 | abi_ka06_1 | N/A |
 | abi_ka06_2 | N/A |
+| abi_ka06_3 | Heroic Guard |
+| abi_ka08_0 | Relentless Assault |
 | abi_ka08_1 | N/A |
 | abi_ka08_2 | N/A |
 | abi_ka08_3 | N/A |
+| abi_la00_0 | Magic Slash |
 | abi_la00_1 | N/A |
 | abi_la00_2 | N/A |
+| abi_la00_3 | Mediguard+ |
 | abi_ma00_0 | N/A |
 | abi_ma00_1 | N/A |
 | abi_ma00_2 | N/A |
@@ -1391,6 +1362,34 @@ The following Abilities have a valid `record` in `item.wdb`, but do not appear i
 | abi_zf00_1 | N/A |
 | abi_zf00_2 | N/A |
 | abi_zf00_3 | N/A |
+| abi_zz99 | Unknown Ability |
+
+
+### Buffing magic
+> **Note:** These abilities are actually not obtainable in-game, though they have entries in `bt_ability.wdb`. They may or may not work if added.<br>Their effects do exist, but are only obtainable through consuming a potion or having a passive that grants it.
+
+| ID | Name |
+| -- | -- |
+| me000_00 | Bravery |
+| me010_00 | Faith |
+| me020_00 | Haste |
+| me030_00 | Enfire |
+| me040_00 | Enfrost |
+| me050_00 | Enthunder |
+| me070_00 | Vigilance |
+| me080_00 | Enaero |
+| me200_00 | Bravera |
+| me210_00 | Faithra |
+| me500_00 | Protect |
+| me510_00 | Shell |
+| me520_00 | Veil |
+| me530_00 | Barfire |
+| me540_00 | Barfrost |
+| me550_00 | Barthunder |
+| me560_00 | Barwater |
+| me700_00 | Protectra |
+| me710_00 | Shellra |
+
 
 ## Miscellaneous
 Miscellaneous are items that you can not use in battle, for EP, or alter Lightning's stats.<br>
