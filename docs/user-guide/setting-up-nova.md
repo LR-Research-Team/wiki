@@ -24,7 +24,7 @@ Before proceeding any further, you need to make sure that your PC version games 
 
 1. From your steam library, launch the game and close it as soon as you reach the game's title screen. this step is important as the game would need to create some default configuration settings which will only happen after it has launched once. remember that the game you launch has to be the same one for which you are setting it up with Nova. if you are setting up Nova for all the three games, then launch each game from your steam library separately and close it at the title screen. make sure not to launch all of them at the same time.
 
-2. Download the Nova Chrysalia.zip file from the **#announcements** channel in the [Discord server](https://discord.gg/mvqaETHjbh).
+2. Download the Nova Chrysalia.zip file from the **#announcements** channel in the [Discord server](https://discord.gg/73FGmVhfG).
 
 3. Extract the zip file that you downloaded with WinRAR or 7Zip software and open the NovaChrysalia.exe file. This should open the Mod manager.
 
