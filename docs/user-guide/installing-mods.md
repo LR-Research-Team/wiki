@@ -9,7 +9,7 @@ This guide covers the process of installing a nova mod with the Nova mod manager
     * Mod files that are packed in a .ncmp file format which has to be installed through Nova
     
     * Mod files that modify or replace the unpacked game files which only work when the game is running in **Unpacked mode**. 
-      You will find this type of mods linked in the [Discord server](https://discord.gg/mvqaETHjbh) in the **#releases** channel
+      You will find this type of mods linked in the [Discord server](https://discord.gg/5a5mGzGBD4) in the **#releases** channel
 
 All of these mods will require the game data to be Unpacked and will only work if the game is launched through Nova, with the Filesystem set to **Unpacked Mode**.
 
@@ -17,7 +17,7 @@ All of these mods will require the game data to be Unpacked and will only work i
 Here is a demo which will help to identify and install a .ncmp mod file with Nova.
 
 
-1. Download the Core mods.zip file from the **#announcements** channel in the [Discord server](https://discord.gg/mvqaETHjbh).
+1. Download the Core mods.zip file from the **#announcements** channel in the [Discord server](https://discord.gg/5a5mGzGBD4).
 
 2. Extract the zip file that you downloaded and you will get lots of .ncmp files. Take notice of the filenames and you will see the short names that are used to refer to the games from the FFXIII trilogy (as explained in the [Setting up the Nova Chrysalia Mod manager](https://lr-research-team.github.io/wiki/user-guide/setting-up-nova) guide page).
 
